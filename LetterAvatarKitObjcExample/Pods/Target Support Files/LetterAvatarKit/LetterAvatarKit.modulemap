@@ -1,0 +1,6 @@
+framework module LetterAvatarKit {
+  umbrella header "LetterAvatarKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
