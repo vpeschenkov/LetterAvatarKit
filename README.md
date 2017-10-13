@@ -59,6 +59,10 @@ self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithUsername:@"Letter 
 
 Questions, comments, issues, and pull requests are always welcome!
 
+## Thanks
+
+Thanks [Cargo](https://github.com/Gargo) for translating [README](https://github.com/vpeschenkov/LetterAvatarKit/blob/master/README.md) to [Russian](http://gargo.of.by/letteravatarkit/).
+
 ## License
 
 Distributed under the MIT license. See LICENSE for more information.
