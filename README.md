@@ -27,7 +27,7 @@ You can configure the following properties of LetterAvatarBuilderConfiguration:
 - ```username``` - the username (if  the username is ```nil```, uses "NA")
 - ```letterFont``` - the letter font (default is ```UIFont.systemFont(ofSize: 16.0)```)
 - ```letterColor``` - the letter color (default is ```rgb(236, 240, 241)```)
-- ```backgroundColors``` - an array of background colors (default using the colors from flatuicolors.com)
+- ```backgroundColors``` - an array of background colors (default using the colors from [flatuicolors.com](http://flatuicolors.com/))
 
 ### Swift
 
