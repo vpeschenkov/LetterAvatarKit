@@ -40,7 +40,7 @@ class LetterAvatarBuilderTests: XCTestCase {
             in: bundle,
             compatibleWith: nil
         )
-        XCTAssertEqual(UIImagePNGRepresentation(avatarImage!), UIImagePNGRepresentation(testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
     }
     
     func testEmptyAvatarBuild() {
@@ -55,8 +55,7 @@ class LetterAvatarBuilderTests: XCTestCase {
             in: bundle,
             compatibleWith: nil
         )
-        
-        XCTAssertEqual(UIImagePNGRepresentation(avatarImage!), UIImagePNGRepresentation(testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
     }
     
     func testAvatarBuildWithSize() {

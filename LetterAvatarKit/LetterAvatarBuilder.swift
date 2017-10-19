@@ -98,9 +98,9 @@ open class LetterAvatarBuilder: NSObject {
                 let lettersSize = letters.size(withAttributes: attributes)
             #else
                 let attributes = [
-                NSParagraphStyleAttributeName: style,
-                NSFontAttributeName: letterFont.withSize(min(size.height, size.width) / 2.0),
-                NSForegroundColorAttributeName: letterColor
+                    NSParagraphStyleAttributeName: style,
+                    NSFontAttributeName: letterFont.withSize(min(size.height, size.width) / 2.0),
+                    NSForegroundColorAttributeName: letterColor
                 ]
                 
                 let lettersSize = letters.size(attributes: attributes)

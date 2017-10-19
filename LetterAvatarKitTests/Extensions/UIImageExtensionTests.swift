@@ -41,7 +41,7 @@ class UIImageExtensionTests: XCTestCase {
         )
         XCTAssertNotNil(testAvatarImage)
         
-        XCTAssertEqual(UIImagePNGRepresentation(avatarImage!), UIImagePNGRepresentation(testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
     }
     
     func testAvatarBuildWithSize() {
@@ -68,6 +68,6 @@ class UIImageExtensionTests: XCTestCase {
         
         XCTAssertTrue(avatarImage?.size.width == configuration.size.width)
         XCTAssertTrue(avatarImage?.size.height == configuration.size.height)
-        XCTAssertEqual(UIImagePNGRepresentation(avatarImage!), UIImagePNGRepresentation(testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
     }
 }

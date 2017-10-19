@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,27 +35,27 @@
 		00FBD1B5464104C8B2802C88F9929B71 /* LetterAvatarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetterAvatarKit.xcconfig; sourceTree = "<group>"; };
 		1483EA1276876246E7A1655BD9E2E39E /* Pods-LetterAvatarKitObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetterAvatarKitObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		158D56B9EDD724C8DE52BE040FC895AF /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		16F1A9A504754D1ABCE12F5D7B38C950 /* Pods_LetterAvatarKitObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetterAvatarKitObjcExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F1A9A504754D1ABCE12F5D7B38C950 /* Pods_LetterAvatarKitObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LetterAvatarKitObjcExample.framework; path = "Pods-LetterAvatarKitObjcExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AC1AD4EC2DAAE27D8EC98C5CA21CB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F2535D0F8EB530323ACE82251F696C /* Pods-LetterAvatarKitObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LetterAvatarKitObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		31B9D4B9DD74813A0DA3AF43B61A8E57 /* CharacterExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterExtension.swift; sourceTree = "<group>"; };
-		35EEB2554B69B3AF3E1A84F0FEB82416 /* Pods-LetterAvatarKitObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LetterAvatarKitObjcExample.modulemap"; sourceTree = "<group>"; };
+		35EEB2554B69B3AF3E1A84F0FEB82416 /* Pods-LetterAvatarKitObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LetterAvatarKitObjcExample.modulemap"; sourceTree = "<group>"; };
 		4789C879FC4015C20393BEA677AE7BE3 /* Pods-LetterAvatarKitObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetterAvatarKitObjcExample.release.xcconfig"; sourceTree = "<group>"; };
 		6543FC3746EA07703BE2B28233A6F4AF /* LetterAvatarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-prefix.pch"; sourceTree = "<group>"; };
 		711EDE325E49A8EC716F39E59BF84A38 /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		7B1BCD83AC13B2ADE91342914D805D51 /* Pods-LetterAvatarKitObjcExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetterAvatarKitObjcExample-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A81F06FA3A730238284C0D1538B69A60 /* Pods-LetterAvatarKitObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LetterAvatarKitObjcExample-dummy.m"; sourceTree = "<group>"; };
 		A8ABB6675AF90C5EA9D397B715889BB4 /* LetterAvatarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LetterAvatarBuilder.swift; sourceTree = "<group>"; };
 		B331B683E4ACA05EE4E28681D2973EA6 /* LetterAvatarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-umbrella.h"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B6D22B6E25820A59EB6A16E2CC3C5692 /* Pods-LetterAvatarKitObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LetterAvatarKitObjcExample-umbrella.h"; sourceTree = "<group>"; };
-		BBF009C023AC24FF8F70B3F9208456E4 /* LetterAvatarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LetterAvatarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF009C023AC24FF8F70B3F9208456E4 /* LetterAvatarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LetterAvatarKit.framework; path = LetterAvatarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC9089ADCF350A35E80E508E034DB91 /* LetterAvatarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LetterAvatarKit.h; sourceTree = "<group>"; };
 		CF0D92D9FFB2E1068BF50803B5EE07CC /* LetterAvatarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetterAvatarKit-dummy.m"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DE9C83939DB7B6D8EDD470B7B0BB56D0 /* Pods-LetterAvatarKitObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetterAvatarKitObjcExample-frameworks.sh"; sourceTree = "<group>"; };
-		E494C3C48570CF6BFFEF4A8E271C71EE /* LetterAvatarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LetterAvatarKit.modulemap; sourceTree = "<group>"; };
+		E494C3C48570CF6BFFEF4A8E271C71EE /* LetterAvatarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LetterAvatarKit.modulemap; sourceTree = "<group>"; };
 		EC75467232694C1A773815FA89159748 /* Pods-LetterAvatarKitObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetterAvatarKitObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F4C89909FD8B718FD0DE89EFADD4B678 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +165,7 @@
 				CCC9089ADCF350A35E80E508E034DB91 /* LetterAvatarKit.h */,
 				FD094A9FD0DC4E0D95833CB102D55261 /* Extensions */,
 			);
+			name = LetterAvatarKit;
 			path = LetterAvatarKit;
 			sourceTree = "<group>";
 		};
@@ -193,6 +194,7 @@
 				158D56B9EDD724C8DE52BE040FC895AF /* UIColorExtension.swift */,
 				711EDE325E49A8EC716F39E59BF84A38 /* UIImageExtension.swift */,
 			);
+			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -261,7 +263,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -318,7 +320,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC75467232694C1A773815FA89159748 /* Pods-LetterAvatarKitObjcExample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -364,9 +365,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -374,21 +373,15 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -414,7 +407,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4789C879FC4015C20393BEA677AE7BE3 /* Pods-LetterAvatarKitObjcExample.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -476,7 +468,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -511,7 +503,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -528,9 +520,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -538,20 +528,14 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",

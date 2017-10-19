@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LetterAvatarKit'
-  s.platform         = :ios, '9.0'
-  s.version          = '1.0.0'
+  s.platform         = :ios, '8.0'
+  s.version          = '1.0.1'
   s.license          = { :type => 'MIT' }
   s.homepage         = 'https://github.com/vpeschenkov/LetterAvatarKit'
   s.authors          = { 'Victor Peschenkov' => 'nerevarxx@gmail.com' }
