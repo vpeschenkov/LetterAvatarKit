@@ -24,7 +24,7 @@ pod "LetterAvatarKit"
 You can configure the following properties of LetterAvatarBuilderConfiguration:
 
 - ```size``` - the result image size (default is 80x80)
-- ```username``` - the username (if  the username is ```nil```, is used "NA")
+- ```username``` - the username (if  the username is ```nil```, it is "NA")
 - ```letterFont``` - the letter font (default is ```UIFont.systemFont(ofSize: 16.0)```)
 - ```letterColor``` - the letter color (default is ```rgb(236, 240, 241)```)
 - ```backgroundColors``` - an array of background colors (default using the colors from [flatuicolors.com](http://flatuicolors.com/))
