@@ -1,6 +1,6 @@
 # LetterAvatarKit
 
-![][Travis] ![][Pods] ![][Platform]
+![][Platform] ![][Travis] ![][Pods] ![][Swift3.2] ![][Swift4.0] 
 
 LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatars written in Swift. Here are some images showing what the LetterAvatarKit does:
 
@@ -68,7 +68,8 @@ Thanks [Cargo](https://github.com/Gargo) for translating [README](https://github
 Distributed under the MIT license. See LICENSE for more information.
 
 [Screenshots]: https://i.imgur.com/n3SjH6q.jpg
-
+[Platform]: https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png
 [Travis]: https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master
 [Pods]: https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png
-[Platform]: https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png
+[Swift3.2]: https://img.shields.io/badge/swift-3.2-orange.svg?style=flat
+[Swift4.0]: https://img.shields.io/badge/swift-3.2-orange.svg?style=flat
