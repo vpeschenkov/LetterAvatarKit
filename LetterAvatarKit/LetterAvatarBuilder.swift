@@ -26,81 +26,140 @@
 import UIKit
 import Foundation
 
-@objc(LAKLetterAvatarBuilderCongiguration)
+/// Uses for configuration LetterAvatarBuilder.
+@objc(LAKLetterAvatarBuilderConfiguration)
 open class LetterAvatarBuilderConfiguration: NSObject {
-    public var size: CGSize = CGSize(width: 80, height: 80)
+    /// The size of an avatar image.
+    @objc(size)
+    open var size: CGSize = CGSize(width: 80, height: 80)
+    /// The username.
+    @objc(username)
     public var username: String?
-    public var letterFont: UIFont = UIFont.systemFont(ofSize: 16.0)
-    public var letterColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
+    /// The letters font.
+    @objc(lettersFont)
+    public var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
+    /// The letters colors
+    @objc(lettersColor)
+    public var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
+    /// The background colors of an image.
+    @objc(backgroundColors)
     public var backgroundColors: [UIColor] = UIColor.colors
 }
 
+/// Uses for making letter-based avatar images.
 @objc(LAKLetterAvatarBuilder)
 open class LetterAvatarBuilder: NSObject {
+    /// Makes an letter-based avatar image using given configuration.
+    ///
+    /// If the username is null, is used "NA".
+    ///
+    /// If the username is one word, is used second letter of that word.
+    ///
+    /// If the username has more words than two, is used the first letter
+    /// of the first and last word.
+    ///
+    /// - Parameters:
+    ///     - configuration: The configuration that uses to draw a
+    /// letter-based avatar image.
+    ///
+    /// - Returns: An instance of UIImage
+    @objc(makeAvatarWithConfiguration:)
     open func makeAvatar(withConfiguration configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
         let colors = configuration.backgroundColors
         guard let username = configuration.username else {
             return drawAvatar(
                 size: configuration.size,
                 letters: "NA",
-                letterFont: configuration.letterFont,
-                letterColor: configuration.letterColor,
-                fillColor: colors[0].cgColor
+                lettersFont: configuration.lettersFont,
+                lettersColor: configuration.lettersColor,
+                backgroundColor: colors[0].cgColor
             )
         }
         
-        let usernameInfo = obtainUserNameInfo(withUsername: username)
+        let usernameInfo = obtainUsernameInfo(withUsername: username)
         var colorIndex = usernameInfo.value
-        colorIndex *= 3557 // The prime number
+        colorIndex *= 3557 // Prime number
         colorIndex %= colors.count - 1
         return drawAvatar(
             size: configuration.size,
             letters: usernameInfo.letters,
-            letterFont: configuration.letterFont,
-            letterColor: configuration.letterColor,
-            fillColor: colors[colorIndex].cgColor
+            lettersFont: configuration.lettersFont,
+            lettersColor: configuration.lettersColor,
+            backgroundColor: colors[colorIndex].cgColor
         )
     }
     
-    private func obtainUserNameInfo(withUsername username: String) -> (letters: String, value: Int) {
+    private func obtainUsernameInfo(withUsername username: String) -> (letters: String, value: Int) {
         var letters = String()
         var lettersAssciValue = 0
-        let nameComponents = username.components(separatedBy: " ")
-        for component in nameComponents {
-            if let letter = component.first {
-                letters.append(letter)
-                lettersAssciValue += letter.asciiValue
+        
+        /// Obtain the array of words using given username
+        let components = username.components(separatedBy: " ")
+        
+        /// If given two words or more
+        if components.count > 1 {
+            if let firstComponent = components.first, let lastComponent = components.last {
+                /// Process the firs name letter
+                if let letter = firstComponent.first {
+                    letters.append(letter)
+                    lettersAssciValue += letter.asciiValue
+                }
+                
+                /// Process the last name letter
+                if let letter = lastComponent.first {
+                    letters.append(letter)
+                    lettersAssciValue += letter.asciiValue
+                }
+            }
+        } else {
+            /// If given just one word
+            if let component = components.first {
+                /// Process the firs name letter
+                if let letter = component.first {
+                    letters.append(letter)
+                    lettersAssciValue += letter.asciiValue
+                    
+                    /// Process the second name letter
+                    let startIndex = component.index(after: component.startIndex)
+                    let endIndex = component.index(component.startIndex, offsetBy: 2)
+                    let substring = component[startIndex..<endIndex].capitalized
+                    if let letter = substring.first {
+                        letters.append(letter)
+                        lettersAssciValue += letter.asciiValue
+                    }
+                }
             }
         }
+
         return (letters: letters, value: lettersAssciValue)
     }
     
     private func drawAvatar(size: CGSize,
                             letters: String,
-                            letterFont: UIFont,
-                            letterColor: UIColor,
-                            fillColor: CGColor) -> UIImage? {
+                            lettersFont: UIFont,
+                            lettersColor: UIColor,
+                            backgroundColor: CGColor) -> UIImage? {
         let rect = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
         
         UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
         if let context = UIGraphicsGetCurrentContext() {
-            context.setFillColor(fillColor)
+            context.setFillColor(backgroundColor)
             context.fill(rect)
             
             let style = NSParagraphStyle.default.mutableCopy()
             #if swift(>=4.0)
                 let attributes = [
                     NSAttributedStringKey.paragraphStyle: style,
-                    NSAttributedStringKey.font: letterFont.withSize(min(size.height, size.width) / 2.0),
-                    NSAttributedStringKey.foregroundColor: letterColor
+                    NSAttributedStringKey.font: lettersFont.withSize(min(size.height, size.width) / 2.0),
+                    NSAttributedStringKey.foregroundColor: lettersColor
                 ]
                 
                 let lettersSize = letters.size(withAttributes: attributes)
             #else
                 let attributes = [
                     NSParagraphStyleAttributeName: style,
-                    NSFontAttributeName: letterFont.withSize(min(size.height, size.width) / 2.0),
-                    NSForegroundColorAttributeName: letterColor
+                    NSFontAttributeName: lettersFont.withSize(min(size.height, size.width) / 2.0),
+                    NSForegroundColorAttributeName: lettersColor
                 ]
                 
                 let lettersSize = letters.size(attributes: attributes)

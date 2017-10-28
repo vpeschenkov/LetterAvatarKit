@@ -1,6 +1,6 @@
 //
-// CharacterExtension.swift
-// LetterAvatarKit
+// Character+LetterAvatarKitTests.swift
+// LetterAvatarKitTests
 //
 // Copyright 2017 Victor Peschenkov
 //
@@ -23,13 +23,17 @@
 // THE SOFTWARE.
 //
 
+import XCTest
 import Foundation
+@testable import LetterAvatarKit
 
-internal extension Character {
-    var asciiValue: Int {
-        get {
-            let s = String(self).unicodeScalars
-            return Int(s[s.startIndex].value)
-        }
+class CharacterLetterAvatarKitTests: XCTestCase {
+    func testASCIIVAlue() {
+        let a = Character("A")
+        let b = Character("B")
+        
+        // 65 is ASCII code of "A"
+        XCTAssertEqual(a.asciiValue, 65)
+        XCTAssertNotEqual(a.asciiValue, b.asciiValue)
     }
 }

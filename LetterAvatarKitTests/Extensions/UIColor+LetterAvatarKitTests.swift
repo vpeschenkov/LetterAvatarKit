@@ -1,5 +1,5 @@
 //
-//  UIColorExtensionTests.swift
+//  UIColor+LetterAvatarKitTests.swift
 //  LetterAvatarKitTests
 //
 // Copyright 2017 Victor Peschenkov
@@ -24,12 +24,11 @@
 //
 
 import XCTest
+import Foundation
 @testable import LetterAvatarKit
 
-import Foundation
-
-class UIColorExtensionTests: XCTestCase {
-    func testColorByHex() {
+class UIColorLetterAvatarKitTests: XCTestCase {
+    func testColorByHEX() {
         // TURQUOISE
         let color = LAKUIColorByHEX(UIColor.HEXColor.turquoiseColor)
         

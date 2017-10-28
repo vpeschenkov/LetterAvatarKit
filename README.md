@@ -72,4 +72,4 @@ Distributed under the MIT license. See LICENSE for more information.
 [Travis]: https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master
 [Pods]: https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png
 [Swift3.2]: https://img.shields.io/badge/swift-3.2-orange.svg?style=flat
-[Swift4.0]: https://img.shields.io/badge/swift-3.2-orange.svg?style=flat
+[Swift4.0]: https://img.shields.io/badge/swift-4.0-orange.svg?style=flat

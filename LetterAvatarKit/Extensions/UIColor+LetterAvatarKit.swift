@@ -1,5 +1,5 @@
 //
-// UIColorExtension.swift
+// UIColor+LetterAvatarKit.swift
 // LetterAvatarKit
 //
 // Copyright 2017 Victor Peschenkov
@@ -26,10 +26,22 @@
 import UIKit
 import Foundation
 
+/// Returns a color by HEX code.
+///
+/// - Parameters:
+///     - hex: HEX code.
+/// - Returns: The color by HEX code.
 func LAKUIColorByHEX(_ hex: Int) -> UIColor {
     return LAKUIColorByRGB(red: CGFloat((hex & 0xFF0000) >> 16), green: CGFloat((hex & 0x00FF00) >> 8), blue: CGFloat((hex & 0x0000FF)))
 }
 
+/// Returns a color by RGB.
+///
+/// - Parameters:
+///     - red: A value of red color component.
+///     - green: A value of green color component.
+///     - blue: A value of blue color component.
+/// - Returns: The color by RGB.
 func LAKUIColorByRGB(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
     return UIColor(red: red / 255, green: green / 255, blue: blue / 255, alpha: CGFloat(1.0))
 }
