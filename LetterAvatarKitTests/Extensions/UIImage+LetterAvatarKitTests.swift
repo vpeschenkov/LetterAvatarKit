@@ -28,6 +28,7 @@ import Foundation
 @testable import LetterAvatarKit
 
 class UIImageLetterAvatarKitTests: XCTestCase {
+    
     func testAvatarBuild() {
         let avatarImage = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
         XCTAssertNotNil(avatarImage)
@@ -77,4 +78,5 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         
         XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
     }
+    
 }

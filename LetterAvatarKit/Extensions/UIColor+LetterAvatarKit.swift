@@ -54,49 +54,49 @@ extension UIColor {
     /// Colors from http://flatuicolors.com/
     public enum HEXColor {
         /// TURQUOISE
-        static let turquoiseColor = 0x1ABC9C;
+        static let turquoiseColor = 0x1ABC9C
         /// EMERALD
-        static let emeraldColor = 0x2ECC71;
+        static let emeraldColor = 0x2ECC71
         /// PITER RIVER
-        static let piterRiverColor = 0x3498DB;
+        static let piterRiverColor = 0x3498DB
         /// AMETHYST
-        static let amethystColor = 0x9B59B6;
+        static let amethystColor = 0x9B59B6
         /// WET ASPHALT
-        static let wetAsphaltColor = 0x34495E;
+        static let wetAsphaltColor = 0x34495E
         /// GREEN SEA
-        static let greenSeaColor = 0x16A085;
+        static let greenSeaColor = 0x16A085
         /// NEPHRITIS
-        static let nephritisColor = 0x27AE60;
+        static let nephritisColor = 0x27AE60
         /// BELIZE HOLE
-        static let belizeHoldeColor = 0x2980B9;
+        static let belizeHoldeColor = 0x2980B9
         /// WISTERIA
-        static let wisteriaColor = 0x8E44AD;
+        static let wisteriaColor = 0x8E44AD
         /// MIDNIGHT BLUE
-        static let midnightBlueColor = 0x2C3E50;
+        static let midnightBlueColor = 0x2C3E50
         /// SUN FLOWER
-        static let sunflowerColor = 0xF1C40F;
+        static let sunflowerColor = 0xF1C40F
         /// CARROT
-        static let carrotColor = 0xE67E22;
+        static let carrotColor = 0xE67E22
         /// ALIZARIN
-        static let alizarinColor = 0xE74C3C;
+        static let alizarinColor = 0xE74C3C
         /// CONCRETE
-        static let concreteColor = 0x95A5A6;
+        static let concreteColor = 0x95A5A6
         /// ORANGE
-        static let orangeColor = 0xF39C12;
+        static let orangeColor = 0xF39C12
         /// PUMPKIN
-        static let pumpkinColor = 0xD35400;
+        static let pumpkinColor = 0xD35400
         /// POMEGRANATE
-        static let pomegranateColor = 0xC0392B;
+        static let pomegranateColor = 0xC0392B
         /// SILVER
-        static let silverColor = 0xBDC3C7;
+        static let silverColor = 0xBDC3C7
         /// ASBESTOS
-        static let asbestosColor = 0x7F8C8D;
+        static let asbestosColor = 0x7F8C8D
     }
     
     static open var colors: [ UIColor ] {
         get {
             var colors = objc_getAssociatedObject(self, &ColorKey.value)
-            guard (colors != nil) else {
+            if colors == nil {
                 colors = [
                     LAKUIColorByHEX(HEXColor.turquoiseColor),
                     LAKUIColorByHEX(HEXColor.emeraldColor),

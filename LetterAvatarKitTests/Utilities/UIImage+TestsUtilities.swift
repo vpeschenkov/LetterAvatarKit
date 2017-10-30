@@ -27,6 +27,13 @@ import UIKit
 import Foundation
 
 extension UIImage {
+    /// Returns the named image from test bundle.
+    ///
+    /// - name: The name of the image. For images in asset
+    /// catalogs, specify the name of the image asset. For PNG
+    /// image files, specify the filename without the filename
+    /// extension. For all other image file formats, include
+    /// the filename extension in the name.
     convenience init?(named name: String) {
         self.init(
             named: name,
@@ -86,6 +93,6 @@ extension UIImage {
         }
         
         /// (1 - misses) / 1 = percent of miss
-        return ((Double(pixelsToCompare - misses) / Double(pixelsToCompare)) >= accuracy);
+        return ((Double(pixelsToCompare - misses) / Double(pixelsToCompare)) >= accuracy)
     }
 }

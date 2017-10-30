@@ -180,4 +180,5 @@ open class LetterAvatarBuilder: NSObject {
         }
         return nil
     }
+    
 }
