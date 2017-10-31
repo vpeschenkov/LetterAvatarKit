@@ -35,6 +35,9 @@ open class LetterAvatarBuilderConfiguration: NSObject {
     /// The username.
     @objc(username)
     public var username: String?
+    /// The flag that indicates of using one letter if username is one word.
+    @objc(singleLetter)
+    public var singleLetter: Bool = false
     /// The letters font.
     @objc(lettersFont)
     public var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
@@ -76,7 +79,11 @@ open class LetterAvatarBuilder: NSObject {
             )
         }
         
-        let usernameInfo = obtainUsernameInfo(withUsername: username)
+        let usernameInfo = obtainUsernameInfo(
+            withUsername: username,
+            singleLetter: configuration.singleLetter
+        )
+        
         var colorIndex = usernameInfo.value
         colorIndex *= 3557 // Prime number
         colorIndex %= colors.count - 1
@@ -89,7 +96,7 @@ open class LetterAvatarBuilder: NSObject {
         )
     }
     
-    private func obtainUsernameInfo(withUsername username: String) -> (letters: String, value: Int) {
+    private func obtainUsernameInfo(withUsername username: String, singleLetter: Bool) -> (letters: String, value: Int) {
         var letters = String()
         var lettersAssciValue = 0
         
@@ -119,13 +126,15 @@ open class LetterAvatarBuilder: NSObject {
                     letters.append(letter)
                     lettersAssciValue += letter.asciiValue
                     
-                    /// Process the second name letter
-                    let startIndex = component.index(after: component.startIndex)
-                    let endIndex = component.index(component.startIndex, offsetBy: 2)
-                    let substring = component[startIndex..<endIndex].capitalized
-                    if let letter = substring.first {
-                        letters.append(letter)
-                        lettersAssciValue += letter.asciiValue
+                    if !singleLetter {
+                        /// Process the second name letter
+                        let startIndex = component.index(after: component.startIndex)
+                        let endIndex = component.index(component.startIndex, offsetBy: 2)
+                        let substring = component[startIndex..<endIndex].capitalized
+                        if let letter = substring.first {
+                            letters.append(letter)
+                            lettersAssciValue += letter.asciiValue
+                        }
                     }
                 }
             }

@@ -83,10 +83,10 @@
 		EB516B611F8810D200BEA1F2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				35AD1DA71FA8F4FC0059BC9A /* String+LetterAvatarKit.swift */,
 				EB516B631F8810D200BEA1F2 /* UIColor+LetterAvatarKit.swift */,
 				EB516B641F8810D200BEA1F2 /* UIImage+LetterAvatarKit.swift */,
 				EB516B621F8810D200BEA1F2 /* Character+LetterAvatarKit.swift */,
-				35AD1DA71FA8F4FC0059BC9A /* String+LetterAvatarKit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
