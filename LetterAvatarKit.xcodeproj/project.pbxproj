@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		351F6CEF1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F6CED1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@3x.png */; };
 		351F6CF01FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F6CEE1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@2x.png */; };
+		35AD1DA81FA8F4FC0059BC9A /* String+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD1DA71FA8F4FC0059BC9A /* String+LetterAvatarKit.swift */; };
 		EB516B651F8810D200BEA1F2 /* Character+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB516B621F8810D200BEA1F2 /* Character+LetterAvatarKit.swift */; };
 		EB516B661F8810D200BEA1F2 /* UIColor+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB516B631F8810D200BEA1F2 /* UIColor+LetterAvatarKit.swift */; };
 		EB516B671F8810D200BEA1F2 /* UIImage+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB516B641F8810D200BEA1F2 /* UIImage+LetterAvatarKit.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		351F6CED1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LetterAvatarOneWordTestImage@3x.png"; sourceTree = "<group>"; };
 		351F6CEE1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LetterAvatarOneWordTestImage@2x.png"; sourceTree = "<group>"; };
+		35AD1DA71FA8F4FC0059BC9A /* String+LetterAvatarKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LetterAvatarKit.swift"; sourceTree = "<group>"; };
 		EB516B621F8810D200BEA1F2 /* Character+LetterAvatarKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Character+LetterAvatarKit.swift"; sourceTree = "<group>"; };
 		EB516B631F8810D200BEA1F2 /* UIColor+LetterAvatarKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+LetterAvatarKit.swift"; sourceTree = "<group>"; };
 		EB516B641F8810D200BEA1F2 /* UIImage+LetterAvatarKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+LetterAvatarKit.swift"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				EB516B631F8810D200BEA1F2 /* UIColor+LetterAvatarKit.swift */,
 				EB516B641F8810D200BEA1F2 /* UIImage+LetterAvatarKit.swift */,
 				EB516B621F8810D200BEA1F2 /* Character+LetterAvatarKit.swift */,
+				35AD1DA71FA8F4FC0059BC9A /* String+LetterAvatarKit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB8EC4241F859382000B7641 /* LetterAvatarBuilder.swift in Sources */,
+				35AD1DA81FA8F4FC0059BC9A /* String+LetterAvatarKit.swift in Sources */,
 				EB516B651F8810D200BEA1F2 /* Character+LetterAvatarKit.swift in Sources */,
 				EB516B661F8810D200BEA1F2 /* UIColor+LetterAvatarKit.swift in Sources */,
 				EB516B671F8810D200BEA1F2 /* UIImage+LetterAvatarKit.swift in Sources */,
