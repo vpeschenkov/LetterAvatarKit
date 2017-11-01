@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00BD0A2FCC92905E2BC1F1D926FB5AB7 /* LetterAvatarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA051E56F83A9DA98107FD7D30A4EC1 /* LetterAvatarBuilder.swift */; };
 		012F94166B075559847BF4A32ED56AC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		06A0BEEEF516F60C8D4F724A2794FEF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		084D855F84E15210BB445D1E660ADA9A /* Character+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4245EE8DB2E5526F1AE874082272A163 /* Character+LetterAvatarKit.swift */; };
+		1CF6D0FEF1886EA071D3EF862D17F875 /* UIImage+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F04A49762DCF36096E8CC757263E78 /* UIImage+LetterAvatarKit.swift */; };
+		2A01174DA8BDC14EA724E428194E946E /* String+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDFE9F0B2C1CCFA060FEC51F8241E1B /* String+LetterAvatarKit.swift */; };
+		2FCA2A1B5CEB07AC76667B6CDE4F35A5 /* LetterAvatarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A657BD7E805922A4AB1C22F3BB729C27 /* LetterAvatarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31AEFAAD64F867BC46962421035DFB27 /* Pods-LetterAvatarKitExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C45F59A669569663FE73EE9D5EF02F1A /* Pods-LetterAvatarKitExample-dummy.m */; };
-		4E3DE1FF89FE584EF284582FDA77785D /* UIColor+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCE71F3F3B2C64018A9B9B23D0DF3DA /* UIColor+LetterAvatarKit.swift */; };
-		627C05CF66D9E6121EE56DF437A39E73 /* LetterAvatarKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F875D98340307936D8B2F3ADBA782F4E /* LetterAvatarKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69BA40F140EDDD75726A415D3B4E5F52 /* UIImage+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512F0052560D9D25EDE16A3575A4DA4 /* UIImage+LetterAvatarKit.swift */; };
+		4D9F0D0C0D1BDD57C9BBAEB56DD0C467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		7CBDC8E080466245CDEAD549022BB9BA /* Character+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C39CBE126F2D9CF568DEEB44A5542A /* Character+LetterAvatarKit.swift */; };
 		8611CE885B83E30A96429293EC6A46C1 /* Pods-LetterAvatarKitExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D125A5BC20E49F83F74F84362BF837E2 /* Pods-LetterAvatarKitExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5DE771251410A529369366E4C683DF7 /* LetterAvatarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D7DADE7575CFF00E43E131E34ED5FC /* LetterAvatarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1E1DB7F0B82E63FD605A066988D4287 /* LetterAvatarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AE8B3983618424008B6CD7ED7D138 /* LetterAvatarKit-dummy.m */; };
-		F328E00F30524860FF815F7BD9730A86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		F5B8D0D25FB556671828F2BB1B257009 /* LetterAvatarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660F479663A22688422E8FDAE478B725 /* LetterAvatarBuilder.swift */; };
+		8DA7272D37E388A0EBA603FF23488AF0 /* LetterAvatarKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B3BFFDF46992631F2908DDCBEEE6D46 /* LetterAvatarKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA032674A99DE6F171D974762FA2D165 /* UIColor+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A6BF9C2436B1213A82DC0A0DFA303 /* UIColor+LetterAvatarKit.swift */; };
+		C94DA35ED73C8E95F5078C276A670708 /* LetterAvatarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8544AF00FAA04F1BA2F582FD5E89B9 /* LetterAvatarKit-dummy.m */; };
+		D24A0BE136816D0AB56BBD0490A06EE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,47 +27,48 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3B4E2CB21F2044A20ADBF959A4027021;
+			remoteGlobalIDString = 766289E35B93AC7B9230F11A1B0D83AA;
 			remoteInfo = LetterAvatarKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B3BFFDF46992631F2908DDCBEEE6D46 /* LetterAvatarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-umbrella.h"; sourceTree = "<group>"; };
 		0F315106F8CF892FE410FCEE373BF7A5 /* Pods-LetterAvatarKitExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetterAvatarKitExample-resources.sh"; sourceTree = "<group>"; };
-		20F29225F24ACADD5626C0EDF397049B /* LetterAvatarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetterAvatarKit.xcconfig; sourceTree = "<group>"; };
+		1EA051E56F83A9DA98107FD7D30A4EC1 /* LetterAvatarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarBuilder.swift; path = LetterAvatarKit/LetterAvatarBuilder.swift; sourceTree = "<group>"; };
+		20C39CBE126F2D9CF568DEEB44A5542A /* Character+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Character+LetterAvatarKit.swift"; sourceTree = "<group>"; };
 		2C1F0A59CF90B2090DA5DC29440A2B1E /* Pods-LetterAvatarKitExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LetterAvatarKitExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2ED83AD0AFACC5001BF2B24E2B873D78 /* Pods-LetterAvatarKitExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetterAvatarKitExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		4245EE8DB2E5526F1AE874082272A163 /* Character+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Character+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		2EDFE9F0B2C1CCFA060FEC51F8241E1B /* String+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+LetterAvatarKit.swift"; sourceTree = "<group>"; };
 		48B12F9614C27933A354B0912E046270 /* Pods_LetterAvatarKitExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LetterAvatarKitExample.framework; path = "Pods-LetterAvatarKitExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4A6BF9C2436B1213A82DC0A0DFA303 /* UIColor+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+LetterAvatarKit.swift"; sourceTree = "<group>"; };
 		5976C8796F1E8555E54260D765689A88 /* Pods-LetterAvatarKitExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetterAvatarKitExample-frameworks.sh"; sourceTree = "<group>"; };
-		61269091A70400246A323D0FAE435A42 /* LetterAvatarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-prefix.pch"; sourceTree = "<group>"; };
-		660F479663A22688422E8FDAE478B725 /* LetterAvatarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarBuilder.swift; path = LetterAvatarKit/LetterAvatarBuilder.swift; sourceTree = "<group>"; };
 		67CF0750AC8FFD2002C92A4BCEAF95CB /* Pods-LetterAvatarKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetterAvatarKitExample.release.xcconfig"; sourceTree = "<group>"; };
+		78E26B4D471E393257D689104A84F07B /* LetterAvatarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LetterAvatarKit.modulemap; sourceTree = "<group>"; };
 		8F1DE201B4AFCD07E0BC3BB68AF882F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CCE71F3F3B2C64018A9B9B23D0DF3DA /* UIColor+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+LetterAvatarKit.swift"; sourceTree = "<group>"; };
-		A66AE8B3983618424008B6CD7ED7D138 /* LetterAvatarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetterAvatarKit-dummy.m"; sourceTree = "<group>"; };
+		A657BD7E805922A4AB1C22F3BB729C27 /* LetterAvatarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LetterAvatarKit.h; path = LetterAvatarKit/LetterAvatarKit.h; sourceTree = "<group>"; };
 		B56888A53A48BAEDDE3ACC892129173B /* LetterAvatarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LetterAvatarKit.framework; path = LetterAvatarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B8D7DADE7575CFF00E43E131E34ED5FC /* LetterAvatarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LetterAvatarKit.h; path = LetterAvatarKit/LetterAvatarKit.h; sourceTree = "<group>"; };
 		C45F59A669569663FE73EE9D5EF02F1A /* Pods-LetterAvatarKitExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LetterAvatarKitExample-dummy.m"; sourceTree = "<group>"; };
 		C9770AAF87C02A3156DC2B2DDC80E020 /* Pods-LetterAvatarKitExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LetterAvatarKitExample.modulemap"; sourceTree = "<group>"; };
+		CCE7DCAC7F3C14E8EADB9F63930ED4C4 /* LetterAvatarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetterAvatarKit.xcconfig; sourceTree = "<group>"; };
 		D125A5BC20E49F83F74F84362BF837E2 /* Pods-LetterAvatarKitExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LetterAvatarKitExample-umbrella.h"; sourceTree = "<group>"; };
+		D7F9A85337974F70BFA9A4C676D2D687 /* LetterAvatarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-prefix.pch"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DA7E1454EF8E4A7A51AB58ACBA818C73 /* LetterAvatarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LetterAvatarKit.modulemap; sourceTree = "<group>"; };
-		E512F0052560D9D25EDE16A3575A4DA4 /* UIImage+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+LetterAvatarKit.swift"; sourceTree = "<group>"; };
-		E7C758C8136114774EEDBF905884281A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5AEF1CA7CDFD845F57764D321F0066B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0E989972877EE0C11F15B46D9B4A83B /* Pods-LetterAvatarKitExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetterAvatarKitExample.debug.xcconfig"; sourceTree = "<group>"; };
-		F875D98340307936D8B2F3ADBA782F4E /* LetterAvatarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-umbrella.h"; sourceTree = "<group>"; };
+		F4F04A49762DCF36096E8CC757263E78 /* UIImage+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		FF8544AF00FAA04F1BA2F582FD5E89B9 /* LetterAvatarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetterAvatarKit-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		983F01920B0D1E403E7CB0D5F26FB5E5 /* Frameworks */ = {
+		63BCCA4C740FC5477FE872184B44C913 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F328E00F30524860FF815F7BD9730A86 /* Foundation.framework in Frameworks */,
-				06A0BEEEF516F60C8D4F724A2794FEF4 /* UIKit.framework in Frameworks */,
+				4D9F0D0C0D1BDD57C9BBAEB56DD0C467 /* Foundation.framework in Frameworks */,
+				D24A0BE136816D0AB56BBD0490A06EE5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,20 +121,35 @@
 		4BA723EF1D5313D6EA824CA9401AC760 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A2ACDEEA6570DE274D48078AB3067A5 /* LetterAvatarKit */,
+				892A187179162178875DA90DD366DEAC /* LetterAvatarKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		5B3EFA22166B57F9FFF85C5E017154C8 /* Extensions */ = {
+		70634BC030041D16CF3DE0C1E1742A67 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4245EE8DB2E5526F1AE874082272A163 /* Character+LetterAvatarKit.swift */,
-				9CCE71F3F3B2C64018A9B9B23D0DF3DA /* UIColor+LetterAvatarKit.swift */,
-				E512F0052560D9D25EDE16A3575A4DA4 /* UIImage+LetterAvatarKit.swift */,
+				20C39CBE126F2D9CF568DEEB44A5542A /* Character+LetterAvatarKit.swift */,
+				2EDFE9F0B2C1CCFA060FEC51F8241E1B /* String+LetterAvatarKit.swift */,
+				4F4A6BF9C2436B1213A82DC0A0DFA303 /* UIColor+LetterAvatarKit.swift */,
+				F4F04A49762DCF36096E8CC757263E78 /* UIImage+LetterAvatarKit.swift */,
 			);
 			name = Extensions;
 			path = LetterAvatarKit/Extensions;
+			sourceTree = "<group>";
+		};
+		71780120DE8B331362A91C2DB800AB66 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5AEF1CA7CDFD845F57764D321F0066B /* Info.plist */,
+				78E26B4D471E393257D689104A84F07B /* LetterAvatarKit.modulemap */,
+				CCE7DCAC7F3C14E8EADB9F63930ED4C4 /* LetterAvatarKit.xcconfig */,
+				FF8544AF00FAA04F1BA2F582FD5E89B9 /* LetterAvatarKit-dummy.m */,
+				D7F9A85337974F70BFA9A4C676D2D687 /* LetterAvatarKit-prefix.pch */,
+				0B3BFFDF46992631F2908DDCBEEE6D46 /* LetterAvatarKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "LetterAvatarKitExample/Pods/Target Support Files/LetterAvatarKit";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -155,27 +172,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		89CA8B62BC9DE78F118540334E21DE34 /* Support Files */ = {
+		892A187179162178875DA90DD366DEAC /* LetterAvatarKit */ = {
 			isa = PBXGroup;
 			children = (
-				E7C758C8136114774EEDBF905884281A /* Info.plist */,
-				DA7E1454EF8E4A7A51AB58ACBA818C73 /* LetterAvatarKit.modulemap */,
-				20F29225F24ACADD5626C0EDF397049B /* LetterAvatarKit.xcconfig */,
-				A66AE8B3983618424008B6CD7ED7D138 /* LetterAvatarKit-dummy.m */,
-				61269091A70400246A323D0FAE435A42 /* LetterAvatarKit-prefix.pch */,
-				F875D98340307936D8B2F3ADBA782F4E /* LetterAvatarKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "LetterAvatarKitExample/Pods/Target Support Files/LetterAvatarKit";
-			sourceTree = "<group>";
-		};
-		9A2ACDEEA6570DE274D48078AB3067A5 /* LetterAvatarKit */ = {
-			isa = PBXGroup;
-			children = (
-				660F479663A22688422E8FDAE478B725 /* LetterAvatarBuilder.swift */,
-				B8D7DADE7575CFF00E43E131E34ED5FC /* LetterAvatarKit.h */,
-				5B3EFA22166B57F9FFF85C5E017154C8 /* Extensions */,
-				89CA8B62BC9DE78F118540334E21DE34 /* Support Files */,
+				1EA051E56F83A9DA98107FD7D30A4EC1 /* LetterAvatarBuilder.swift */,
+				A657BD7E805922A4AB1C22F3BB729C27 /* LetterAvatarKit.h */,
+				70634BC030041D16CF3DE0C1E1742A67 /* Extensions */,
+				71780120DE8B331362A91C2DB800AB66 /* Support Files */,
 			);
 			name = LetterAvatarKit;
 			path = ../..;
@@ -192,12 +195,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AA7E481637F77EE4A2CB6AE88CE700C5 /* Headers */ = {
+		A022DB7F2D6BD2DE4736ADF899F8124D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				627C05CF66D9E6121EE56DF437A39E73 /* LetterAvatarKit-umbrella.h in Headers */,
-				E5DE771251410A529369366E4C683DF7 /* LetterAvatarKit.h in Headers */,
+				8DA7272D37E388A0EBA603FF23488AF0 /* LetterAvatarKit-umbrella.h in Headers */,
+				2FCA2A1B5CEB07AC76667B6CDE4F35A5 /* LetterAvatarKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,13 +215,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3B4E2CB21F2044A20ADBF959A4027021 /* LetterAvatarKit */ = {
+		766289E35B93AC7B9230F11A1B0D83AA /* LetterAvatarKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E414AB681795C3A16C4347E493045A4 /* Build configuration list for PBXNativeTarget "LetterAvatarKit" */;
+			buildConfigurationList = 8D0335526ED95A48306C1632289F32A4 /* Build configuration list for PBXNativeTarget "LetterAvatarKit" */;
 			buildPhases = (
-				E90DDD5D00B87F0EA3AB96B9FA5FF164 /* Sources */,
-				983F01920B0D1E403E7CB0D5F26FB5E5 /* Frameworks */,
-				AA7E481637F77EE4A2CB6AE88CE700C5 /* Headers */,
+				F41C7A4F4216E6E58274FCF2176A62B7 /* Sources */,
+				63BCCA4C740FC5477FE872184B44C913 /* Frameworks */,
+				A022DB7F2D6BD2DE4736ADF899F8124D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -268,7 +271,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B4E2CB21F2044A20ADBF959A4027021 /* LetterAvatarKit */,
+				766289E35B93AC7B9230F11A1B0D83AA /* LetterAvatarKit */,
 				A6DE764018E9E9D5AC4FC2DF9C7DC7D7 /* Pods-LetterAvatarKitExample */,
 			);
 		};
@@ -283,15 +286,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E90DDD5D00B87F0EA3AB96B9FA5FF164 /* Sources */ = {
+		F41C7A4F4216E6E58274FCF2176A62B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				084D855F84E15210BB445D1E660ADA9A /* Character+LetterAvatarKit.swift in Sources */,
-				F5B8D0D25FB556671828F2BB1B257009 /* LetterAvatarBuilder.swift in Sources */,
-				F1E1DB7F0B82E63FD605A066988D4287 /* LetterAvatarKit-dummy.m in Sources */,
-				4E3DE1FF89FE584EF284582FDA77785D /* UIColor+LetterAvatarKit.swift in Sources */,
-				69BA40F140EDDD75726A415D3B4E5F52 /* UIImage+LetterAvatarKit.swift in Sources */,
+				7CBDC8E080466245CDEAD549022BB9BA /* Character+LetterAvatarKit.swift in Sources */,
+				00BD0A2FCC92905E2BC1F1D926FB5AB7 /* LetterAvatarBuilder.swift in Sources */,
+				C94DA35ED73C8E95F5078C276A670708 /* LetterAvatarKit-dummy.m in Sources */,
+				2A01174DA8BDC14EA724E428194E946E /* String+LetterAvatarKit.swift in Sources */,
+				BA032674A99DE6F171D974762FA2D165 /* UIColor+LetterAvatarKit.swift in Sources */,
+				1CF6D0FEF1886EA071D3EF862D17F875 /* UIImage+LetterAvatarKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +305,7 @@
 		BCFD49B378D20842A47D5532088B4A77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LetterAvatarKit;
-			target = 3B4E2CB21F2044A20ADBF959A4027021 /* LetterAvatarKit */;
+			target = 766289E35B93AC7B9230F11A1B0D83AA /* LetterAvatarKit */;
 			targetProxy = D0EEF9FBB784C259C0432649E208557F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -340,69 +344,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		6478E8D1051CCA9FD75BA1920AE52721 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20F29225F24ACADD5626C0EDF397049B /* LetterAvatarKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LetterAvatarKit/LetterAvatarKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LetterAvatarKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LetterAvatarKit/LetterAvatarKit.modulemap";
-				PRODUCT_NAME = LetterAvatarKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9F5D8BD5D881C6F1519416436E093ECC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20F29225F24ACADD5626C0EDF397049B /* LetterAvatarKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LetterAvatarKit/LetterAvatarKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LetterAvatarKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LetterAvatarKit/LetterAvatarKit.modulemap";
-				PRODUCT_NAME = LetterAvatarKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -458,6 +399,37 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		C17DE3DB8DE88523E87671F5C5EC9B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE7DCAC7F3C14E8EADB9F63930ED4C4 /* LetterAvatarKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LetterAvatarKit/LetterAvatarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LetterAvatarKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LetterAvatarKit/LetterAvatarKit.modulemap";
+				PRODUCT_NAME = LetterAvatarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -553,18 +525,41 @@
 			};
 			name = Release;
 		};
+		FE8BBDC735C6CE2BB8C375F8ACB83C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE7DCAC7F3C14E8EADB9F63930ED4C4 /* LetterAvatarKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LetterAvatarKit/LetterAvatarKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LetterAvatarKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LetterAvatarKit/LetterAvatarKit.modulemap";
+				PRODUCT_NAME = LetterAvatarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E414AB681795C3A16C4347E493045A4 /* Build configuration list for PBXNativeTarget "LetterAvatarKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6478E8D1051CCA9FD75BA1920AE52721 /* Debug */,
-				9F5D8BD5D881C6F1519416436E093ECC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		19570A1816EA982BDB418B91F122B722 /* Build configuration list for PBXNativeTarget "Pods-LetterAvatarKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -579,6 +574,15 @@
 			buildConfigurations = (
 				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
 				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D0335526ED95A48306C1632289F32A4 /* Build configuration list for PBXNativeTarget "LetterAvatarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C17DE3DB8DE88523E87671F5C5EC9B65 /* Debug */,
+				FE8BBDC735C6CE2BB8C375F8ACB83C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
