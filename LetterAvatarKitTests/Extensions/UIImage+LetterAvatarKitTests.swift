@@ -45,6 +45,22 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         XCTAssertTrue(avatarImage?.size.height == size.height)
     }
     
+    func testAvatarBuildSingleLetterFlag() {
+        let configuration = LetterAvatarBuilderConfiguration()
+        configuration.username = "Avatar Test"
+        configuration.singleLetter = true
+        
+        let avatarImage = UIImage.makeLetterAvatar(withConfiguration: configuration)
+        XCTAssertNotNil(avatarImage)
+        
+        let testAvatarImage = UIImage(named: "LetterAvatarSingleLetterTestImage")
+        XCTAssertNotNil(testAvatarImage)
+        
+        XCTAssertTrue(avatarImage?.size.width == configuration.size.width)
+        XCTAssertTrue(avatarImage?.size.height == configuration.size.height)
+        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
+    }
+    
     func testAvatarBuildWithConfiguration() {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = "Letter Avatar"
@@ -74,6 +90,20 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         XCTAssertNotNil(avatarImage)
         
         let testAvatarImage = UIImage(named: "LetterAvatarTestImage")
+        XCTAssertNotNil(testAvatarImage)
+        
+        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
+    }
+    
+    func testAvatarBuildWithOneWordUsernameAndSingleLetterFlag() {
+        let configuration = LetterAvatarBuilderConfiguration()
+        configuration.username = "Avatar"
+        configuration.singleLetter = true
+        
+        let avatarImage = UIImage.makeLetterAvatar(withConfiguration: configuration)
+        XCTAssertNotNil(avatarImage)
+        
+        let testAvatarImage = UIImage(named: "LetterAvatarSingleLetterTestImage")
         XCTAssertNotNil(testAvatarImage)
         
         XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))

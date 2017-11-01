@@ -28,13 +28,6 @@ import Foundation
 extension UIImage {
     /// Makes an letter-based avatar image using given configuration.
     ///
-    /// If the username is null, is used "NA".
-    ///
-    /// If the username is one word, is used second letter of that word.
-    ///
-    /// If the username has more words than two, is used the first letter
-    /// of the first and last word.
-    ///
     /// - Parameters:
     ///     - configuration: The configuration that uses to draw a
     /// letter-based avatar image.
@@ -46,13 +39,6 @@ extension UIImage {
     }
     
     /// Makes an letter-based avatar image using given username.
-    ///
-    /// If the username is null, is used "NA".
-    ///
-    /// If the username is one word, is used second letter of that word.
-    ///
-    /// If the username has more words than two, is used the first letter
-    /// of the first and last word.
     ///
     /// - Parameters:
     ///     - username: The username that uses to draw a
@@ -67,13 +53,6 @@ extension UIImage {
     }
     
     /// Makes an letter-based avatar image using given username and size.
-    ///
-    /// If the username is null, is used "NA".
-    ///
-    /// If the username is one word, is used second letter of that word.
-    ///
-    /// If the username has more words than two, is used the first letter
-    /// of the first and last word.
     ///
     /// - Parameters:
     ///     - username: The username that uses to draw a

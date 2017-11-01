@@ -1,6 +1,6 @@
 //
-// String+LetterAvatarKit.swift
-// LetterAvatarKit
+//  String+LetterAvatarKitTests.swift
+//  LetterAvatarKitTests
 //
 // Copyright 2017 Victor Peschenkov
 //
@@ -23,19 +23,13 @@
 // THE SOFTWARE.
 //
 
+import XCTest
 import Foundation
+@testable import LetterAvatarKit
 
-extension String{
-    /// The the first element of the collection.
-    ///
-    /// If the collection is empty, the value of this property is `nil`.
-    var first: Character? {
-        get {
-            if isEmpty {
-                return nil
-            }
-            return self[index(startIndex, offsetBy: 0)]
-        }
+class StringLetterAvatarKitTests: XCTestCase {
+    func testGettingFirstCharacter() {
+        XCTAssertEqual(Character("A"), "Avatar".first)
+        XCTAssertNotEqual(Character("r"), "Avatar".first)
     }
-    
 }

@@ -1,6 +1,6 @@
 # LetterAvatarKit
 
-![][Platform] ![][Travis] ![][Pods] ![][Swift3.2] ![][Swift4.0] 
+![][Platform] ![][Travis] ![][Pods] ![][Swift3.2] ![][Swift4.0]
 
 LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatars written in Swift. Here are some images showing what the LetterAvatarKit does:
 
@@ -23,11 +23,35 @@ pod "LetterAvatarKit"
 
 You can configure the following properties of LetterAvatarBuilderConfiguration:
 
-- ```size``` - the result image size (default is 80x80)
-- ```username``` - the username (if  the username is ```nil```, it is "NA")
-- ```letterFont``` - the letter font (default is ```UIFont.systemFont(ofSize: 16.0)```)
-- ```letterColor``` - the letter color (default is ```rgb(236, 240, 241)```)
-- ```backgroundColors``` - an array of background colors (default using the colors from [flatuicolors.com](http://flatuicolors.com/))
+```
+/// The size of an avatar image.
+open var size: CGSize = CGSize(width: 80, height: 80)
+```
+
+```
+/// The username.
+open var username: String?
+```
+
+```
+/// The flag that indicates of using single letter instead of two lettters.
+open var singleLetter: Bool = false
+```
+
+```
+/// The letters font.
+open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
+```
+
+```
+/// The letters colors
+open var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
+```
+
+```
+/// The background colors of an image.
+open var backgroundColors: [UIColor] = UIColor.colors
+```
 
 ### Swift
 

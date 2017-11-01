@@ -34,32 +34,25 @@ open class LetterAvatarBuilderConfiguration: NSObject {
     open var size: CGSize = CGSize(width: 80, height: 80)
     /// The username.
     @objc(username)
-    public var username: String?
-    /// The flag that indicates of using one letter if username is one word.
+    open var username: String?
+    /// The flag that indicates of using single letter instead of two lettters.
     @objc(singleLetter)
-    public var singleLetter: Bool = false
+    open var singleLetter: Bool = false
     /// The letters font.
     @objc(lettersFont)
-    public var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
+    open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
     /// The letters colors
     @objc(lettersColor)
-    public var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
+    open var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
     /// The background colors of an image.
     @objc(backgroundColors)
-    public var backgroundColors: [UIColor] = UIColor.colors
+    open var backgroundColors: [UIColor] = UIColor.colors
 }
 
 /// Uses for making letter-based avatar images.
 @objc(LAKLetterAvatarBuilder)
 open class LetterAvatarBuilder: NSObject {
     /// Makes an letter-based avatar image using given configuration.
-    ///
-    /// If the username is null, is used "NA".
-    ///
-    /// If the username is one word, is used second letter of that word.
-    ///
-    /// If the username has more words than two, is used the first letter
-    /// of the first and last word.
     ///
     /// - Parameters:
     ///     - configuration: The configuration that uses to draw a
@@ -112,10 +105,12 @@ open class LetterAvatarBuilder: NSObject {
                     lettersAssciValue += letter.asciiValue
                 }
                 
-                /// Process the last name letter
-                if let letter = lastComponent.first {
-                    letters.append(letter)
-                    lettersAssciValue += letter.asciiValue
+                if !singleLetter {
+                    /// Process the last name letter
+                    if let letter = lastComponent.first {
+                        letters.append(letter)
+                        lettersAssciValue += letter.asciiValue
+                    }
                 }
             }
         } else {
@@ -139,7 +134,7 @@ open class LetterAvatarBuilder: NSObject {
                 }
             }
         }
-
+        
         return (letters: letters, value: lettersAssciValue)
     }
     
@@ -166,9 +161,9 @@ open class LetterAvatarBuilder: NSObject {
                 let lettersSize = letters.size(withAttributes: attributes)
             #else
                 let attributes = [
-                    NSParagraphStyleAttributeName: style,
-                    NSFontAttributeName: lettersFont.withSize(min(size.height, size.width) / 2.0),
-                    NSForegroundColorAttributeName: lettersColor
+                NSParagraphStyleAttributeName: style,
+                NSFontAttributeName: lettersFont.withSize(min(size.height, size.width) / 2.0),
+                NSForegroundColorAttributeName: lettersColor
                 ]
                 
                 let lettersSize = letters.size(attributes: attributes)
