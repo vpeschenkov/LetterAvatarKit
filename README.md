@@ -12,6 +12,10 @@ LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatar
 
 ## Install
 
+To use with **Swift 3.2** please ensure you are using **v1.1.1**
+
+To use with **Swift 4.0** please ensure you are using **v1.1.2**
+
 ### CocoaPods
 
 To install LetterAvatarKit using CocoaPods, add this line to your Podfile:
@@ -97,3 +101,4 @@ Distributed under the MIT license. See LICENSE for more information.
 [Pods]: https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png
 [Swift3.2]: https://img.shields.io/badge/swift-3.2-orange.svg?style=flat
 [Swift4.0]: https://img.shields.io/badge/swift-4.0-orange.svg?style=flat
+
