@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,25 +36,25 @@
 		018B9C7D094ED1260BC9C77D00D40100 /* LetterAvatarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-umbrella.h"; sourceTree = "<group>"; };
 		146E03E122E913FF3B9D91846A9DFACF /* LetterAvatarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetterAvatarKit.xcconfig; sourceTree = "<group>"; };
 		1483EA1276876246E7A1655BD9E2E39E /* Pods-LetterAvatarKitObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetterAvatarKitObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		16F1A9A504754D1ABCE12F5D7B38C950 /* Pods_LetterAvatarKitObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetterAvatarKitObjcExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F1A9A504754D1ABCE12F5D7B38C950 /* Pods_LetterAvatarKitObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LetterAvatarKitObjcExample.framework; path = "Pods-LetterAvatarKitObjcExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AC1AD4EC2DAAE27D8EC98C5CA21CB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F2535D0F8EB530323ACE82251F696C /* Pods-LetterAvatarKitObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LetterAvatarKitObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		35EEB2554B69B3AF3E1A84F0FEB82416 /* Pods-LetterAvatarKitObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LetterAvatarKitObjcExample.modulemap"; sourceTree = "<group>"; };
+		35EEB2554B69B3AF3E1A84F0FEB82416 /* Pods-LetterAvatarKitObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LetterAvatarKitObjcExample.modulemap"; sourceTree = "<group>"; };
 		4789C879FC4015C20393BEA677AE7BE3 /* Pods-LetterAvatarKitObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetterAvatarKitObjcExample.release.xcconfig"; sourceTree = "<group>"; };
 		47A7D56E897195A36F621A3DE3885EB7 /* LetterAvatarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-prefix.pch"; sourceTree = "<group>"; };
 		49046A56D9EF30F55B9DFED6965384AC /* UIImage+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+LetterAvatarKit.swift"; sourceTree = "<group>"; };
 		7603EF3A289B26AE4D4D30B654F37CE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B1BCD83AC13B2ADE91342914D805D51 /* Pods-LetterAvatarKitObjcExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetterAvatarKitObjcExample-resources.sh"; sourceTree = "<group>"; };
 		812C4FCFB2A49BE6D8EE61AD6B3D1AAF /* LetterAvatarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarBuilder.swift; path = LetterAvatarKit/LetterAvatarBuilder.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A81F06FA3A730238284C0D1538B69A60 /* Pods-LetterAvatarKitObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LetterAvatarKitObjcExample-dummy.m"; sourceTree = "<group>"; };
 		ACBB60FE48061625AADDC84F151CA0BA /* String+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+LetterAvatarKit.swift"; sourceTree = "<group>"; };
 		B521AA373CA9D6627DFB0F1DB2753156 /* LetterAvatarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetterAvatarKit-dummy.m"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B6D22B6E25820A59EB6A16E2CC3C5692 /* Pods-LetterAvatarKitObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LetterAvatarKitObjcExample-umbrella.h"; sourceTree = "<group>"; };
 		B755F7D6A5AD1081A80132725FC3D000 /* UIColor+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+LetterAvatarKit.swift"; sourceTree = "<group>"; };
-		BBF009C023AC24FF8F70B3F9208456E4 /* LetterAvatarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LetterAvatarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE946BD5F38370396239348C2B698A93 /* LetterAvatarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LetterAvatarKit.modulemap; sourceTree = "<group>"; };
+		BBF009C023AC24FF8F70B3F9208456E4 /* LetterAvatarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LetterAvatarKit.framework; path = LetterAvatarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE946BD5F38370396239348C2B698A93 /* LetterAvatarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LetterAvatarKit.modulemap; sourceTree = "<group>"; };
 		C164C04869A881A94E2C768243DA1A72 /* LetterAvatarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LetterAvatarKit.h; path = LetterAvatarKit/LetterAvatarKit.h; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DE9C83939DB7B6D8EDD470B7B0BB56D0 /* Pods-LetterAvatarKitObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetterAvatarKitObjcExample-frameworks.sh"; sourceTree = "<group>"; };
@@ -426,7 +426,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -487,7 +486,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
