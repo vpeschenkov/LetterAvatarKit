@@ -25,7 +25,7 @@
 
 import Foundation
 
-extension String{
+extension String {
     /// The the first element of the collection.
     ///
     /// If the collection is empty, the value of this property is `nil`.
