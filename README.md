@@ -10,7 +10,7 @@ LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatar
 - iOS 8 and later
 - Swift 3.2 and later
 
-## Install
+## Installation
 
 To use with **Swift 3.2** please ensure you are using **v1.1.1**
 
