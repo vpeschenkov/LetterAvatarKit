@@ -89,7 +89,7 @@ Questions, comments, issues, and pull requests are always welcome!
 
 ## Thanks
 
-Thanks [Cargo](https://github.com/Gargo) for translating [README](https://github.com/vpeschenkov/LetterAvatarKit/blob/master/README.md) to [Russian](http://gargo.of.by/letteravatarkit/).
+Thanks [Cargo](https://github.com/Gargo) for translating [README](https://github.com/vpeschenkov/LetterAvatarKit/blob/master/README.md) into [Russian](http://gargo.of.by/letteravatarkit/).
 
 ## License
 
