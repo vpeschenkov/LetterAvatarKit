@@ -89,7 +89,10 @@ open class LetterAvatarBuilder: NSObject {
         )
     }
     
-    private func obtainUsernameInfo(withUsername username: String, singleLetter: Bool) -> (letters: String, value: Int) {
+    private func obtainUsernameInfo(
+        withUsername username: String,
+        singleLetter: Bool
+        ) -> (letters: String, value: Int) {
         var letters = String()
         var lettersAssciValue = 0
         
