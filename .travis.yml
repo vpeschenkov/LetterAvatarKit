@@ -1,5 +1,7 @@
 language: objective-c
 osx_image: xcode9
 
-script: 
-    - set -o pipefail && xcodebuild clean && xcodebuild build && xcodebuild test -project LetterAvatarKit.xcodeproj -scheme LetterAvatarKit -destination 'platform=iOS Simulator,name=iPhone 6s,OS=11.0' | xcpretty -t
+install:
+  - bundle install
+script:
+  - fastlane test

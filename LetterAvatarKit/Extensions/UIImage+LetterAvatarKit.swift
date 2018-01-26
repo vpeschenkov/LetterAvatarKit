@@ -34,7 +34,9 @@ extension UIImage {
     ///
     /// - Returns: An instance of UIImage
     @objc(lak_makeLetterAvatarWithConfiguration:)
-    static open func makeLetterAvatar(withConfiguration configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
+    static open func makeLetterAvatar(
+        withConfiguration configuration: LetterAvatarBuilderConfiguration
+        ) -> UIImage? {
         return LetterAvatarBuilder().makeAvatar(withConfiguration: configuration)
     }
     

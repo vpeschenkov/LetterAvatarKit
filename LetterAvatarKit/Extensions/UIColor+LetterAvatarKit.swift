@@ -122,8 +122,8 @@ extension UIColor {
                 LAKUIColorByHEX(HEXColor.asbestosColor)
             ]
             objc_setAssociatedObject(self, &ColorKey.value, colors, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return colors as! [ UIColor ]
+            return colors as? [ UIColor ] ?? []
         }
-        return colors as! [ UIColor ]
+        return colors as? [ UIColor ] ?? []
     }
 }

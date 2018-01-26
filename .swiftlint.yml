@@ -1,10 +1,14 @@
 disabled_rules:
   - trailing_whitespace
-  - force_cast
 
 included:
   - LetterAvatarKit
+  - LetterAvatarKitTests
+
+line_length:
+  - 110
+  - 110
 
 type_body_length:
-  - 300
-  - 400
+  - 150
+  - 150
