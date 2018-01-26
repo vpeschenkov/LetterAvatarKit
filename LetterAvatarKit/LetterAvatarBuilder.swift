@@ -52,6 +52,7 @@ open class LetterAvatarBuilderConfiguration: NSObject {
 /// Uses for making letter-based avatar images.
 @objc(LAKLetterAvatarBuilder)
 open class LetterAvatarBuilder: NSObject {
+    
     /// Makes an letter-based avatar image using given configuration.
     ///
     /// - Parameters:
@@ -173,5 +174,4 @@ open class LetterAvatarBuilder: NSObject {
         }
         return nil
     }
-    
 }

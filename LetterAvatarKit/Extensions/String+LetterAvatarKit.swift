@@ -26,6 +26,7 @@
 import Foundation
 
 extension String {
+    
     /// The the first element of the collection.
     ///
     /// If the collection is empty, the value of this property is `nil`.
@@ -35,5 +36,4 @@ extension String {
         }
         return self[index(startIndex, offsetBy: 0)]
     }
-    
 }

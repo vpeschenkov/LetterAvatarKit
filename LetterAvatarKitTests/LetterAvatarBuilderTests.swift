@@ -94,5 +94,4 @@ class LetterAvatarBuilderTests: XCTestCase {
         let testAvatarImage = UIImage(named: "LetterAvatarSingleLetterTestImage")
         XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
     }
-    
 }

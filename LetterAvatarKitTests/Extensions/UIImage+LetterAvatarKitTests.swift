@@ -94,5 +94,4 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         XCTAssertNotNil(testAvatarImage)
         XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
     }
-    
 }

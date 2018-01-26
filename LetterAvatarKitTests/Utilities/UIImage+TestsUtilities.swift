@@ -27,6 +27,7 @@ import UIKit
 import Foundation
 
 extension UIImage {
+    
     /// Returns the named image from test bundle.
     ///
     /// - name: The name of the image. For images in asset

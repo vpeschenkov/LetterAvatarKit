@@ -32,5 +32,4 @@ class StringLetterAvatarKitTests: XCTestCase {
         XCTAssertEqual(Character("A"), "Avatar".first)
         XCTAssertNotEqual(Character("r"), "Avatar".first)
     }
-    
 }
