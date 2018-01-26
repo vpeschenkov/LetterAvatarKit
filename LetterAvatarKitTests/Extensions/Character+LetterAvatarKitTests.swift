@@ -28,11 +28,9 @@ import Foundation
 @testable import LetterAvatarKit
 
 class CharacterLetterAvatarKitTests: XCTestCase {
-    
     func testASCIIVAlue() {
         let a = Character("A")
         let b = Character("B")
-        
         // 65 is ASCII code of "A"
         XCTAssertEqual(a.asciiValue, 65)
         XCTAssertNotEqual(a.asciiValue, b.asciiValue)

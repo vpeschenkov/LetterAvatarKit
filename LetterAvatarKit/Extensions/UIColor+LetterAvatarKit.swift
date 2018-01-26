@@ -54,7 +54,6 @@ extension UIColor {
     private struct ColorKey {
         static var value = "org.peschenkov.LetterAvatarKit.UIColor.colors"
     }
-    
     /// Colors from http://flatuicolors.com/
     public enum HEXColor {
         /// TURQUOISE
@@ -96,7 +95,6 @@ extension UIColor {
         /// ASBESTOS
         static let asbestosColor = 0x7F8C8D
     }
-    
     static open var colors: [ UIColor ] {
         var colors = objc_getAssociatedObject(self, &ColorKey.value)
         if colors == nil {

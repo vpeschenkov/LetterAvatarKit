@@ -69,4 +69,5 @@ extension UIImage {
         configuration.size = size
         return LetterAvatarBuilder().makeAvatar(withConfiguration: configuration)
     }
+    
 }

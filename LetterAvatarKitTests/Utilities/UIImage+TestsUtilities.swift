@@ -46,11 +46,9 @@ extension UIImage {
         guard self.size.equalTo(image.size) else {
             return false
         }
-        
         let pixelsWidth: Int = self.cgImage!.width
         let pixelsHeight: Int = self.cgImage!.height
         let pixelsToCompare: Int  = Int(CGFloat(pixelsWidth * pixelsHeight) * density)
-        
         var firstImagePixel = UInt()
         let firstImageContext = CGContext(
             data: &firstImagePixel,
@@ -61,7 +59,6 @@ extension UIImage {
             space: CGColorSpaceCreateDeviceRGB(),
             bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue
         )
-        
         var secondImagePixel = UInt()
         let secondImageContext = CGContext(
             data: &secondImagePixel,
@@ -72,7 +69,6 @@ extension UIImage {
             space: CGColorSpaceCreateDeviceRGB(),
             bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue
         )
-        
         var misses = 0
         for _ in 0..<pixelsToCompare {
             let pixelX = Int(arc4random()) % pixelsWidth
@@ -83,16 +79,14 @@ extension UIImage {
                 width: CGFloat(pixelsWidth),
                 height: CGFloat(pixelsHeight)
             )
-            
             firstImageContext?.draw(self.cgImage!, in: drawRect)
             secondImageContext?.draw(image.cgImage!, in: drawRect)
-            
             if firstImagePixel != secondImagePixel {
                 misses += 1
             }
         }
-        
         /// (1 - misses) / 1 = percent of miss
         return ((Double(pixelsToCompare - misses) / Double(pixelsToCompare)) >= accuracy)
     }
+    
 }

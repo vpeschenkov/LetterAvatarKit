@@ -28,11 +28,9 @@ import Foundation
 @testable import LetterAvatarKit
 
 class UIColorLetterAvatarKitTests: XCTestCase {
-    
     func testColorByHEX() {
         // TURQUOISE
         let color = LAKUIColorByHEX(UIColor.HEXColor.turquoiseColor)
-        
         XCTAssertEqual(CIColor(color: color).red, 26 / 255)
         XCTAssertEqual(CIColor(color: color).green, 188 / 255)
         XCTAssertEqual(CIColor(color: color).blue, 156 / 255)
@@ -41,9 +39,9 @@ class UIColorLetterAvatarKitTests: XCTestCase {
     func testColorByRGB() {
         // TURQUOISE
         let color = LAKUIColorByRGB(red: 26, green: 188, blue: 156)
-        
         XCTAssertEqual(CIColor(color: color).red, 26 / 255)
         XCTAssertEqual(CIColor(color: color).green, 188 / 255)
         XCTAssertEqual(CIColor(color: color).blue, 156 / 255)
     }
+    
 }

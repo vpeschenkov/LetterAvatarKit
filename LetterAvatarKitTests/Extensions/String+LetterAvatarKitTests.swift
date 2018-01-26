@@ -28,7 +28,6 @@ import Foundation
 @testable import LetterAvatarKit
 
 class StringLetterAvatarKitTests: XCTestCase {
-    
     func testGettingFirstCharacter() {
         XCTAssertEqual(Character("A"), "Avatar".first)
         XCTAssertNotEqual(Character("r"), "Avatar".first)

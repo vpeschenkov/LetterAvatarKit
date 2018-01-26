@@ -71,12 +71,10 @@ open class LetterAvatarBuilder: NSObject {
                 backgroundColor: colors[0].cgColor
             )
         }
-        
         let usernameInfo = obtainUsernameInfo(
             withUsername: username,
             singleLetter: configuration.singleLetter
         )
-        
         var colorIndex = usernameInfo.value
         colorIndex *= 3557 // Prime number
         colorIndex %= colors.count - 1
@@ -95,10 +93,8 @@ open class LetterAvatarBuilder: NSObject {
         ) -> (letters: String, value: Int) {
         var letters = String()
         var lettersAssciValue = 0
-        
         /// Obtain the array of words using given username
         let components = username.components(separatedBy: " ")
-        
         /// If given two words or more
         if components.count > 1 {
             if let firstComponent = components.first, let lastComponent = components.last {
@@ -107,7 +103,6 @@ open class LetterAvatarBuilder: NSObject {
                     letters.append(letter)
                     lettersAssciValue += letter.asciiValue
                 }
-                
                 if !singleLetter {
                     /// Process the last name letter
                     if let letter = lastComponent.first {
@@ -123,7 +118,6 @@ open class LetterAvatarBuilder: NSObject {
                 if let letter = component.first {
                     letters.append(letter)
                     lettersAssciValue += letter.asciiValue
-                    
                     if !singleLetter {
                         /// Process the second name letter
                         let startIndex = component.index(after: component.startIndex)
@@ -137,7 +131,6 @@ open class LetterAvatarBuilder: NSObject {
                 }
             }
         }
-        
         return (letters: letters, value: lettersAssciValue)
     }
     
@@ -147,12 +140,10 @@ open class LetterAvatarBuilder: NSObject {
                             lettersColor: UIColor,
                             backgroundColor: CGColor) -> UIImage? {
         let rect = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
-        
         UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
         if let context = UIGraphicsGetCurrentContext() {
             context.setFillColor(backgroundColor)
             context.fill(rect)
-            
             let style = NSParagraphStyle.default.mutableCopy()
             #if swift(>=4.0)
                 let attributes = [
@@ -160,7 +151,6 @@ open class LetterAvatarBuilder: NSObject {
                     NSAttributedStringKey.font: lettersFont.withSize(min(size.height, size.width) / 2.0),
                     NSAttributedStringKey.foregroundColor: lettersColor
                 ]
-                
                 let lettersSize = letters.size(withAttributes: attributes)
             #else
                 let attributes = [
@@ -168,10 +158,8 @@ open class LetterAvatarBuilder: NSObject {
                 NSFontAttributeName: lettersFont.withSize(min(size.height, size.width) / 2.0),
                 NSForegroundColorAttributeName: lettersColor
                 ]
-                
                 let lettersSize = letters.size(attributes: attributes)
             #endif
-            
             let lettersRect = CGRect(
                 x: (rect.size.width - lettersSize.width) / 2.0,
                 y: (rect.size.height - lettersSize.height) / 2.0,
@@ -179,10 +167,8 @@ open class LetterAvatarBuilder: NSObject {
                 height: lettersSize.height
             )
             letters.draw(in: lettersRect, withAttributes: attributes)
-            
             let avatarImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
-            
             return avatarImage
         }
         return nil
