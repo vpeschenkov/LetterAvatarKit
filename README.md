@@ -1,5 +1,7 @@
 # LetterAvatarKit
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7)](https://www.codacy.com/app/nerevarxx/LetterAvatarKit?utm_source=github.com&utm_medium=referral&utm_content=vpeschenkov/LetterAvatarKit&utm_campaign=badger)
+
 ![][Platform] ![][Travis] ![][Pods] ![][Swift3.2] ![][Swift4.0]
 
 LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatars written in Swift. Here are some images showing what the LetterAvatarKit does:
