@@ -2,7 +2,7 @@
 
 ![][Platform] ![][Travis] ![][Pods] ![][Swift3.2] ![][Swift4.0] ![][Codacy Badge]
 
-LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatars. Here are some images showing what the LetterAvatarKit does:
+LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatars. Here are some images showing what LetterAvatarKit does:
 
 ![][screenshots]
 
