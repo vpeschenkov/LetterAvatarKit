@@ -91,6 +91,11 @@ Questions, comments, issues, and pull requests are always welcome!
 
 Thanks [Cargo](https://github.com/Gargo) for translating [README](https://github.com/vpeschenkov/LetterAvatarKit/blob/master/README.md) into [Russian](http://gargo.of.by/letteravatarkit/).
 
+## Contacts
+
+- [GitHub](https://github.com/vpeschenkov)
+- [Twitter](https://twitter.com/vpeschenkov)
+
 ## License
 
 Distributed under the MIT license. See LICENSE for more information.
