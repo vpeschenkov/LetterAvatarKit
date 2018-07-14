@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'LetterAvatarKit'
   spec.platform         = :ios, '8.0'
-  spec.version          = '1.1.2'
+  spec.version          = '1.1.3'
   spec.license          = { :type => 'MIT' }
   spec.homepage         = 'https://github.com/vpeschenkov/LetterAvatarKit'
   spec.authors          = { 'Victor Peschenkov' => 'nerevarxx@gmail.com' }
@@ -10,4 +10,5 @@ Pod::Spec.new do |spec|
   spec.source_files     = 'LetterAvatarKit/*.{h,swift}', 'LetterAvatarKit/Extensions/*.{swift}'
   spec.requires_arc     = true
   spec.framework        = 'Foundation', 'UIKit'
+  spec.swift_version = '4.1'
 end

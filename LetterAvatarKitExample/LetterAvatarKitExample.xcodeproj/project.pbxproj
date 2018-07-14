@@ -100,7 +100,6 @@
 				EBEC63B71F8CF49B00CE334B /* Frameworks */,
 				EBEC63B81F8CF49B00CE334B /* Resources */,
 				F6F80C452BEEEBCDC029AF2F /* [CP] Embed Pods Frameworks */,
-				FC50DAE1FFB36300B2FF475C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,21 +192,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LetterAvatarKitExample/Pods-LetterAvatarKitExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC50DAE1FFB36300B2FF475C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LetterAvatarKitExample/Pods-LetterAvatarKitExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
