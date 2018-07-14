@@ -94,4 +94,13 @@ class LetterAvatarBuilderTests: XCTestCase {
         let testAvatarImage = UIImage(named: "LetterAvatarSingleLetterTestImage")
         XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
     }
+    
+    func testAvatarBuildWithOnlyOneBackgroundColor() {
+        let configuration = LetterAvatarBuilderConfiguration()
+        configuration.username = "Avatar"
+        configuration.singleLetter = true
+        configuration.backgroundColors = [ .red ]
+        let avatarImage = LetterAvatarBuilder().makeAvatar(withConfiguration: configuration)
+        XCTAssertNotNil(avatarImage)
+    }
 }

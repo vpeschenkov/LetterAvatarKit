@@ -76,9 +76,12 @@ open class LetterAvatarBuilder: NSObject {
             withUsername: username,
             singleLetter: configuration.singleLetter
         )
-        var colorIndex = usernameInfo.value
-        colorIndex *= 3557 // Prime number
-        colorIndex %= colors.count - 1
+        var colorIndex = 0
+        if colors.count > 1 {
+            colorIndex = usernameInfo.value
+            colorIndex *= 3557 // Prime number
+            colorIndex %= colors.count - 1
+        }
         return drawAvatar(
             size: configuration.size,
             letters: usernameInfo.letters,
@@ -146,21 +149,12 @@ open class LetterAvatarBuilder: NSObject {
             context.setFillColor(backgroundColor)
             context.fill(rect)
             let style = NSParagraphStyle.default.mutableCopy()
-            #if swift(>=4.0)
-                let attributes = [
+            let attributes = [
                     NSAttributedStringKey.paragraphStyle: style,
                     NSAttributedStringKey.font: lettersFont.withSize(min(size.height, size.width) / 2.0),
                     NSAttributedStringKey.foregroundColor: lettersColor
-                ]
-                let lettersSize = letters.size(withAttributes: attributes)
-            #else
-                let attributes = [
-                NSParagraphStyleAttributeName: style,
-                NSFontAttributeName: lettersFont.withSize(min(size.height, size.width) / 2.0),
-                NSForegroundColorAttributeName: lettersColor
-                ]
-                let lettersSize = letters.size(attributes: attributes)
-            #endif
+            ]
+            let lettersSize = letters.size(withAttributes: attributes)
             let lettersRect = CGRect(
                 x: (rect.size.width - lettersSize.width) / 2.0,
                 y: (rect.size.height - lettersSize.height) / 2.0,

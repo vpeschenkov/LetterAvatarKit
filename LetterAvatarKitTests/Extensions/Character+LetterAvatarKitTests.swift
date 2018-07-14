@@ -29,11 +29,11 @@ import Foundation
 
 class CharacterLetterAvatarKitTests: XCTestCase {
     func testASCIIVAlue() {
-        let a = Character("A")
-        let b = Character("B")
+        let first = Character("A")
+        let second = Character("B")
         // 65 is ASCII code of "A"
-        XCTAssertEqual(a.asciiValue, 65)
-        XCTAssertNotEqual(a.asciiValue, b.asciiValue)
+        XCTAssertEqual(first.asciiValue, 65)
+        XCTAssertNotEqual(first.asciiValue, second.asciiValue)
     }
     
 }
