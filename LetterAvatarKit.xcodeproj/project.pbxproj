@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35089433210272B20024E7CA /* LetterAvatarBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35089432210272B20024E7CA /* LetterAvatarBuilderConfiguration.swift */; };
 		351F38A31FAA386E0077F001 /* LetterAvatarSingleLetterTestImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F38A21FAA386E0077F001 /* LetterAvatarSingleLetterTestImage@3x.png */; };
 		351F38A51FAA38D10077F001 /* LetterAvatarSingleLetterTestImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F38A41FAA38D10077F001 /* LetterAvatarSingleLetterTestImage@2x.png */; };
 		351F6CEF1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F6CED1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@3x.png */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35089432210272B20024E7CA /* LetterAvatarBuilderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterAvatarBuilderConfiguration.swift; sourceTree = "<group>"; };
 		351F38A21FAA386E0077F001 /* LetterAvatarSingleLetterTestImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LetterAvatarSingleLetterTestImage@3x.png"; sourceTree = "<group>"; };
 		351F38A41FAA38D10077F001 /* LetterAvatarSingleLetterTestImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LetterAvatarSingleLetterTestImage@2x.png"; sourceTree = "<group>"; };
 		351F6CED1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LetterAvatarOneWordTestImage@3x.png"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				EB516B611F8810D200BEA1F2 /* Extensions */,
 				EB8EC40C1F85929E000B7641 /* LetterAvatarKit.h */,
 				EB8EC4231F859382000B7641 /* LetterAvatarBuilder.swift */,
+				35089432210272B20024E7CA /* LetterAvatarBuilderConfiguration.swift */,
 				EB8EC40D1F85929E000B7641 /* Info.plist */,
 			);
 			path = LetterAvatarKit;
@@ -294,6 +297,7 @@
 				EB8EC4241F859382000B7641 /* LetterAvatarBuilder.swift in Sources */,
 				35AD1DA81FA8F4FC0059BC9A /* String+LetterAvatarKit.swift in Sources */,
 				EB516B651F8810D200BEA1F2 /* Character+LetterAvatarKit.swift in Sources */,
+				35089433210272B20024E7CA /* LetterAvatarBuilderConfiguration.swift in Sources */,
 				EB516B661F8810D200BEA1F2 /* UIColor+LetterAvatarKit.swift in Sources */,
 				EB516B671F8810D200BEA1F2 /* UIImage+LetterAvatarKit.swift in Sources */,
 			);

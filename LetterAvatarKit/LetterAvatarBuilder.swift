@@ -26,29 +26,6 @@
 import UIKit
 import Foundation
 
-/// Uses for configuration LetterAvatarBuilder.
-@objc(LAKLetterAvatarBuilderConfiguration)
-open class LetterAvatarBuilderConfiguration: NSObject {
-    /// The size of an avatar image.
-    @objc(size)
-    open var size: CGSize = CGSize(width: 80, height: 80)
-    /// The username.
-    @objc(username)
-    open var username: String?
-    /// The flag that indicates of using single letter instead of two lettters.
-    @objc(singleLetter)
-    open var singleLetter: Bool = false
-    /// The letters font.
-    @objc(lettersFont)
-    open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
-    /// The letters colors.
-    @objc(lettersColor)
-    open var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
-    /// The background colors of a letter-based avatar.
-    @objc(backgroundColors)
-    open var backgroundColors: [UIColor] = UIColor.colors
-}
-
 /// Uses for making letter-based avatar images.
 @objc(LAKLetterAvatarBuilder)
 open class LetterAvatarBuilder: NSObject {
