@@ -25,7 +25,7 @@
 
 import Foundation
 
-/// Uses for configuration LetterAvatarBuilder.
+/// Uses for configurating a LetterAvatarBuilder instance.
 @objc(LAKLetterAvatarBuilderConfiguration)
 open class LetterAvatarBuilderConfiguration: NSObject {
     /// The size of an avatar image.

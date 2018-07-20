@@ -33,7 +33,7 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         XCTAssertNotNil(avatarImage)
         let testAvatarImage = UIImage(named: "LetterAvatarTestImage")
         XCTAssertNotNil(testAvatarImage)
-        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToImage(testAvatarImage))
     }
     
     func testAvatarBuildWithCustomSize() {
@@ -53,7 +53,7 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         XCTAssertNotNil(testAvatarImage)
         XCTAssertTrue(avatarImage?.size.width == configuration.size.width)
         XCTAssertTrue(avatarImage?.size.height == configuration.size.height)
-        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToImage(testAvatarImage))
     }
     
     func testAvatarBuildWithConfiguration() {
@@ -65,7 +65,7 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         XCTAssertNotNil(testAvatarImage)
         XCTAssertTrue(avatarImage?.size.width == configuration.size.width)
         XCTAssertTrue(avatarImage?.size.height == configuration.size.height)
-        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToImage(testAvatarImage))
     }
     
     func testAvatarBuildWithOneWordUsername() {
@@ -73,7 +73,7 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         XCTAssertNotNil(avatarImage)
         let testAvatarImage = UIImage(named: "LetterAvatarOneWordTestImage")
         XCTAssertNotNil(testAvatarImage)
-        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToImage(testAvatarImage))
     }
     
     func testAvatarBuildWithMoreThanTwoWordsUsername() {
@@ -81,7 +81,7 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         XCTAssertNotNil(avatarImage)
         let testAvatarImage = UIImage(named: "LetterAvatarTestImage")
         XCTAssertNotNil(testAvatarImage)
-        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToImage(testAvatarImage))
     }
     
     func testAvatarBuildWithOneWordUsernameAndSingleLetterFlag() {
@@ -92,6 +92,6 @@ class UIImageLetterAvatarKitTests: XCTestCase {
         XCTAssertNotNil(avatarImage)
         let testAvatarImage = UIImage(named: "LetterAvatarSingleLetterTestImage")
         XCTAssertNotNil(testAvatarImage)
-        XCTAssert(avatarImage!.isEqualToAnotherImage(image: testAvatarImage!))
+        XCTAssert(avatarImage!.isEqualToImage(testAvatarImage))
     }
 }

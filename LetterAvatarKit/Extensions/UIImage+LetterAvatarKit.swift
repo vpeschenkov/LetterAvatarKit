@@ -33,7 +33,7 @@ extension UIImage {
     ///     - configuration: The configuration that uses to draw a
     /// letter-based avatar image.
     ///
-    /// - Returns: An instance of UIImage
+    /// - Returns: An instance of UIImage.
     @objc(lak_makeLetterAvatarWithConfiguration:)
     static open func makeLetterAvatar(
         withConfiguration configuration: LetterAvatarBuilderConfiguration
@@ -47,7 +47,7 @@ extension UIImage {
     ///     - username: The username that uses to draw a
     /// letter-based avatar image.
     ///
-    /// - Returns: An instance of UIImage
+    /// - Returns: An instance of UIImage.
     @objc(lak_makeLetterAvatarWithUsername:)
     static open func makeLetterAvatar(withUsername username: String?) -> UIImage? {
         let configuration = LetterAvatarBuilderConfiguration()
@@ -62,7 +62,7 @@ extension UIImage {
     /// letter-based avatar image.
     ///     - size: The avatar size.
     ///
-    /// - Returns: An instance of UIImage
+    /// - Returns: An instance of UIImage.
     @objc(lak_makeLetterAvatarWithUsername:size:)
     static open func makeLetterAvatar(withUsername username: String?, size: CGSize) -> UIImage? {
         let configuration = LetterAvatarBuilderConfiguration()

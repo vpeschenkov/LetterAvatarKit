@@ -43,8 +43,8 @@ extension UIImage {
         )
     }
     
-    func isEqualToAnotherImage(image: UIImage, density: CGFloat = 1.0, accuracy: Double = 0.9) -> Bool {
-        guard self.size.equalTo(image.size) else {
+    func isEqualToImage(_ image: UIImage?, density: CGFloat = 1.0, accuracy: Double = 0.9) -> Bool {
+        guard let image = image, self.size.equalTo(image.size) else {
             return false
         }
         let pixelsWidth: Int = self.cgImage!.width
