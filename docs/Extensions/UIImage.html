@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UIImage Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/UIImage" class="dashAnchor"></a>
+    <a title="UIImage Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">LetterAvatarKit Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/vpeschenkov/LetterAvatarKit"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">LetterAvatarKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UIImage Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/LetterAvatarBuilder.html">LetterAvatarBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LetterAvatarBuilderConfiguration.html">LetterAvatarBuilderConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UIImage</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">UIImage</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@LetterAvatarKit@@objc(cs)UIImage(cm)lak_makeLetterAvatarWithConfiguration:"></a>
+                    <a name="//apple_ref/swift/Method/makeLetterAvatar(withConfiguration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@LetterAvatarKit@@objc(cs)UIImage(cm)lak_makeLetterAvatarWithConfiguration:">makeLetterAvatar(withConfiguration:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Makes an letter-based avatar image using given configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(lak_makeLetterAvatarWithConfiguration:)</span>
+<span class="kd">static</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">makeLetterAvatar</span><span class="p">(</span>
+    <span class="n">withConfiguration</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/LetterAvatarBuilderConfiguration.html">LetterAvatarBuilderConfiguration</a></span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIImage</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The configuration that uses to draw a
+letter-based avatar image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of UIImage.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@LetterAvatarKit@@objc(cs)UIImage(cm)lak_makeLetterAvatarWithUsername:"></a>
+                    <a name="//apple_ref/swift/Method/makeLetterAvatar(withUsername:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@LetterAvatarKit@@objc(cs)UIImage(cm)lak_makeLetterAvatarWithUsername:">makeLetterAvatar(withUsername:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Makes an letter-based avatar image using given username.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(lak_makeLetterAvatarWithUsername:)</span>
+<span class="kd">open</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">makeLetterAvatar</span><span class="p">(</span><span class="n">withUsername</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIImage</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>username</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The username that uses to draw a
+letter-based avatar image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of UIImage.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@LetterAvatarKit@@objc(cs)UIImage(cm)lak_makeLetterAvatarWithUsername:size:"></a>
+                    <a name="//apple_ref/swift/Method/makeLetterAvatar(withUsername:size:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@LetterAvatarKit@@objc(cs)UIImage(cm)lak_makeLetterAvatarWithUsername:size:">makeLetterAvatar(withUsername:size:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Makes an letter-based avatar image using given username and size.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(lak_makeLetterAvatarWithUsername:size:)</span>
+<span class="kd">open</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">makeLetterAvatar</span><span class="p">(</span><span class="n">withUsername</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIImage</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>username</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The username that uses to draw a
+letter-based avatar image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>size</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The avatar size.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of UIImage.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2018-07-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
