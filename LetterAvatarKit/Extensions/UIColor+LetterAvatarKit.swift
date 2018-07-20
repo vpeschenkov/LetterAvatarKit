@@ -39,13 +39,13 @@ func LAKUIColorByHEX(_ hex: Int) -> UIColor {
     )
 }
 
-/// Returns a color by RGB.
+/// Returns a UIColor instance.
 ///
 /// - Parameters:
-///     - red: A value of red color component.
-///     - green: A value of green color component.
-///     - blue: A value of blue color component.
-/// - Returns: The color by RGB.
+///     - red: A value of the red color component.
+///     - green: A value of the green color component.
+///     - blue: A value of the blue color component.
+/// - Returns: A UIColor instance.
 func LAKUIColorByRGB(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
     return UIColor(red: red / 255, green: green / 255, blue: blue / 255, alpha: CGFloat(1.0))
 }

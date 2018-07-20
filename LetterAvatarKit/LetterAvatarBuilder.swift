@@ -41,10 +41,10 @@ open class LetterAvatarBuilderConfiguration: NSObject {
     /// The letters font.
     @objc(lettersFont)
     open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
-    /// The letters colors
+    /// The letters colors.
     @objc(lettersColor)
     open var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
-    /// The background colors of an image.
+    /// The background colors of a letter-based avatar.
     @objc(backgroundColors)
     open var backgroundColors: [UIColor] = UIColor.colors
 }
@@ -53,13 +53,13 @@ open class LetterAvatarBuilderConfiguration: NSObject {
 @objc(LAKLetterAvatarBuilder)
 open class LetterAvatarBuilder: NSObject {
     
-    /// Makes an letter-based avatar image using given configuration.
+    /// Makes a letter-based avatar image by using a given configuration.
     ///
     /// - Parameters:
-    ///     - configuration: The configuration that uses to draw a
+    ///     - configuration: The configuration that is used to draw a
     /// letter-based avatar image.
     ///
-    /// - Returns: An instance of UIImage
+    /// - Returns: An instance of the UIImage class.
     @objc(makeAvatarWithConfiguration:)
     open func makeAvatar(withConfiguration configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
         let colors = configuration.backgroundColors
@@ -97,18 +97,18 @@ open class LetterAvatarBuilder: NSObject {
         ) -> (letters: String, value: Int) {
         var letters = String()
         var lettersAssciValue = 0
-        /// Obtain the array of words using given username
+        // Obtains an array of words by using a given username
         let components = username.components(separatedBy: " ")
-        /// If given two words or more
+        // If there are whether two words or more
         if components.count > 1 {
             if let firstComponent = components.first, let lastComponent = components.last {
-                /// Process the firs name letter
+                // Process the firs name letter
                 if let letter = firstComponent.first {
                     letters.append(letter)
                     lettersAssciValue += letter.asciiValue
                 }
                 if !singleLetter {
-                    /// Process the last name letter
+                    // Process the last name letter
                     if let letter = lastComponent.first {
                         letters.append(letter)
                         lettersAssciValue += letter.asciiValue
@@ -116,14 +116,14 @@ open class LetterAvatarBuilder: NSObject {
                 }
             }
         } else {
-            /// If given just one word
+            // If given just one word
             if let component = components.first {
-                /// Process the firs name letter
+                // Process the firs name letter
                 if let letter = component.first {
                     letters.append(letter)
                     lettersAssciValue += letter.asciiValue
                     if !singleLetter {
-                        /// Process the second name letter
+                        // Process the second name letter
                         let startIndex = component.index(after: component.startIndex)
                         let endIndex = component.index(component.startIndex, offsetBy: 2)
                         let substring = component[startIndex..<endIndex].capitalized

@@ -27,9 +27,8 @@ import Foundation
 
 extension String {
     
-    /// The the first element of the collection.
-    ///
-    /// If the collection is empty, the value of this property is `nil`.
+    /// Returns the first element of the collection of string. If a collection
+    /// is empty, returns nil.
     var first: Character? {
         if isEmpty {
             return nil
