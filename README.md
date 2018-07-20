@@ -16,7 +16,7 @@ LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatar
 
 To install LetterAvatarKit using CocoaPods, add this line to your Podfile:
 ```
-pod "LetterAvatarKit"
+pod "LetterAvatarKit", "1.1.3"
 ```
 
 ## Usage
