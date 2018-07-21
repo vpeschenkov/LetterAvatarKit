@@ -115,11 +115,13 @@ open class LetterAvatarBuilder: NSObject {
         return (letters: letters, value: lettersAssciValue)
     }
     
-    private func drawAvatar(size: CGSize,
-                            letters: String,
-                            lettersFont: UIFont,
-                            lettersColor: UIColor,
-                            backgroundColor: CGColor) -> UIImage? {
+    private func drawAvatar(
+        size: CGSize,
+        letters: String,
+        lettersFont: UIFont,
+        lettersColor: UIColor,
+        backgroundColor: CGColor
+        ) -> UIImage? {
         let rect = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
         UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
         if let context = UIGraphicsGetCurrentContext() {
@@ -127,9 +129,9 @@ open class LetterAvatarBuilder: NSObject {
             context.fill(rect)
             let style = NSParagraphStyle.default.mutableCopy()
             let attributes = [
-                    NSAttributedStringKey.paragraphStyle: style,
-                    NSAttributedStringKey.font: lettersFont.withSize(min(size.height, size.width) / 2.0),
-                    NSAttributedStringKey.foregroundColor: lettersColor
+                NSAttributedStringKey.paragraphStyle: style,
+                NSAttributedStringKey.font: lettersFont.withSize(min(size.height, size.width) / 2.0),
+                NSAttributedStringKey.foregroundColor: lettersColor
             ]
             let lettersSize = letters.size(withAttributes: attributes)
             let lettersRect = CGRect(
