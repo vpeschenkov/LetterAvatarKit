@@ -99,7 +99,10 @@ open class LetterAvatarBuilder: NSObject {
                 if let letter = component.first {
                     letters.append(letter)
                     lettersAssciValue += letter.asciiValue
-                    if !singleLetter {
+                    // If single Letter is passed as false but the string is a single char,
+                    // this line fails due to out of bounds exception.
+                    // https://github.com/vpeschenkov/LetterAvatarKit/issues/11
+                    if !singleLetter && component.count >= 2 {
                         // Process the second name letter
                         let startIndex = component.index(after: component.startIndex)
                         let endIndex = component.index(component.startIndex, offsetBy: 2)

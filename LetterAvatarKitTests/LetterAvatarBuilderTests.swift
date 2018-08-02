@@ -101,4 +101,16 @@ class LetterAvatarBuilderTests: XCTestCase {
         let avatarImage = LetterAvatarBuilder().makeAvatar(withConfiguration: configuration)
         XCTAssertNotNil(avatarImage)
     }
+    
+    /// If single Letter is passed as false but the string is a single char,
+    /// this line fails due to out of bounds exception.
+    /// https://github.com/vpeschenkov/LetterAvatarKit/issues/11
+    func testAvatarBuildFailureCannotIncrementBeyondEndIndex() {
+        let configuration = LetterAvatarBuilderConfiguration()
+        configuration.username = "A"
+        configuration.singleLetter = false
+        configuration.backgroundColors = [ .red ]
+        let avatarImage = LetterAvatarBuilder().makeAvatar(withConfiguration: configuration)
+        XCTAssertNotNil(avatarImage)
+    }
 }
