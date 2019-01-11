@@ -123,7 +123,7 @@
 		EBEC63D01F8CF4D500CE334B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Victor Peschenkov";
 				TargetAttributes = {
 					EBEC63D71F8CF4D500CE334B = {

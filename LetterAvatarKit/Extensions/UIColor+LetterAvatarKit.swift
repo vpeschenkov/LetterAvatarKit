@@ -95,7 +95,7 @@ extension UIColor {
         /// ASBESTOS
         static let asbestosColor = 0x7F8C8D
     }
-    static open var colors: [ UIColor ] {
+    static public var colors: [ UIColor ] {
         var colors = objc_getAssociatedObject(self, &ColorKey.value)
         if colors == nil {
             colors = [

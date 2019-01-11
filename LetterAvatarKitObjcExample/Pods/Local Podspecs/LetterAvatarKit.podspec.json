@@ -3,18 +3,18 @@
   "platforms": {
     "ios": "8.0"
   },
-  "version": "1.1.3",
+  "version": "1.1.5",
   "license": {
     "type": "MIT"
   },
   "homepage": "https://github.com/vpeschenkov/LetterAvatarKit",
   "authors": {
-    "Victor Peschenkov": "nerevarxx@gmail.com"
+    "Viktor Peschenkov": "v.peschenkov@gmail.com"
   },
-  "summary": "A UIImage extension that generates letter-based avatars written in Swift.",
+  "summary": "An extension that generates letter-based avatars written in Swift",
   "source": {
     "git": "https://github.com/vpeschenkov/LetterAvatarKit.git",
-    "tag": "1.1.3"
+    "tag": "1.1.5"
   },
   "source_files": [
     "LetterAvatarKit/*.{h,swift}",
@@ -25,5 +25,5 @@
     "Foundation",
     "UIKit"
   ],
-  "swift_version": "4.1"
+  "swift_version": "4.2"
 }

@@ -10,5 +10,5 @@ Pod::Spec.new do |spec|
   spec.source_files     = 'LetterAvatarKit/*.{h,swift}', 'LetterAvatarKit/Extensions/*.{swift}'
   spec.requires_arc     = true
   spec.framework        = 'Foundation', 'UIKit'
-  spec.swift_version = '4.0'
+  spec.swift_version    = '4.2'
 end

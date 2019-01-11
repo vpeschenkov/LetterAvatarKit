@@ -107,8 +107,8 @@ class LetterAvatarBuilderTests: XCTestCase {
     /// https://github.com/vpeschenkov/LetterAvatarKit/issues/11
     func testAvatarBuildFailureCannotIncrementBeyondEndIndex() {
         let configuration = LetterAvatarBuilderConfiguration()
-        configuration.username = "A"
-        configuration.singleLetter = false
+        configuration.username = ""
+//        configuration.singleLetter = false
         configuration.backgroundColors = [ .red ]
         let avatarImage = LetterAvatarBuilder().makeAvatar(withConfiguration: configuration)
         XCTAssertNotNil(avatarImage)

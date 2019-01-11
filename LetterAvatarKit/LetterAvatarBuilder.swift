@@ -132,9 +132,9 @@ open class LetterAvatarBuilder: NSObject {
             context.fill(rect)
             let style = NSParagraphStyle.default.mutableCopy()
             let attributes = [
-                NSAttributedStringKey.paragraphStyle: style,
-                NSAttributedStringKey.font: lettersFont.withSize(min(size.height, size.width) / 2.0),
-                NSAttributedStringKey.foregroundColor: lettersColor
+                NSAttributedString.Key.paragraphStyle: style,
+                NSAttributedString.Key.font: lettersFont.withSize(min(size.height, size.width) / 2.0),
+                NSAttributedString.Key.foregroundColor: lettersColor
             ]
             let lettersSize = letters.size(withAttributes: attributes)
             let lettersRect = CGRect(
