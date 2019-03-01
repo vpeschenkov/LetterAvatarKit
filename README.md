@@ -15,7 +15,7 @@ LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatar
 ### CocoaPods
 
 To install LetterAvatarKit using CocoaPods, add this line to your Podfile:
-```
+```ruby
 pod "LetterAvatarKit", "1.1.6" # Swift 4.2
 pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 ```
@@ -24,32 +24,32 @@ pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 
 You can configure the following properties of LetterAvatarBuilderConfiguration:
 
-```
+```swift
 /// The size of an avatar image.
 open var size: CGSize = CGSize(width: 80, height: 80)
 ```
 
-```
+```swift
 /// The username.
 open var username: String?
 ```
 
-```
+```swift
 /// The flag that indicates of using single letter instead of two lettters.
 open var singleLetter: Bool = false
 ```
 
-```
+```swift
 /// The letters font.
 open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
 ```
 
-```
+```swift
 /// The letters colors
 open var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
 ```
 
-```
+```swift
 /// The background colors of an image.
 open var backgroundColors: [UIColor] = UIColor.colors
 ```
@@ -57,26 +57,26 @@ open var backgroundColors: [UIColor] = UIColor.colors
 ### Swift
 
 Using a configuration:
-```
+```swift
 let configuration = LetterAvatarBuilderConfiguration()
 configuration.username = "Letter Avatar"
 avatarImageView?.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
 ```
 or
-```
+```swift
 avatarImageView?.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
 ```
 
 ### Objective-C
 
 Using a configuration:
-```
+```objc
 LAKLetterAvatarBuilderCongiguration *configuration = [[LAKLetterAvatarBuilderCongiguration alloc] init];
 configuration.username = @"Letter Avatar";
 self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithConfiguration:configuration];
 ```
 or
-```
+```objc
 self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithUsername:@"Letter Avatar"];
 ```
 
