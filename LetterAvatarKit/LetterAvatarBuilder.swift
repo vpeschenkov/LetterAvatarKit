@@ -35,7 +35,7 @@ open class LetterAvatarBuilder: NSObject {
     ///     - configuration: The configuration that is used to draw a
     /// letter-based avatar image.
     ///
-    /// - Returns: An instance of the UIImage class.
+    /// - Returns: Returns whether an instance of UIImage or nil.
     @objc(makeAvatarWithConfiguration:)
     open func makeAvatar(withConfiguration configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
         let colors = configuration.backgroundColors
