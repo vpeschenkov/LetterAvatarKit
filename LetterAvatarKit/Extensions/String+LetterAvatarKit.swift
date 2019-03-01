@@ -26,7 +26,6 @@
 import Foundation
 
 extension String {
-    
     /// Returns the first element of the collection of string. If a collection
     /// is empty, returns nil.
     var first: Character? {

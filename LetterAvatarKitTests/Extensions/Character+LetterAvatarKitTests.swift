@@ -32,8 +32,8 @@ class CharacterLetterAvatarKitTests: XCTestCase {
         let first = Character("A")
         let second = Character("B")
         // 65 is ASCII code of "A"
-        XCTAssertEqual(first.asciiValue, 65)
-        XCTAssertNotEqual(first.asciiValue, second.asciiValue)
+        XCTAssertEqual(first.ASCIIValue, 65)
+        XCTAssertNotEqual(first.ASCIIValue, second.ASCIIValue)
     }
     
 }

@@ -26,7 +26,6 @@
 import Foundation
 
 extension UIImage {
-    
     /// Makes an letter-based avatar image using given configuration.
     ///
     /// - Parameters:

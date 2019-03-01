@@ -29,7 +29,6 @@ import Foundation
 /// Uses for making letter-based avatar images.
 @objc(LAKLetterAvatarBuilder)
 open class LetterAvatarBuilder: NSObject {
-    
     /// Makes a letter-based avatar image by using a given configuration.
     ///
     /// - Parameters:
@@ -82,13 +81,13 @@ open class LetterAvatarBuilder: NSObject {
                 // Process the firs name letter
                 if let letter = firstComponent.first {
                     letters.append(letter)
-                    lettersAssciValue += letter.asciiValue
+                    lettersAssciValue += letter.ASCIIValue
                 }
                 if !singleLetter {
                     // Process the last name letter
                     if let letter = lastComponent.first {
                         letters.append(letter)
-                        lettersAssciValue += letter.asciiValue
+                        lettersAssciValue += letter.ASCIIValue
                     }
                 }
             }
@@ -98,7 +97,7 @@ open class LetterAvatarBuilder: NSObject {
                 // Process the firs name letter
                 if let letter = component.first {
                     letters.append(letter)
-                    lettersAssciValue += letter.asciiValue
+                    lettersAssciValue += letter.ASCIIValue
                     // If single Letter is passed as false but the string is a single char,
                     // this line fails due to out of bounds exception.
                     // https://github.com/vpeschenkov/LetterAvatarKit/issues/11
@@ -109,7 +108,7 @@ open class LetterAvatarBuilder: NSObject {
                         let substring = component[startIndex..<endIndex].capitalized
                         if let letter = substring.first {
                             letters.append(letter)
-                            lettersAssciValue += letter.asciiValue
+                            lettersAssciValue += letter.ASCIIValue
                         }
                     }
                 }
