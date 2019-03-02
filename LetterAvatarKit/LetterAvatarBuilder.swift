@@ -24,7 +24,6 @@
 //
 
 import UIKit
-import Foundation
 
 /// Uses for making letter-based avatar images.
 @objc(LAKLetterAvatarBuilder)
@@ -42,13 +41,13 @@ open class LetterAvatarBuilder: NSObject {
         guard let username = configuration.username else {
             return drawAvatar(with: configuration, letters: "NA", backgroundColor: colors[0].cgColor)
         }
-        let usernameInfo = obtainUsernameInfo(
-            withUsername: username,
+        let usernameInfo = UsernameInfo(
+            username: username,
             singleLetter: configuration.singleLetter
         )
         var colorIndex = 0
         if colors.count > 1 {
-            colorIndex = usernameInfo.value
+            colorIndex = usernameInfo.ASCIIValue
             colorIndex *= 3557 // Prime number
             colorIndex %= colors.count - 1
         }
@@ -94,10 +93,30 @@ open class LetterAvatarBuilder: NSObject {
         return nil
     }
     
-    private func obtainUsernameInfo(
-        withUsername username: String,
-        singleLetter: Bool
-        ) -> (letters: String, value: Int) {
+    private func makeFitFont(withFont font: UIFont?, forSize size: CGSize) -> UIFont {
+        guard let font = font else {
+            return UIFont.systemFont(ofSize:min(size.height, size.width) / 2.0)
+        }
+        let fitFont = font.withSize(min(size.height, size.width) / 2.0)
+        return fitFont.pointSize < font.pointSize ? fitFont : font
+    }
+}
+
+private class UsernameInfo {
+    
+    public var letters: String {
+        return userInfo.letters
+    }
+    
+    public var ASCIIValue: Int {
+        return userInfo.value
+    }
+    
+    private let username: String
+    private let singleLetter: Bool
+    
+    private typealias InfoContainer = (letters: String, value: Int)
+    private lazy var userInfo: InfoContainer = {
         var letters = String()
         var lettersASCIIValue = 0
         // Obtains an array of words by using a given username
@@ -142,13 +161,10 @@ open class LetterAvatarBuilder: NSObject {
             }
         }
         return (letters: letters, value: lettersASCIIValue)
-    }
+    }()
     
-    private func makeFitFont(withFont font: UIFont?, forSize size: CGSize) -> UIFont {
-        guard let font = font else {
-            return UIFont.systemFont(ofSize:min(size.height, size.width) / 2.0)
-        }
-        let fitFont = font.withSize(min(size.height, size.width) / 2.0)
-        return fitFont.pointSize < font.pointSize ? fitFont : font
+    init(username: String, singleLetter: Bool) {
+        self.username = username
+        self.singleLetter = singleLetter
     }
 }
