@@ -39,7 +39,7 @@ open class LetterAvatarBuilderConfiguration: NSObject {
     open var singleLetter: Bool = false
     /// The letters font.
     @objc(lettersFont)
-    open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
+    open var lettersFont: UIFont = UIFont.systemFont(ofSize: 40.0)
     /// The letters colors.
     @objc(lettersColor)
     open var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)

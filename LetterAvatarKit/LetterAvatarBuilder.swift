@@ -67,6 +67,39 @@ open class LetterAvatarBuilder: NSObject {
         )
     }
     
+    private func drawAvatar(
+        size: CGSize,
+        letters: String,
+        lettersFont: UIFont,
+        lettersColor: UIColor,
+        backgroundColor: CGColor
+        ) -> UIImage? {
+        let rect = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
+        UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
+        if let context = UIGraphicsGetCurrentContext() {
+            context.setFillColor(backgroundColor)
+            context.fill(rect)
+            let style = NSParagraphStyle.default.mutableCopy()
+            let attributes = [
+                NSAttributedString.Key.paragraphStyle: style,
+                NSAttributedString.Key.font: calculatePreferredFont(withFont: lettersFont, for: rect.size),
+                NSAttributedString.Key.foregroundColor: lettersColor
+            ]
+            let lettersSize = letters.size(withAttributes: attributes)
+            let lettersRect = CGRect(
+                x: (rect.size.width - lettersSize.width) / 2.0,
+                y: (rect.size.height - lettersSize.height) / 2.0,
+                width: lettersSize.width,
+                height: lettersSize.height
+            )
+            letters.draw(in: lettersRect, withAttributes: attributes)
+            let avatarImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            return avatarImage
+        }
+        return nil
+    }
+    
     private func obtainUsernameInfo(
         withUsername username: String,
         singleLetter: Bool
@@ -117,36 +150,8 @@ open class LetterAvatarBuilder: NSObject {
         return (letters: letters, value: lettersAssciValue)
     }
     
-    private func drawAvatar(
-        size: CGSize,
-        letters: String,
-        lettersFont: UIFont,
-        lettersColor: UIColor,
-        backgroundColor: CGColor
-        ) -> UIImage? {
-        let rect = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
-        UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
-        if let context = UIGraphicsGetCurrentContext() {
-            context.setFillColor(backgroundColor)
-            context.fill(rect)
-            let style = NSParagraphStyle.default.mutableCopy()
-            let attributes = [
-                NSAttributedString.Key.paragraphStyle: style,
-                NSAttributedString.Key.font: lettersFont.withSize(min(size.height, size.width) / 2.0),
-                NSAttributedString.Key.foregroundColor: lettersColor
-            ]
-            let lettersSize = letters.size(withAttributes: attributes)
-            let lettersRect = CGRect(
-                x: (rect.size.width - lettersSize.width) / 2.0,
-                y: (rect.size.height - lettersSize.height) / 2.0,
-                width: lettersSize.width,
-                height: lettersSize.height
-            )
-            letters.draw(in: lettersRect, withAttributes: attributes)
-            let avatarImage = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
-            return avatarImage
-        }
-        return nil
+    private func calculatePreferredFont(withFont font: UIFont, for size: CGSize) -> UIFont {
+        let preferredFont = font.withSize(min(size.height, size.width) / 2.0)
+        return preferredFont.pointSize < font.pointSize ? preferredFont : font
     }
 }
