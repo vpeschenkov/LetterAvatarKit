@@ -37,7 +37,7 @@ extension UIImage {
     static public func makeLetterAvatar(
         withConfiguration configuration: LetterAvatarBuilderConfiguration
         ) -> UIImage? {
-        return LetterAvatarBuilder().makeAvatar(withConfiguration: configuration)
+        return LetterAvatarBuilder().makeAvatar(with: configuration)
     }
     
     /// Makes an letter-based avatar image using given username.
@@ -51,7 +51,7 @@ extension UIImage {
     static public func makeLetterAvatar(withUsername username: String?) -> UIImage? {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = username
-        return LetterAvatarBuilder().makeAvatar(withConfiguration: configuration)
+        return LetterAvatarBuilder().makeAvatar(with: configuration)
     }
     
     /// Makes an letter-based avatar image using given username and size.
@@ -67,7 +67,7 @@ extension UIImage {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = username
         configuration.size = size
-        return LetterAvatarBuilder().makeAvatar(withConfiguration: configuration)
+        return LetterAvatarBuilder().makeAvatar(with: configuration)
     }
     
 }

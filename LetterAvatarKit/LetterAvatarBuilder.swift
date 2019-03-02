@@ -37,16 +37,10 @@ open class LetterAvatarBuilder: NSObject {
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
     @objc(makeAvatarWithConfiguration:)
-    open func makeAvatar(withConfiguration configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
+    open func makeAvatar(with configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
         let colors = configuration.backgroundColors
         guard let username = configuration.username else {
-            return drawAvatar(
-                size: configuration.size,
-                letters: "NA",
-                lettersFont: configuration.lettersFont,
-                lettersColor: configuration.lettersColor,
-                backgroundColor: colors[0].cgColor
-            )
+            return drawAvatar(with: configuration, letters: "NA", backgroundColor: colors[0].cgColor)
         }
         let usernameInfo = obtainUsernameInfo(
             withUsername: username,
@@ -58,33 +52,29 @@ open class LetterAvatarBuilder: NSObject {
             colorIndex *= 3557 // Prime number
             colorIndex %= colors.count - 1
         }
-        return drawAvatar(
-            size: configuration.size,
-            letters: usernameInfo.letters,
-            lettersFont: configuration.lettersFont,
-            lettersColor: configuration.lettersColor,
-            backgroundColor: colors[colorIndex].cgColor
-        )
+        let backgroundColor = colors[colorIndex].cgColor
+        return drawAvatar(with: configuration, letters: usernameInfo.letters, backgroundColor: backgroundColor)
     }
     
     private func drawAvatar(
-        size: CGSize,
+        with configuration: LetterAvatarBuilderConfiguration,
         letters: String,
-        lettersFont: UIFont,
-        lettersColor: UIColor,
         backgroundColor: CGColor
         ) -> UIImage? {
-        let rect = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
-        UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
+        let rect = CGRect(x: 0.0, y: 0.0, width: configuration.size.width, height: configuration.size.height)
+        UIGraphicsBeginImageContextWithOptions(rect.size, true, UIScreen.main.scale)
         if let context = UIGraphicsGetCurrentContext() {
             context.setFillColor(backgroundColor)
             context.fill(rect)
-            let style = NSParagraphStyle.default.mutableCopy()
-            let attributes = [
-                NSAttributedString.Key.paragraphStyle: style,
-                NSAttributedString.Key.font: makeFitFont(withFont: lettersFont, forSize: rect.size),
-                NSAttributedString.Key.foregroundColor: lettersColor
-            ]
+            var attributes = configuration.lettersFontAttributes
+            if attributes == nil {
+                attributes = [
+                    .paragraphStyle: NSParagraphStyle.default.mutableCopy(),
+                    .font: makeFitFont(withFont: configuration.lettersFont, forSize: rect.size),
+                    .foregroundColor: configuration.lettersColor
+                ]
+            }
+
             let lettersSize = letters.size(withAttributes: attributes)
             let lettersRect = CGRect(
                 x: (rect.size.width - lettersSize.width) / 2.0,
@@ -150,7 +140,10 @@ open class LetterAvatarBuilder: NSObject {
         return (letters: letters, value: lettersASCIIValue)
     }
     
-    private func makeFitFont(withFont font: UIFont, forSize size: CGSize) -> UIFont {
+    private func makeFitFont(withFont font: UIFont?, forSize size: CGSize) -> UIFont {
+        guard let font = font else {
+            return UIFont.systemFont(ofSize:min(size.height, size.width) / 2.0)
+        }
         let fitFont = font.withSize(min(size.height, size.width) / 2.0)
         return fitFont.pointSize < font.pointSize ? fitFont : font
     }
