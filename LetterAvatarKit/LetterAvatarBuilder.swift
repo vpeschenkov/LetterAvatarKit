@@ -53,7 +53,11 @@ open class LetterAvatarBuilder: NSObject {
             colorIndex %= colors.count - 1
         }
         let backgroundColor = colors[colorIndex].cgColor
-        return drawAvatar(with: configuration, letters: usernameInfo.letters, backgroundColor: backgroundColor)
+        return drawAvatar(
+            with: configuration,
+            letters: usernameInfo.letters,
+            backgroundColor: backgroundColor
+        )
     }
     
     private func drawAvatar(
