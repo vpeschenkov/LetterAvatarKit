@@ -46,7 +46,7 @@ open class LetterAvatarBuilderConfiguration: NSObject {
     /// The background colors of a letter-based avatar.
     @objc(backgroundColors)
     open var backgroundColors: [UIColor] = UIColor.colors
-    /// The letters font.
+    /// The letters font attributes.
     @objc(lettersFontAttributes)
     open var lettersFontAttributes: [NSAttributedString.Key: Any]?
 }
