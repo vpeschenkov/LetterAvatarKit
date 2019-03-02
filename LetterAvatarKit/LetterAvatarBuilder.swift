@@ -82,7 +82,7 @@ open class LetterAvatarBuilder: NSObject {
             let style = NSParagraphStyle.default.mutableCopy()
             let attributes = [
                 NSAttributedString.Key.paragraphStyle: style,
-                NSAttributedString.Key.font: calculatePreferredFont(withFont: lettersFont, for: rect.size),
+                NSAttributedString.Key.font: makeFitFont(withFont: lettersFont, forSize: rect.size),
                 NSAttributedString.Key.foregroundColor: lettersColor
             ]
             let lettersSize = letters.size(withAttributes: attributes)
@@ -105,7 +105,7 @@ open class LetterAvatarBuilder: NSObject {
         singleLetter: Bool
         ) -> (letters: String, value: Int) {
         var letters = String()
-        var lettersAssciValue = 0
+        var lettersASCIIValue = 0
         // Obtains an array of words by using a given username
         let components = username.components(separatedBy: " ")
         // If there are whether two words or more
@@ -114,13 +114,13 @@ open class LetterAvatarBuilder: NSObject {
                 // Process the firs name letter
                 if let letter = firstComponent.first {
                     letters.append(letter)
-                    lettersAssciValue += letter.ASCIIValue
+                    lettersASCIIValue += letter.ASCIIValue
                 }
                 if !singleLetter {
                     // Process the last name letter
                     if let letter = lastComponent.first {
                         letters.append(letter)
-                        lettersAssciValue += letter.ASCIIValue
+                        lettersASCIIValue += letter.ASCIIValue
                     }
                 }
             }
@@ -130,7 +130,7 @@ open class LetterAvatarBuilder: NSObject {
                 // Process the firs name letter
                 if let letter = component.first {
                     letters.append(letter)
-                    lettersAssciValue += letter.ASCIIValue
+                    lettersASCIIValue += letter.ASCIIValue
                     // If single Letter is passed as false but the string is a single char,
                     // this line fails due to out of bounds exception.
                     // https://github.com/vpeschenkov/LetterAvatarKit/issues/11
@@ -141,17 +141,17 @@ open class LetterAvatarBuilder: NSObject {
                         let substring = component[startIndex..<endIndex].capitalized
                         if let letter = substring.first {
                             letters.append(letter)
-                            lettersAssciValue += letter.ASCIIValue
+                            lettersASCIIValue += letter.ASCIIValue
                         }
                     }
                 }
             }
         }
-        return (letters: letters, value: lettersAssciValue)
+        return (letters: letters, value: lettersASCIIValue)
     }
     
-    private func calculatePreferredFont(withFont font: UIFont, for size: CGSize) -> UIFont {
-        let preferredFont = font.withSize(min(size.height, size.width) / 2.0)
-        return preferredFont.pointSize < font.pointSize ? preferredFont : font
+    private func makeFitFont(withFont font: UIFont, forSize size: CGSize) -> UIFont {
+        let fitFont = font.withSize(min(size.height, size.width) / 2.0)
+        return fitFont.pointSize < font.pointSize ? fitFont : font
     }
 }
