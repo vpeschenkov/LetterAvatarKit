@@ -54,9 +54,9 @@
             
             <h1 id='letteravatarkit' class='heading'>LetterAvatarKit</h1>
 
-<p><img src="https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png" alt=""> <img src="https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master" alt=""> <img src="https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png" alt=""> <img src="https://img.shields.io/badge/swift-4.0-orange.svg?style=flat" alt=""> <img src="https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7" alt=""></p>
+<p><img src="https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png" alt=""> <img src="https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master" alt=""> <img src="https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png" alt=""> <img src="https://img.shields.io/badge/swift-4.2-orange.svg?style=flat" alt=""> <img src="https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7" alt=""></p>
 
-<p>LetterAvatarKit is an <code>UIImage</code> extension that generates letter-based avatars. Here are some images showing what LetterAvatarKit does:</p>
+<p><code>LetterAvatarKit</code> provides an <code>UIImage</code> extension for generating letter-based avatars. There are a few images showing what you can achive by using this framework:</p>
 
 <p><img src="https://i.imgur.com/n3SjH6q.jpg" alt=""></p>
 <h2 id='requirements' class='heading'>Requirements</h2>
@@ -68,52 +68,56 @@
 <h2 id='installation' class='heading'>Installation</h2>
 <h3 id='cocoapods' class='heading'>CocoaPods</h3>
 
-<p>To install LetterAvatarKit using CocoaPods, add this line to your Podfile:</p>
-<pre class="highlight plaintext"><code>pod "LetterAvatarKit", "1.1.6" # Swift 4.2
-pod "LetterAvatarKit", "1.1.5" # Swift 4.0
+<p>To install <code>LetterAvatarKit</code> using <code>CocoaPods</code>, add this line to your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.1.7"</span> <span class="c1"># Swift 4.2</span>
+<span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.1.5"</span> <span class="c1"># Swift 4.0</span>
 </code></pre>
 <h2 id='usage' class='heading'>Usage</h2>
-
-<p>You can configure the following properties of LetterAvatarBuilderConfiguration:</p>
-<pre class="highlight plaintext"><code>/// The size of an avatar image.
-open var size: CGSize = CGSize(width: 80, height: 80)
-</code></pre>
-<pre class="highlight plaintext"><code>/// The username.
-open var username: String?
-</code></pre>
-<pre class="highlight plaintext"><code>/// The flag that indicates of using single letter instead of two lettters.
-open var singleLetter: Bool = false
-</code></pre>
-<pre class="highlight plaintext"><code>/// The letters font.
-open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
-</code></pre>
-<pre class="highlight plaintext"><code>/// The letters colors
-open var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
-</code></pre>
-<pre class="highlight plaintext"><code>/// The background colors of an image.
-open var backgroundColors: [UIColor] = UIColor.colors
-</code></pre>
 <h3 id='swift' class='heading'>Swift</h3>
 
-<p>Using a configuration:</p>
-<pre class="highlight plaintext"><code>let configuration = LetterAvatarBuilderConfiguration()
-configuration.username = "Letter Avatar"
-avatarImageView?.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
+<p>By <code><a href="Classes/LetterAvatarBuilderConfiguration.html">LetterAvatarBuilderConfiguration</a></code>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="kt">LetterAvatarBuilderConfiguration</span><span class="p">()</span>
+<span class="n">configuration</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">"Letter Avatar"</span>
+<span class="n">avatarImageView</span><span class="p">?</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="o">.</span><span class="nf">makeLetterAvatar</span><span class="p">(</span><span class="nv">withConfiguration</span><span class="p">:</span> <span class="n">configuration</span><span class="p">)</span>
 </code></pre>
 
-<p>or</p>
-<pre class="highlight plaintext"><code>avatarImageView?.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
+<p>or simplier without the one:</p>
+<pre class="highlight swift"><code><span class="n">avatarImageView</span><span class="p">?</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="o">.</span><span class="nf">makeLetterAvatar</span><span class="p">(</span><span class="nv">withUsername</span><span class="p">:</span> <span class="s">"Letter Avatar"</span><span class="p">)</span>
 </code></pre>
 <h3 id='objective-c' class='heading'>Objective-C</h3>
 
 <p>Using a configuration:</p>
-<pre class="highlight plaintext"><code>LAKLetterAvatarBuilderCongiguration *configuration = [[LAKLetterAvatarBuilderCongiguration alloc] init];
-configuration.username = @"Letter Avatar";
-self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithConfiguration:configuration];
+<pre class="highlight objective_c"><code><span class="n">LAKLetterAvatarBuilderCongiguration</span> <span class="o">*</span><span class="n">configuration</span> <span class="o">=</span> <span class="p">[[</span><span class="n">LAKLetterAvatarBuilderCongiguration</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
+<span class="n">configuration</span><span class="p">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">@"Letter Avatar"</span><span class="p">;</span>
+<span class="n">self</span><span class="p">.</span><span class="n">avatarImageView</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImage</span> <span class="nf">lak_makeLetterAvatarWithConfiguration</span><span class="p">:</span><span class="n">configuration</span><span class="p">];</span>
 </code></pre>
 
-<p>or</p>
-<pre class="highlight plaintext"><code>self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithUsername:@"Letter Avatar"];
+<p>or simplier without the one:</p>
+<pre class="highlight objective_c"><code><span class="n">self</span><span class="p">.</span><span class="n">avatarImageView</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImage</span> <span class="nf">lak_makeLetterAvatarWithUsername</span><span class="p">:</span><span class="s">@"Letter Avatar"</span><span class="p">];</span>
+</code></pre>
+<h2 id='customization' class='heading'>Customization</h2>
+
+<p>You can configure the following properties of <code><a href="Classes/LetterAvatarBuilderConfiguration.html">LetterAvatarBuilderConfiguration</a></code>:</p>
+<pre class="highlight swift"><code><span class="c1">/// The size of an avatar image.</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="o">=</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">80</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">80</span><span class="p">)</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="c1">/// The username.</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="c1">/// The flag that indicates of using single letter instead of two lettters.</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">singleLetter</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="c1">/// The letters font.</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">lettersFont</span><span class="p">:</span> <span class="kt">UIFont</span> <span class="o">=</span> <span class="kt">UIFont</span><span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mf">16.0</span><span class="p">)</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="c1">/// The letters colors</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">lettersColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">LAKUIColorByRGB</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="mi">236</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="mi">240</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="mi">241</span><span class="p">)</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="c1">/// The background colors of an image.</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">backgroundColors</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIColor</span><span class="p">]</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">colors</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="c1">/// The letters font attributes.</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">lettersFontAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSAttributedString</span><span class="o">.</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span>
 </code></pre>
 <h2 id='community' class='heading'>Community</h2>
 
@@ -131,7 +135,7 @@ self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithConfiguration:conf
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2019-03-02)</p>
+          <p>&copy; 2019 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2019-03-03)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

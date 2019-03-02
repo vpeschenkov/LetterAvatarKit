@@ -1,5 +1,5 @@
 PODS:
-  - LetterAvatarKit (1.1.6)
+  - LetterAvatarKit (1.1.7)
 
 DEPENDENCIES:
   - LetterAvatarKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LetterAvatarKit: 8e10f84349688c5b04ee03b72507a2e08739010b
+  LetterAvatarKit: ec7c18ff8c35a522d329d120bd5fb4e9f29c1091
 
 PODFILE CHECKSUM: acab86cc8cc5517bd2b945abae924096efac0c35
 

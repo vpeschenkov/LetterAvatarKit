@@ -2,7 +2,7 @@
 
 ![][Platform] ![][Travis] ![][Pods] ![][Swift Version] ![][Codacy Badge]
 
-LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatars. Here are some images showing what LetterAvatarKit does:
+`LetterAvatarKit` provides an ```UIImage``` extension for generating letter-based avatars. There are a few images showing what you can achive by using this framework:
 
 ![][screenshots]
 
@@ -14,15 +14,43 @@ LetterAvatarKit is an ```UIImage``` extension that generates letter-based avatar
 
 ### CocoaPods
 
-To install LetterAvatarKit using CocoaPods, add this line to your Podfile:
+To install `LetterAvatarKit` using `CocoaPods`, add this line to your `Podfile`:
 ```ruby
-pod "LetterAvatarKit", "1.1.6" # Swift 4.2
+pod "LetterAvatarKit", "1.1.7" # Swift 4.2
 pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 ```
 
 ## Usage
 
-You can configure the following properties of LetterAvatarBuilderConfiguration:
+### Swift
+
+By `LetterAvatarBuilderConfiguration`:
+```swift
+let configuration = LetterAvatarBuilderConfiguration()
+configuration.username = "Letter Avatar"
+avatarImageView?.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
+```
+or simplier without the one:
+```swift
+avatarImageView?.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
+```
+
+### Objective-C
+
+Using a configuration:
+```objc
+LAKLetterAvatarBuilderCongiguration *configuration = [[LAKLetterAvatarBuilderCongiguration alloc] init];
+configuration.username = @"Letter Avatar";
+self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithConfiguration:configuration];
+```
+or simplier without the one:
+```objc
+self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithUsername:@"Letter Avatar"];
+```
+
+## Customization
+
+You can configure the following properties of `LetterAvatarBuilderConfiguration`:
 
 ```swift
 /// The size of an avatar image.
@@ -54,35 +82,14 @@ open var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241
 open var backgroundColors: [UIColor] = UIColor.colors
 ```
 
-### Swift
-
-Using a configuration:
 ```swift
-let configuration = LetterAvatarBuilderConfiguration()
-configuration.username = "Letter Avatar"
-avatarImageView?.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
-```
-or
-```swift
-avatarImageView?.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
-```
-
-### Objective-C
-
-Using a configuration:
-```objc
-LAKLetterAvatarBuilderCongiguration *configuration = [[LAKLetterAvatarBuilderCongiguration alloc] init];
-configuration.username = @"Letter Avatar";
-self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithConfiguration:configuration];
-```
-or
-```objc
-self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithUsername:@"Letter Avatar"];
+/// The letters font attributes.
+open var lettersFontAttributes: [NSAttributedString.Key: Any]?
 ```
 
 ## Community
 
-Questions, comments, issues, and pull requests are always welcome!
+Questions, comments, issues, and pull requests are welcome!
 
 ## Contacts
 
