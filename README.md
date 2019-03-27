@@ -16,6 +16,7 @@
 
 To install `LetterAvatarKit` using `CocoaPods`, add this line to your `Podfile`:
 ```ruby
+pod "LetterAvatarKit", "1.1.8" # Swift 5.0
 pod "LetterAvatarKit", "1.1.7" # Swift 4.2
 pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 ```
