@@ -105,5 +105,5 @@ Distributed under the MIT license. See [LICENSE](https://github.com/vpeschenkov/
 [Platform]: https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png
 [Travis]: https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master
 [Pods]: https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png
-[Swift Version]: https://img.shields.io/badge/swift-4.2-orange.svg?style=flat
+[Swift Version]: https://img.shields.io/badge/swift-5.0-orange.svg?style=flat
 [Codacy Badge]: https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7
