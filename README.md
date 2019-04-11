@@ -1,6 +1,6 @@
 # LetterAvatarKit
 
-![][Platform] ![][Travis] ![][Pods] ![][Swift Version] ![][Codacy Badge]
+![][Platform] ![][Travis] ![][Pods] ![][Carthage compatible] ![][Swift Version] ![][Codacy Badge]
 
 `LetterAvatarKit` provides an ```UIImage``` extension for generating letter-based avatars. There are a few images showing what you can achive by using this framework:
 
@@ -12,13 +12,28 @@
 
 ## Installation
 
-### CocoaPods
+### [CocoaPods](https://cocoapods.org)
 
-To install `LetterAvatarKit` using `CocoaPods`, add this line to your `Podfile`:
+`LetterAvatarKit` is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 ```ruby
 pod "LetterAvatarKit", "1.1.8" # Swift 5.0
 pod "LetterAvatarKit", "1.1.7" # Swift 4.2
 pod "LetterAvatarKit", "1.1.5" # Swift 4.0
+```
+
+### [Carthage](https://github.com/Carthage/Carthage)
+
+Add this to `Cartfile`
+
+```ruby
+github "vpeschenkov/LetterAvatarKit" == 1.1.8 # Swift 5.0
+github "vpeschenkov/LetterAvatarKit" == 1.1.7 # Swift 4.2
+github "vpeschenkov/LetterAvatarKit" == 1.1.5 # Swift 4.0
+```
+
+```sh
+$ carthage update
 ```
 
 ## Usage
@@ -107,3 +122,4 @@ Distributed under the MIT license. See [LICENSE](https://github.com/vpeschenkov/
 [Pods]: https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png
 [Swift Version]: https://img.shields.io/badge/swift-5.0-orange.svg?style=flat
 [Codacy Badge]: https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7
+[Carthage compatible]: https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat(https://github.com/Carthage/Carthage)
