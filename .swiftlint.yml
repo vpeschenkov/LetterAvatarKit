@@ -12,3 +12,11 @@ line_length:
 type_body_length:
   - 150
   - 150
+
+identifier_name:
+  excluded:
+    - c
+    - m
+    - to
+    - id
+    

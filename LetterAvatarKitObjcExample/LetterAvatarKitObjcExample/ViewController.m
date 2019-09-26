@@ -38,11 +38,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    LAKLetterAvatarBuilderConfiguration *configuration = [[LAKLetterAvatarBuilderConfiguration alloc] init];
+    LKLetterAvatarBuilderConfiguration *configuration = [[LKLetterAvatarBuilderConfiguration alloc] init];
     configuration.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width);
     configuration.username = @"Letter Avatar";
     
-    self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithConfiguration:configuration];
+    self.avatarImageView.image = [UIImage lk_makeLetterAvatarWithConfiguration:configuration];
 }
 
 @end

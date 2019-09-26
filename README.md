@@ -17,7 +17,7 @@
 `LetterAvatarKit` is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 ```ruby
-pod "LetterAvatarKit", "1.1.9" # Swift 5.0
+pod "LetterAvatarKit", "1.2.0" # Swift 5.0
 pod "LetterAvatarKit", "1.1.7" # Swift 4.2
 pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 ```
@@ -27,7 +27,7 @@ pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 Add this to `Cartfile`
 
 ```ruby
-github "vpeschenkov/LetterAvatarKit" == 1.1.9 # Swift 5.0
+github "vpeschenkov/LetterAvatarKit" == 1.2.0 # Swift 5.0
 github "vpeschenkov/LetterAvatarKit" == 1.1.7 # Swift 4.2
 github "vpeschenkov/LetterAvatarKit" == 1.1.5 # Swift 4.0
 ```
@@ -40,28 +40,44 @@ $ carthage update
 
 ### Swift
 
-By `LetterAvatarBuilderConfiguration`:
+Using `LetterAvatarMaker`:
+```swift
+let avatarImage = LetterAvatarMaker()
+    .setUsername("Letter Avatar")
+    .build()
+avatarImageView.image = avatarImage
+
+// Using closures
+let avatarImage = LetterAvatarMaker()
+    .build { c in
+        c.username = "Letter Avatar"
+    }
+avatarImageView.image = avatarImage
+```
+
+Using `LetterAvatarBuilderConfiguration`:
 ```swift
 let configuration = LetterAvatarBuilderConfiguration()
 configuration.username = "Letter Avatar"
-avatarImageView?.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
+avatarImageView.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
 ```
-or simplier without the one:
+
+Using UIImage extension:
 ```swift
-avatarImageView?.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
+avatarImageView.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
 ```
 
 ### Objective-C
 
-Using a configuration:
+Using `LKLetterAvatarBuilderCongiguration`:
 ```objc
-LAKLetterAvatarBuilderCongiguration *configuration = [[LAKLetterAvatarBuilderCongiguration alloc] init];
+LKLetterAvatarBuilderCongiguration *configuration = [[LKLetterAvatarBuilderCongiguration alloc] init];
 configuration.username = @"Letter Avatar";
-self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithConfiguration:configuration];
+self.avatarImageView.image = [UIImage lk_makeLetterAvatarWithConfiguration:configuration];
 ```
-or simplier without the one:
+Using UIImage extension:
 ```objc
-self.avatarImageView.image = [UIImage lak_makeLetterAvatarWithUsername:@"Letter Avatar"];
+self.avatarImageView.image = [UIImage lk_makeLetterAvatarWithUsername:@"Letter Avatar"];
 ```
 
 ## Customization
@@ -90,7 +106,7 @@ open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
 
 ```swift
 /// The letters colors
-open var lettersColor: UIColor = LAKUIColorByRGB(red: 236, green: 240, blue: 241)
+open var lettersColor: UIColor = LKUIColorByRGB(red: 236, green: 240, blue: 241)
 ```
 
 ```swift
