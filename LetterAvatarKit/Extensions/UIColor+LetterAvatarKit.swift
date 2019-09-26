@@ -31,8 +31,8 @@ import Foundation
 /// - Parameters:
 ///     - hex: HEX code.
 /// - Returns: The color by HEX code.
-func LAKUIColorByHEX(_ hex: Int) -> UIColor {
-    return LAKUIColorByRGB(
+func LKUIColorByHEX(_ hex: Int) -> UIColor {
+    return LKUIColorByRGB(
         red: CGFloat((hex & 0xFF0000) >> 16),
         green: CGFloat((hex & 0x00FF00) >> 8),
         blue: CGFloat((hex & 0x0000FF))
@@ -46,7 +46,7 @@ func LAKUIColorByHEX(_ hex: Int) -> UIColor {
 ///     - green: A value of the green color component.
 ///     - blue: A value of the blue color component.
 /// - Returns: A UIColor instance.
-func LAKUIColorByRGB(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
+func LKUIColorByRGB(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
     return UIColor(red: red / 255, green: green / 255, blue: blue / 255, alpha: CGFloat(1.0))
 }
 
@@ -99,25 +99,25 @@ extension UIColor {
         var colors = objc_getAssociatedObject(self, &ColorKey.value)
         if colors == nil {
             colors = [
-                LAKUIColorByHEX(HEXColor.turquoiseColor),
-                LAKUIColorByHEX(HEXColor.emeraldColor),
-                LAKUIColorByHEX(HEXColor.piterRiverColor),
-                LAKUIColorByHEX(HEXColor.amethystColor),
-                LAKUIColorByHEX(HEXColor.wetAsphaltColor),
-                LAKUIColorByHEX(HEXColor.greenSeaColor),
-                LAKUIColorByHEX(HEXColor.nephritisColor),
-                LAKUIColorByHEX(HEXColor.belizeHoldeColor),
-                LAKUIColorByHEX(HEXColor.wisteriaColor),
-                LAKUIColorByHEX(HEXColor.midnightBlueColor),
-                LAKUIColorByHEX(HEXColor.sunflowerColor),
-                LAKUIColorByHEX(HEXColor.carrotColor),
-                LAKUIColorByHEX(HEXColor.alizarinColor),
-                LAKUIColorByHEX(HEXColor.concreteColor),
-                LAKUIColorByHEX(HEXColor.orangeColor),
-                LAKUIColorByHEX(HEXColor.pumpkinColor),
-                LAKUIColorByHEX(HEXColor.pomegranateColor),
-                LAKUIColorByHEX(HEXColor.silverColor),
-                LAKUIColorByHEX(HEXColor.asbestosColor)
+                LKUIColorByHEX(HEXColor.turquoiseColor),
+                LKUIColorByHEX(HEXColor.emeraldColor),
+                LKUIColorByHEX(HEXColor.piterRiverColor),
+                LKUIColorByHEX(HEXColor.amethystColor),
+                LKUIColorByHEX(HEXColor.wetAsphaltColor),
+                LKUIColorByHEX(HEXColor.greenSeaColor),
+                LKUIColorByHEX(HEXColor.nephritisColor),
+                LKUIColorByHEX(HEXColor.belizeHoldeColor),
+                LKUIColorByHEX(HEXColor.wisteriaColor),
+                LKUIColorByHEX(HEXColor.midnightBlueColor),
+                LKUIColorByHEX(HEXColor.sunflowerColor),
+                LKUIColorByHEX(HEXColor.carrotColor),
+                LKUIColorByHEX(HEXColor.alizarinColor),
+                LKUIColorByHEX(HEXColor.concreteColor),
+                LKUIColorByHEX(HEXColor.orangeColor),
+                LKUIColorByHEX(HEXColor.pumpkinColor),
+                LKUIColorByHEX(HEXColor.pomegranateColor),
+                LKUIColorByHEX(HEXColor.silverColor),
+                LKUIColorByHEX(HEXColor.asbestosColor)
             ]
             objc_setAssociatedObject(self, &ColorKey.value, colors, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             return colors as? [ UIColor ] ?? []

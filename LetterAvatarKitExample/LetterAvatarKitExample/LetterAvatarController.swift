@@ -1,6 +1,6 @@
 //
-// LetterAvatarBuilderConfiguration.swift
-// LetterAvatarKit
+// ViewController.swift
+// LetterAvatarKitExample
 //
 // Copyright 2017 Victor Peschenkov
 //
@@ -23,30 +23,21 @@
 // THE SOFTWARE.
 //
 
-import Foundation
+import UIKit
+import LetterAvatarKit
 
-/// Uses for configurating a LetterAvatarBuilder instance.
-@objc(LKLetterAvatarBuilderConfiguration)
-open class LetterAvatarBuilderConfiguration: NSObject {
-    /// The size of an avatar image.
-    @objc(size)
-    open var size: CGSize = CGSize(width: 80, height: 80)
-    /// The username.
-    @objc(username)
-    open var username: String?
-    /// The flag that indicates of using single letter instead of two lettters.
-    @objc(singleLetter)
-    open var singleLetter: Bool = false
-    /// The letters font.
-    @objc(lettersFont)
-    open var lettersFont: UIFont?
-    /// The letters colors.
-    @objc(lettersColor)
-    open var lettersColor: UIColor = LKUIColorByRGB(red: 236, green: 240, blue: 241)
-    /// The background colors of a letter-based avatar.
-    @objc(backgroundColors)
-    open var backgroundColors: [UIColor] = UIColor.colors
-    /// The letters font attributes.
-    @objc(lettersFontAttributes)
-    open var lettersFontAttributes: [NSAttributedString.Key: Any]?
+class LetterAvatarController: UIViewController {
+    @IBOutlet var avatarImageView: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let width = UIScreen.main.bounds.size.width
+        let height = width
+        let avatarImage = LetterAvatarMaker()
+            .setUsername("Letter Avatar")
+            .setSize(CGSize(width: width, height: height))
+            .build()
+        avatarImageView.image = avatarImage
+    }
 }
+

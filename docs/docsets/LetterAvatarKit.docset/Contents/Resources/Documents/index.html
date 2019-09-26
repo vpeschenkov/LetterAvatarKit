@@ -13,7 +13,7 @@
     <a title="LetterAvatarKit  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">LetterAvatarKit Docs</a> (100% documented)</p>
+        <p><a href="index.html">LetterAvatarKit Docs</a> (78% documented)</p>
         <p class="header-right"><a href="https://github.com/vpeschenkov/LetterAvatarKit"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -42,6 +42,12 @@
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIColor.html#/s:So7UIColorC15LetterAvatarKitE8HEXColorO">– HEXColor</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Extensions/UIImage.html">UIImage</a>
               </li>
             </ul>
@@ -54,7 +60,7 @@
             
             <h1 id='letteravatarkit' class='heading'>LetterAvatarKit</h1>
 
-<p><img src="https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png" alt=""> <img src="https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master" alt=""> <img src="https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png" alt=""> <img src="https://img.shields.io/badge/swift-4.2-orange.svg?style=flat" alt=""> <img src="https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7" alt=""></p>
+<p><img src="https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png" alt=""> <img src="https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master" alt=""> <img src="https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png" alt=""> <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat(https://github.com/Carthage/Carthage)" alt=""> <img src="https://img.shields.io/badge/swift-5.0-orange.svg?style=flat" alt=""> <img src="https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7" alt=""></p>
 
 <p><code>LetterAvatarKit</code> provides an <code>UIImage</code> extension for generating letter-based avatars. There are a few images showing what you can achive by using this framework:</p>
 
@@ -66,34 +72,59 @@
 <li>Swift 4.0 and later</li>
 </ul>
 <h2 id='installation' class='heading'>Installation</h2>
-<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+<h3 id='a-href-https-cocoapods-org-cocoapods-a' class='heading'><a href="https://cocoapods.org">CocoaPods</a></h3>
 
-<p>To install <code>LetterAvatarKit</code> using <code>CocoaPods</code>, add this line to your <code>Podfile</code>:</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.1.7"</span> <span class="c1"># Swift 4.2</span>
+<p><code>LetterAvatarKit</code> is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.2.0"</span> <span class="c1"># Swift 5.0</span>
+<span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.1.7"</span> <span class="c1"># Swift 4.2</span>
 <span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.1.5"</span> <span class="c1"># Swift 4.0</span>
+</code></pre>
+<h3 id='a-href-https-github-com-carthage-carthage-carthage-a' class='heading'><a href="https://github.com/Carthage/Carthage">Carthage</a></h3>
+
+<p>Add this to <code>Cartfile</code></p>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.2</span><span class="o">.</span><span class="mi">0</span> <span class="c1"># Swift 5.0</span>
+<span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">7</span> <span class="c1"># Swift 4.2</span>
+<span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">5</span> <span class="c1"># Swift 4.0</span>
+</code></pre>
+<pre class="highlight shell"><code><span class="nv">$ </span>carthage update
 </code></pre>
 <h2 id='usage' class='heading'>Usage</h2>
 <h3 id='swift' class='heading'>Swift</h3>
 
-<p>By <code><a href="Classes/LetterAvatarBuilderConfiguration.html">LetterAvatarBuilderConfiguration</a></code>:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="kt">LetterAvatarBuilderConfiguration</span><span class="p">()</span>
-<span class="n">configuration</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">"Letter Avatar"</span>
-<span class="n">avatarImageView</span><span class="p">?</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="o">.</span><span class="nf">makeLetterAvatar</span><span class="p">(</span><span class="nv">withConfiguration</span><span class="p">:</span> <span class="n">configuration</span><span class="p">)</span>
+<p>Using <code>LetterAvatarMaker</code>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">avatarImage</span> <span class="o">=</span> <span class="kt">LetterAvatarMaker</span><span class="p">()</span>
+    <span class="o">.</span><span class="nf">setUsername</span><span class="p">(</span><span class="s">"Letter Avatar"</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">build</span><span class="p">()</span>
+<span class="n">avatarImageView</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">avatarImage</span>
+
+<span class="c1">// Using closures</span>
+<span class="k">let</span> <span class="nv">avatarImage</span> <span class="o">=</span> <span class="kt">LetterAvatarMaker</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">build</span> <span class="p">{</span> <span class="n">c</span> <span class="k">in</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">"Letter Avatar"</span>
+    <span class="p">}</span>
+<span class="n">avatarImageView</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">avatarImage</span>
 </code></pre>
 
-<p>or simplier without the one:</p>
-<pre class="highlight swift"><code><span class="n">avatarImageView</span><span class="p">?</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="o">.</span><span class="nf">makeLetterAvatar</span><span class="p">(</span><span class="nv">withUsername</span><span class="p">:</span> <span class="s">"Letter Avatar"</span><span class="p">)</span>
+<p>Using <code><a href="Classes/LetterAvatarBuilderConfiguration.html">LetterAvatarBuilderConfiguration</a></code>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="kt">LetterAvatarBuilderConfiguration</span><span class="p">()</span>
+<span class="n">configuration</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">"Letter Avatar"</span>
+<span class="n">avatarImageView</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="o">.</span><span class="nf">makeLetterAvatar</span><span class="p">(</span><span class="nv">withConfiguration</span><span class="p">:</span> <span class="n">configuration</span><span class="p">)</span>
+</code></pre>
+
+<p>Using UIImage extension:</p>
+<pre class="highlight swift"><code><span class="n">avatarImageView</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="o">.</span><span class="nf">makeLetterAvatar</span><span class="p">(</span><span class="nv">withUsername</span><span class="p">:</span> <span class="s">"Letter Avatar"</span><span class="p">)</span>
 </code></pre>
 <h3 id='objective-c' class='heading'>Objective-C</h3>
 
-<p>Using a configuration:</p>
-<pre class="highlight objective_c"><code><span class="n">LAKLetterAvatarBuilderCongiguration</span> <span class="o">*</span><span class="n">configuration</span> <span class="o">=</span> <span class="p">[[</span><span class="n">LAKLetterAvatarBuilderCongiguration</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
+<p>Using <code>LKLetterAvatarBuilderCongiguration</code>:</p>
+<pre class="highlight objective_c"><code><span class="n">LKLetterAvatarBuilderCongiguration</span> <span class="o">*</span><span class="n">configuration</span> <span class="o">=</span> <span class="p">[[</span><span class="n">LKLetterAvatarBuilderCongiguration</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
 <span class="n">configuration</span><span class="p">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">@"Letter Avatar"</span><span class="p">;</span>
-<span class="n">self</span><span class="p">.</span><span class="n">avatarImageView</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImage</span> <span class="nf">lak_makeLetterAvatarWithConfiguration</span><span class="p">:</span><span class="n">configuration</span><span class="p">];</span>
+<span class="n">self</span><span class="p">.</span><span class="n">avatarImageView</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImage</span> <span class="nf">lk_makeLetterAvatarWithConfiguration</span><span class="p">:</span><span class="n">configuration</span><span class="p">];</span>
 </code></pre>
 
-<p>or simplier without the one:</p>
-<pre class="highlight objective_c"><code><span class="n">self</span><span class="p">.</span><span class="n">avatarImageView</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImage</span> <span class="nf">lak_makeLetterAvatarWithUsername</span><span class="p">:</span><span class="s">@"Letter Avatar"</span><span class="p">];</span>
+<p>Using UIImage extension:</p>
+<pre class="highlight objective_c"><code><span class="n">self</span><span class="p">.</span><span class="n">avatarImageView</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImage</span> <span class="nf">lk_makeLetterAvatarWithUsername</span><span class="p">:</span><span class="s">@"Letter Avatar"</span><span class="p">];</span>
 </code></pre>
 <h2 id='customization' class='heading'>Customization</h2>
 
@@ -121,7 +152,7 @@
 </code></pre>
 <h2 id='community' class='heading'>Community</h2>
 
-<p>Questions, comments, issues, and pull requests are always welcome!</p>
+<p>Questions, comments, issues, and pull requests are welcome!</p>
 <h2 id='contacts' class='heading'>Contacts</h2>
 
 <ul>
@@ -135,7 +166,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2019-03-03)</p>
+          <p>&copy; 2019 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2019-09-26)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

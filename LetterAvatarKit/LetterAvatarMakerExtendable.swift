@@ -1,6 +1,6 @@
 //
-// ViewController.swift
-// LetterAvatarKitExample
+//  LetterAvatarMakerExtendable.swift
+//  LetterAvatarKit
 //
 // Copyright 2017 Victor Peschenkov
 //
@@ -23,19 +23,18 @@
 // THE SOFTWARE.
 //
 
-import UIKit
-import LetterAvatarKit
+import Foundation
 
-class ViewController: UIViewController {
-    @IBOutlet weak var avatarImageView: UIImageView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let configuration = LetterAvatarBuilderConfiguration()
-        configuration.size = CGSize(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.width)
-        configuration.username = "Letter Avatar"
-        avatarImageView?.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
-    }
+public protocol LetterAvatarMakerExtendable: NSObjectProtocol {
+    func setSize(_ size: CGSize) -> LetterAvatarMakerExtendable
+    func setUsername(_ username: String) -> LetterAvatarMakerExtendable
+    func setSingleLetter(_ singleLetter: Bool) -> LetterAvatarMakerExtendable
+    func setLettersFont(_ lettersFont: UIFont?) -> LetterAvatarMakerExtendable
+    func setLettersColor(_ lettersColor: UIColor) -> LetterAvatarMakerExtendable
+    func setBackgroundColors(_ backgroundColors: [UIColor]) -> LetterAvatarMakerExtendable
+    func setLettersFontAttributes(
+        _ lettersFontAttributes: [NSAttributedString.Key: Any]?
+    ) -> LetterAvatarMakerExtendable
+    func build(maker: (LetterAvatarBuilderConfiguration) -> Void) -> UIImage?
+    func build() -> UIImage?
 }
-

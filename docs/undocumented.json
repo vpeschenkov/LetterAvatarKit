@@ -1,6 +1,33 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/Extensions/UIColor+LetterAvatarKit.swift",
+      "line": 98,
+      "symbol": "UIColor.colors",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/LetterAvatarMaker.swift",
+      "line": null,
+      "symbol": "LetterAvatarMaker",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/LetterAvatarMaker.swift",
+      "line": 28,
+      "symbol": "LetterAvatarMaker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/LetterAvatarMakerExtendable.swift",
+      "line": 28,
+      "symbol": "LetterAvatarMakerExtendable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    }
   ],
-  "source_directory": "/Users/vpeschenkov/Documents/git/LetterAvatarKit.git"
+  "source_directory": "/Users/vpeschenkov/Documents/git/LetterAvatarKit"
 }

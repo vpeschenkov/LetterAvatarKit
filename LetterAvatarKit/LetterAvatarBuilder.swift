@@ -26,7 +26,7 @@
 import UIKit
 
 /// Uses for making letter-based avatar images.
-@objc(LAKLetterAvatarBuilder)
+@objc(LKLetterAvatarBuilder)
 open class LetterAvatarBuilder: NSObject {
     /// Makes a letter-based avatar image by using a given configuration.
     ///

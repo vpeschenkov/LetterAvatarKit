@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LetterAvatarBuilder Class Reference</title>
+    <title>UIColor Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/LetterAvatarBuilder" class="dashAnchor"></a>
-    <a title="LetterAvatarBuilder Class Reference"></a>
+    <a name="//apple_ref/swift/Extension/UIColor" class="dashAnchor"></a>
+    <a title="UIColor Extension Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">LetterAvatarKit Docs</a> (78% documented)</p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">LetterAvatarKit Reference</a>
         <img id="carat" src="../img/carat.png" />
-        LetterAvatarBuilder Class Reference
+        UIColor Extension Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -58,16 +58,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>LetterAvatarBuilder</h1>
+            <h1>UIColor</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">@objc(LKLetterAvatarBuilder)</span>
-<span class="kd">open</span> <span class="kd">class</span> <span class="kt">LetterAvatarBuilder</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">UIColor</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span><span class="p">,</span> <span class="kt">NSCopying</span></code></pre>
 
                 </div>
               </div>
-            <p>Uses for making letter-based avatar images.</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -75,9 +73,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilder(im)makeAvatarWithConfiguration:"></a>
-                    <a name="//apple_ref/swift/Method/makeAvatar(with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilder(im)makeAvatarWithConfiguration:">makeAvatar(with:)</a>
+                    <a name="/s:So7UIColorC15LetterAvatarKitE8HEXColorO"></a>
+                    <a name="//apple_ref/swift/Enum/HEXColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7UIColorC15LetterAvatarKitE8HEXColorO">HEXColor</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -85,41 +83,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Makes a letter-based avatar image by using a given configuration.</p>
+                        <p>Colors from <a href="http://flatuicolors.com/">http://flatuicolors.com/</a></p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(makeAvatarWithConfiguration:)</span>
-<span class="kd">open</span> <span class="kd">func</span> <span class="nf">makeAvatar</span><span class="p">(</span><span class="n">with</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/LetterAvatarBuilderConfiguration.html">LetterAvatarBuilderConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIImage</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">HEXColor</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>configuration</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The configuration that is used to draw a
-letter-based avatar image.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Returns whether an instance of UIImage or nil.</p>
                       </div>
                     </section>
                   </div>
