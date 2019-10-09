@@ -120,6 +120,11 @@ open var backgroundColors: [UIColor] = UIColor.colors
 open var lettersFontAttributes: [NSAttributedString.Key: Any]?
 ```
 
+```swift
+/// Indicates whether to generate circle or square image.
+open var isCircle: Bool = false
+```
+
 ## Community
 
 Questions, comments, issues, and pull requests are welcome!

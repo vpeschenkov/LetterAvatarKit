@@ -43,12 +43,6 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
     }
     
     @discardableResult
-    public func setSingleLetter(_ singleLetter: Bool) -> LetterAvatarMakerExtendable {
-        configuration.isSingleLettered = singleLetter
-        return self
-    }
-    
-    @discardableResult
     public func setLettersFont(_ lettersFont: UIFont?) -> LetterAvatarMakerExtendable {
         configuration.lettersFont = lettersFont
         return self
@@ -57,6 +51,12 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
     @discardableResult
     public func setLettersColor(_ lettersColor: UIColor) -> LetterAvatarMakerExtendable {
         configuration.lettersColor = lettersColor
+        return self
+    }
+    
+    @discardableResult
+    public func setSingleLettered(_ isSingleLettered: Bool) -> LetterAvatarMakerExtendable {
+        configuration.isSingleLettered = isSingleLettered
         return self
     }
     
@@ -71,6 +71,12 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
         _ lettersFontAttributes: [NSAttributedString.Key: Any]?
     ) -> LetterAvatarMakerExtendable {
         configuration.lettersFontAttributes = lettersFontAttributes
+        return self
+    }
+    
+    @discardableResult
+    public func setCircle(_ isCircle: Bool) -> LetterAvatarMakerExtendable {
+        configuration.isCircle = isCircle
         return self
     }
     

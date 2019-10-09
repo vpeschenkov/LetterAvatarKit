@@ -28,13 +28,14 @@ import Foundation
 public protocol LetterAvatarMakerExtendable: NSObjectProtocol {
     func setSize(_ size: CGSize) -> LetterAvatarMakerExtendable
     func setUsername(_ username: String) -> LetterAvatarMakerExtendable
-    func setSingleLetter(_ singleLetter: Bool) -> LetterAvatarMakerExtendable
     func setLettersFont(_ lettersFont: UIFont?) -> LetterAvatarMakerExtendable
     func setLettersColor(_ lettersColor: UIColor) -> LetterAvatarMakerExtendable
+    func setSingleLettered(_ isSingleLettered: Bool) -> LetterAvatarMakerExtendable
     func setBackgroundColors(_ backgroundColors: [UIColor]) -> LetterAvatarMakerExtendable
     func setLettersFontAttributes(
         _ lettersFontAttributes: [NSAttributedString.Key: Any]?
     ) -> LetterAvatarMakerExtendable
+    func setCircle(_ isCircle: Bool) -> LetterAvatarMakerExtendable
     func build(maker: (LetterAvatarBuilderConfiguration) -> Void) -> UIImage?
     func build() -> UIImage?
 }

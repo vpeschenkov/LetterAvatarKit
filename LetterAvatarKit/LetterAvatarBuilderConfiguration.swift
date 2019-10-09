@@ -50,4 +50,7 @@ open class LetterAvatarBuilderConfiguration: NSObject {
     /// The letters font attributes.
     @objc(lettersFontAttributes)
     open var lettersFontAttributes: [NSAttributedString.Key: Any]?
+    /// Indicates whether to generate circle or square image.
+    @objc(isCircle)
+    open var isCircle: Bool = false
 }

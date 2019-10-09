@@ -49,7 +49,7 @@ class LetterAvatarMakerTests: XCTestCase {
         // Make images
         let avatarImage = LetterAvatarMaker()
             .setUsername("Avatar Test")
-            .setSingleLetter(true)
+            .setSingleLettered(true)
             .build()
         let testImage = UIImage(named: "LetterAvatarSingleLetterTestImage")
         XCTAssertEqual(avatarImage, testImage)
@@ -80,7 +80,7 @@ class LetterAvatarMakerTests: XCTestCase {
     func testAvatarBuildWithOneWordUsernameAndSingleLetterFlag() {
         let avatarImage = LetterAvatarMaker()
             .setUsername("Avatar")
-            .setSingleLetter(true)
+            .setSingleLettered(true)
             .build()
         let testImage = UIImage(named: "LetterAvatarSingleLetterTestImage")
         XCTAssertEqual(avatarImage, testImage)
@@ -89,7 +89,7 @@ class LetterAvatarMakerTests: XCTestCase {
     func testAvatarBuildWithOnlyOneBackgroundColor() {
         let avatarImage = LetterAvatarMaker()
             .setUsername("Avatar")
-            .setSingleLetter(true)
+            .setSingleLettered(true)
             .setBackgroundColors([ .red ])
             .build()
         XCTAssertNotNil(avatarImage)
@@ -101,7 +101,7 @@ class LetterAvatarMakerTests: XCTestCase {
     func testAvatarBuildFailureCannotIncrementBeyondEndIndex() {
         let avatarImage = LetterAvatarMaker()
             .setUsername("N")
-            .setSingleLetter(true)
+            .setSingleLettered(true)
             .setBackgroundColors([ .red ])
             .build()
         XCTAssertNotNil(avatarImage)
