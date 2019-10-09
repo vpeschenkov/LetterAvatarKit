@@ -1,5 +1,5 @@
 //
-// UIImage+TestsUtilities.swift
+// UIImage+Compare.swift
 // LetterAvatarKitTests
 //
 // Copyright 2017 Victor Peschenkov
@@ -23,29 +23,15 @@
 // THE SOFTWARE.
 //
 
-import UIKit
+#import <UIKit/UIKit.h>
 
-extension UIImage {
-    
-    /// Returns the named image from test bundle.
-    ///
-    /// - name: The name of the image. For images in asset
-    /// catalogs, specify the name of the image asset. For PNG
-    /// image files, specify the filename without the filename
-    /// extension. For all other image file formats, include
-    /// the filename extension in the name.
-    convenience init?(named name: String) {
-        self.init(
-            named: name,
-            in: Bundle(identifier: "org.peschenkov.LetterAvatarKit.LetterAvatarKitTests"),
-            compatibleWith: nil
-        )
-    }
-    
-    open override func isEqual(_ object: Any?) -> Bool {
-        guard let image = object as? UIImage else {
-            return false
-        }
-        return self.lk_compare(with: image, tolerance: 0.90)
-    }
-}
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UIImage (Compare)
+
+- (BOOL)lk_compareWithImage:(UIImage *)image
+                  tolerance:(CGFloat)tolerance;
+
+@end
+
+NS_ASSUME_NONNULL_END

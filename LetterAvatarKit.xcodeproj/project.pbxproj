@@ -12,6 +12,7 @@
 		351F38A51FAA38D10077F001 /* LetterAvatarSingleLetterTestImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F38A41FAA38D10077F001 /* LetterAvatarSingleLetterTestImage@2x.png */; };
 		351F6CEF1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F6CED1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@3x.png */; };
 		351F6CF01FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351F6CEE1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@2x.png */; };
+		358E9E3D234E941900B8F8D7 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 358E9E3C234E941900B8F8D7 /* UIImage+Compare.m */; };
 		3591E079233C233F0041B834 /* LetterAvatarMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591E078233C233F0041B834 /* LetterAvatarMakerExtendable.swift */; };
 		3591E07B233C24830041B834 /* LetterAvatarMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591E07A233C24830041B834 /* LetterAvatarMaker.swift */; };
 		3591E07D233C26A50041B834 /* LetterAvatarMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591E07C233C26A50041B834 /* LetterAvatarMakerTests.swift */; };
@@ -50,6 +51,9 @@
 		351F38A41FAA38D10077F001 /* LetterAvatarSingleLetterTestImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LetterAvatarSingleLetterTestImage@2x.png"; sourceTree = "<group>"; };
 		351F6CED1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LetterAvatarOneWordTestImage@3x.png"; sourceTree = "<group>"; };
 		351F6CEE1FA3F9A8003059D2 /* LetterAvatarOneWordTestImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LetterAvatarOneWordTestImage@2x.png"; sourceTree = "<group>"; };
+		358E9E39234E940100B8F8D7 /* LetterAvatarKitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		358E9E3B234E941900B8F8D7 /* UIImage+Compare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compare.h"; sourceTree = "<group>"; };
+		358E9E3C234E941900B8F8D7 /* UIImage+Compare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compare.m"; sourceTree = "<group>"; };
 		3591E078233C233F0041B834 /* LetterAvatarMakerExtendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterAvatarMakerExtendable.swift; sourceTree = "<group>"; };
 		3591E07A233C24830041B834 /* LetterAvatarMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterAvatarMaker.swift; sourceTree = "<group>"; };
 		3591E07C233C26A50041B834 /* LetterAvatarMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterAvatarMakerTests.swift; sourceTree = "<group>"; };
@@ -134,7 +138,10 @@
 		EB821DFA1F98C0D4009B3775 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				358E9E3B234E941900B8F8D7 /* UIImage+Compare.h */,
+				358E9E3C234E941900B8F8D7 /* UIImage+Compare.m */,
 				EB821DFB1F98C233009B3775 /* UIImage+TestsUtilities.swift */,
+				358E9E39234E940100B8F8D7 /* LetterAvatarKitTests-Bridging-Header.h */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -251,7 +258,7 @@
 					};
 					EB8EC4111F85929E000B7641 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -327,6 +334,7 @@
 				EB821DFC1F98C233009B3775 /* UIImage+TestsUtilities.swift in Sources */,
 				3591E07D233C26A50041B834 /* LetterAvatarMakerTests.swift in Sources */,
 				EB516B6E1F88110A00BEA1F2 /* UIImage+LetterAvatarKitTests.swift in Sources */,
+				358E9E3D234E941900B8F8D7 /* UIImage+Compare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,11 +523,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LetterAvatarKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.peschenkov.LetterAvatarKit.LetterAvatarKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LetterAvatarKitTests/Utilities/LetterAvatarKitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -529,11 +540,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LetterAvatarKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.peschenkov.LetterAvatarKit.LetterAvatarKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LetterAvatarKitTests/Utilities/LetterAvatarKitTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
