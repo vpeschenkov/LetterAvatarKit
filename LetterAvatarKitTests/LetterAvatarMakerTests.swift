@@ -74,7 +74,7 @@ class LetterAvatarMakerTests: XCTestCase {
             .setUsername("Letter Test Avatar")
             .build()
         let testImage = UIImage(named: "LetterAvatarTestImage")
-        XCTAssertEqual(avatarImage, testImage)
+        XCTAssertNotEqual(avatarImage, testImage)
     }
     
     func testAvatarBuildWithOneWordUsernameAndSingleLetterFlag() {

@@ -34,7 +34,8 @@ open class LetterAvatarBuilderConfiguration: NSObject {
     /// The username.
     @objc(username)
     open var username: String?
-    /// The flag that indicates of using single letter instead of two lettters.
+    /// The flag that indicates of using single only one letter, otherwise,
+    /// as much as wil be possible to obtain. But no more than 3 letters.
     @objc(singleLetter)
     open var singleLetter: Bool = false
     /// The letters font.

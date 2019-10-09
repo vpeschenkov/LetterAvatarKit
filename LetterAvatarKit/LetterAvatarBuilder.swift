@@ -123,15 +123,17 @@ private class UsernameInfo {
         let components = username.components(separatedBy: " ")
         // If there are whether two words or more
         if components.count > 1 {
-            if let firstComponent = components.first, let lastComponent = components.last {
-                // Process the firs name letter
-                if let letter = firstComponent.first {
-                    letters.append(letter)
-                    lettersASCIIValue += letter.ASCIIValue
+            if !singleLetter {
+                for component in components.prefix(3) {
+                    if let letter = component.first {
+                        letters.append(letter)
+                        lettersASCIIValue += letter.ASCIIValue
+                    }
                 }
-                if !singleLetter {
-                    // Process the last name letter
-                    if let letter = lastComponent.first {
+            } else {
+                if let firstComponent = components.first {
+                    // Process the firs name letter
+                    if let letter = firstComponent.first {
                         letters.append(letter)
                         lettersASCIIValue += letter.ASCIIValue
                     }
