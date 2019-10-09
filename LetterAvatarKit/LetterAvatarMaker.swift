@@ -44,7 +44,7 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
     
     @discardableResult
     public func setSingleLetter(_ singleLetter: Bool) -> LetterAvatarMakerExtendable {
-        configuration.singleLetter = singleLetter
+        configuration.isSingleLettered = singleLetter
         return self
     }
     

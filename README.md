@@ -97,7 +97,7 @@ open var username: String?
 ```swift
 /// The flag that indicates of using single only one letter, otherwise,
 /// as much as wil be possible to obtain. But no more than 3 letters.
-open var singleLetter: Bool = false
+open var isSingleLettered: Bool = false
 ```
 
 ```swift

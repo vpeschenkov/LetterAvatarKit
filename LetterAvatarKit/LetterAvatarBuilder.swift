@@ -43,7 +43,7 @@ open class LetterAvatarBuilder: NSObject {
         }
         let usernameInfo = UsernameInfo(
             username: username,
-            singleLetter: configuration.singleLetter
+            singleLetter: configuration.isSingleLettered
         )
         var colorIndex = 0
         if colors.count > 1 {
@@ -113,7 +113,7 @@ private class UsernameInfo {
     }
     
     private let username: String
-    private let singleLetter: Bool
+    private let isSingleLettered: Bool
     
     private typealias InfoContainer = (letters: String, value: Int)
     private lazy var userInfo: InfoContainer = {
@@ -123,7 +123,7 @@ private class UsernameInfo {
         let components = username.components(separatedBy: " ")
         // If there are whether two words or more
         if components.count > 1 {
-            if !singleLetter {
+            if !isSingleLettered {
                 for component in components.prefix(3) {
                     if let letter = component.first {
                         letters.append(letter)
@@ -149,7 +149,7 @@ private class UsernameInfo {
                     // If single Letter is passed as false but the string is a single char,
                     // this line fails due to out of bounds exception.
                     // https://github.com/vpeschenkov/LetterAvatarKit/issues/11
-                    if !singleLetter && component.count >= 2 {
+                    if !isSingleLettered && component.count >= 2 {
                         // Process the second name letter
                         let startIndex = component.index(after: component.startIndex)
                         let endIndex = component.index(component.startIndex, offsetBy: 2)
@@ -167,6 +167,6 @@ private class UsernameInfo {
     
     init(username: String, singleLetter: Bool) {
         self.username = username
-        self.singleLetter = singleLetter
+        self.isSingleLettered = singleLetter
     }
 }
