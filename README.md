@@ -17,7 +17,7 @@
 `LetterAvatarKit` is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 ```ruby
-pod "LetterAvatarKit", "1.2.0" # Swift 5.0
+pod "LetterAvatarKit", "1.2.1" # Swift 5.0
 pod "LetterAvatarKit", "1.1.7" # Swift 4.2
 pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 ```
@@ -27,7 +27,7 @@ pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 Add this to `Cartfile`
 
 ```ruby
-github "vpeschenkov/LetterAvatarKit" == 1.2.0 # Swift 5.0
+github "vpeschenkov/LetterAvatarKit" == 1.2.1 # Swift 5.0
 github "vpeschenkov/LetterAvatarKit" == 1.1.7 # Swift 4.2
 github "vpeschenkov/LetterAvatarKit" == 1.1.5 # Swift 4.0
 ```
@@ -57,8 +57,11 @@ let circleAvatarImage = LetterAvatarMaker()
     .setBackgroundColors([ .red ])
     .build()
 avatarImageView.image = circleAvatarImage
+```
 
-// Using closures
+Using `LetterAvatarMaker` with closures:
+
+```swift
 let avatarImage = LetterAvatarMaker()
     .build { c in
         c.username = "Letter Avatar"
@@ -105,13 +108,13 @@ self.avatarImageView.image = [UIImage lk_makeLetterAvatarWithUsername:@"Letter A
 You can configure the following properties of `LetterAvatarBuilderConfiguration`:
 
 ```swift
-/// The size of an avatar image.
-open var size: CGSize = CGSize(width: 80, height: 80)
+/// The username.
+open var username: String?
 ```
 
 ```swift
-/// The username.
-open var username: String?
+/// The size of an avatar image.
+open var size: CGSize = CGSize(width: 80, height: 80)
 ```
 
 ```swift
