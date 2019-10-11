@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0978367E3F5451F340CA495C4FFDB859 /* Pods-LetterAvatarKitObjcExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88633E760E91F5DB5655075DC75A60E1 /* Pods-LetterAvatarKitObjcExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31C19330A09EA010A3F16331279E4278 /* LetterAvatarKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DF75344145864544FBAD0071A5193A /* LetterAvatarKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EAC7C4CAD6C4D39A1371DDBC49CC1D8 /* Character+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091BB612808CA8A85704AEA7D3963340 /* Character+LetterAvatarKit.swift */; };
-		5FE050AE22C3F548BD61D2EDD086D61C /* LetterAvatarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E9780D36A1F0725F274FA4A5881A1915 /* LetterAvatarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		775BA76DFD2A0DE79C8F2D7438F42B35 /* UIImage+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC50D6688CF055905D245F8DAC6B87 /* UIImage+LetterAvatarKit.swift */; };
-		84E9878917DE3C1002D47A74D33E4AD7 /* LetterAvatarMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE442884C5DC6143CBD27E6FAC513852 /* LetterAvatarMakerExtendable.swift */; };
-		88603C964B151DC40E6B24B96D201FE3 /* LetterAvatarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E097EB4811FA8FCCCA1F8AA51C2F3 /* LetterAvatarKit-dummy.m */; };
-		AF0D1F005C4B6E8A60CFE21F061D1046 /* UIColor+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAD5F8C3D58BEA98CEA402AC718511 /* UIColor+LetterAvatarKit.swift */; };
+		31C19330A09EA010A3F16331279E4278 /* LetterAvatarKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AB794DBA7D3FC57F1CE52437FF92E1 /* LetterAvatarKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EAC7C4CAD6C4D39A1371DDBC49CC1D8 /* Character+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECEB5DDF01C1A0EB8418234BA17452 /* Character+LetterAvatarKit.swift */; };
+		5FE050AE22C3F548BD61D2EDD086D61C /* LetterAvatarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCCAA4FF8B6649CE22562854BFC69F /* LetterAvatarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775BA76DFD2A0DE79C8F2D7438F42B35 /* UIImage+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DF090B2D999F9611E4367EEC38BAA /* UIImage+LetterAvatarKit.swift */; };
+		84E9878917DE3C1002D47A74D33E4AD7 /* LetterAvatarMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F265110D2453F4BA9536A5B157965 /* LetterAvatarMakerExtendable.swift */; };
+		88603C964B151DC40E6B24B96D201FE3 /* LetterAvatarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBC4D9458F23B38DA6C5B5F0834B76 /* LetterAvatarKit-dummy.m */; };
+		AF0D1F005C4B6E8A60CFE21F061D1046 /* UIColor+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9BF32A454FA11EA9B0A51D7585499E /* UIColor+LetterAvatarKit.swift */; };
 		AF7D8AFC7327015369033C95DABFA39F /* Pods-LetterAvatarKitObjcExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C50D087AE41542C5113C0257B89E33B /* Pods-LetterAvatarKitObjcExample-dummy.m */; };
-		B350CC59DE13BBB76419ABDB7F945814 /* LetterAvatarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5513DFB623FEF9F5DC4C6E112F8BCB82 /* LetterAvatarBuilder.swift */; };
-		B58EAABF9B2A52A942D58EF8A7B7BFC6 /* String+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AD5131AF5BDC64B64BF4724C70254 /* String+LetterAvatarKit.swift */; };
-		B9DAF5BAC6CE2077BCDE8AD5AFD48B9C /* LetterAvatarMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320AC2954D41608D06513E5877DFBF6 /* LetterAvatarMaker.swift */; };
+		B350CC59DE13BBB76419ABDB7F945814 /* LetterAvatarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC7E67B4ACCE8D3C71AF49056DA9A8 /* LetterAvatarBuilder.swift */; };
+		B58EAABF9B2A52A942D58EF8A7B7BFC6 /* String+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F719F05868B0CE9C301D85F81B90A5 /* String+LetterAvatarKit.swift */; };
+		B9DAF5BAC6CE2077BCDE8AD5AFD48B9C /* LetterAvatarMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76265D46F45CA31F735AE944955F3090 /* LetterAvatarMaker.swift */; };
 		C93C3F559078166255FF89BE6FD61702 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		D74AEE3035A37B4370BE770B833C071F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 		D7BFE5ED63239496A5F8D21165DD050F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		E39D3B670AF23127D1C9834507FD11E6 /* LetterAvatarBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD091DA3DF05EAEA62F720EA60DAB65 /* LetterAvatarBuilderConfiguration.swift */; };
+		E39D3B670AF23127D1C9834507FD11E6 /* LetterAvatarBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D288C2A8894EFA80619913FAE56490 /* LetterAvatarBuilderConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,70 +36,72 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04C84C194331C42EA371262EFD843010 /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = docSet.dsidx; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
-		087A82C3D01620996D70D255A5DDCCE0 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = highlight.css; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
-		091BB612808CA8A85704AEA7D3963340 /* Character+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Character+LetterAvatarKit.swift"; sourceTree = "<group>"; };
-		0F3AD5131AF5BDC64B64BF4724C70254 /* String+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+LetterAvatarKit.swift"; sourceTree = "<group>"; };
-		128FCDA4A788FAE0F33FFE2CF31722FB /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
+		07AB794DBA7D3FC57F1CE52437FF92E1 /* LetterAvatarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-umbrella.h"; sourceTree = "<group>"; };
+		0BA107F8470A3DD3D9280D7A375347FD /* LetterAvatarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-prefix.pch"; sourceTree = "<group>"; };
+		0D83C87F7D61A27F12A19E22B3173F2D /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/Classes.html; sourceTree = "<group>"; };
+		123252F631A8F393863B15A216C1513D /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
 		15F9CCA5786FEF74B11D867FB973DEE0 /* Pods-LetterAvatarKitObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetterAvatarKitObjcExample-frameworks.sh"; sourceTree = "<group>"; };
-		1608D59F01782D1356104EDFF6E4B3FE /* LetterAvatarKit.tgz */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = LetterAvatarKit.tgz; path = docs/docsets/LetterAvatarKit.tgz; sourceTree = "<group>"; };
-		1DD091DA3DF05EAEA62F720EA60DAB65 /* LetterAvatarBuilderConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarBuilderConfiguration.swift; path = LetterAvatarKit/LetterAvatarBuilderConfiguration.swift; sourceTree = "<group>"; };
-		1DEAFB481E68CAE4159E1B091BDEABE7 /* LetterAvatarKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LetterAvatarKit-Info.plist"; sourceTree = "<group>"; };
-		1FA1866AF7E1090D4ED3E98A2897C73F /* LetterAvatarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-prefix.pch"; sourceTree = "<group>"; };
-		21E380550FE288A5A213C9C7369DCFA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		24DB9D4D86EDE5616A7FF0936AE20D50 /* LetterAvatarKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LetterAvatarKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2658F7A7631BF207DFC4C00BA3355C2C /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
-		288D92F759F015E16DCBC461EA234906 /* LetterAvatarBuilderConfiguration.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = LetterAvatarBuilderConfiguration.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Classes/LetterAvatarBuilderConfiguration.html; sourceTree = "<group>"; };
-		2C6E097EB4811FA8FCCCA1F8AA51C2F3 /* LetterAvatarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetterAvatarKit-dummy.m"; sourceTree = "<group>"; };
-		2F36B3B130BD441758DE37B113F29E83 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = jazzy.css; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
-		2F690EFD56143B5304BA65F621E2A9EB /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
-		30DAD5F8C3D58BEA98CEA402AC718511 /* UIColor+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		1686ED9EC1754982B62A4E2FCEEDA239 /* LetterAvatarKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LetterAvatarKit-Info.plist"; sourceTree = "<group>"; };
+		19F6558309DB4FD505632F2AF35C0AE7 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		32914F5E3E272C0E329A2319500ACCF8 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
+		312CDE39B9D1BC49B92A78237DB39F98 /* LetterAvatarBuilderConfiguration.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarBuilderConfiguration.html; path = docs/Classes/LetterAvatarBuilderConfiguration.html; sourceTree = "<group>"; };
+		3225B610822FFF2265134C92F7E6ACC2 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
+		353245E92E269EFC1F09D150390FC13E /* LetterAvatarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetterAvatarKit.xcconfig; sourceTree = "<group>"; };
+		38205A8531F7E916E7E4642B60340D7B /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
 		3F75AFED5837C88AEF197D47BAA22140 /* Pods-LetterAvatarKitObjcExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetterAvatarKitObjcExample-Info.plist"; sourceTree = "<group>"; };
-		3FD3CB358DF937204C75835BBC1E1F84 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
+		435363007DD6E5E6CF321B4D3A9ABB77 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		440EF9603912CC15CDDB0E67B435B892 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
-		47BF3370EE3758E4E5141F750130C9B0 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = search.json; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
-		499F988B65BBCA5FCEC8E5703B62EDCB /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
+		45297D5EDDC0D4EE752B938CD25940FF /* LetterAvatarBuilderConfiguration.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarBuilderConfiguration.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Classes/LetterAvatarBuilderConfiguration.html; sourceTree = "<group>"; };
 		4C50D087AE41542C5113C0257B89E33B /* Pods-LetterAvatarKitObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LetterAvatarKitObjcExample-dummy.m"; sourceTree = "<group>"; };
-		5513DFB623FEF9F5DC4C6E112F8BCB82 /* LetterAvatarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarBuilder.swift; path = LetterAvatarKit/LetterAvatarBuilder.swift; sourceTree = "<group>"; };
-		563250A697FB009E508EB46B20DE1ADA /* LetterAvatarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LetterAvatarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C51C23361C1B7FD2BD39F56EA51E950 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
+		50DF8C1FB951CCD5512D371876B30218 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
+		563250A697FB009E508EB46B20DE1ADA /* LetterAvatarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LetterAvatarKit.framework; path = LetterAvatarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		575456FB39CC6683D8FDA84DB3CBF9E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/LetterAvatarKit.docset/Contents/Info.plist; sourceTree = "<group>"; };
 		57DA105AAD84B0803F512F9AEAC73BE0 /* Pods-LetterAvatarKitObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetterAvatarKitObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		5A870F85A7EB9C75F90179000AC784DB /* LetterAvatarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LetterAvatarKit.modulemap; sourceTree = "<group>"; };
+		5ABBC4D9458F23B38DA6C5B5F0834B76 /* LetterAvatarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetterAvatarKit-dummy.m"; sourceTree = "<group>"; };
+		5C5AF5110275E531D68AE386024C94D5 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
+		633B61E25A133A5A30D36523108A0FBB /* UIColor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIColor.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Extensions/UIColor.html; sourceTree = "<group>"; };
+		6E3DF090B2D999F9611E4367EEC38BAA /* UIImage+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		6EDAB50B5720BCC8EE0074B007E33C57 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
 		72BBB8D54CE353B808481EBAFCAD212B /* Pods-LetterAvatarKitObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetterAvatarKitObjcExample.release.xcconfig"; sourceTree = "<group>"; };
-		76F432FC8CB5B42508EF47626C5B245A /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = index.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
-		79111A0BCB398516C39D33B55EED7CC2 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
+		745DD5D6AA31D8FAA73A64B779178412 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
+		75D5DE0AD7635D1C151A4D75910BCDF8 /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; name = docSet.dsidx; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
+		76265D46F45CA31F735AE944955F3090 /* LetterAvatarMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarMaker.swift; path = LetterAvatarKit/LetterAvatarMaker.swift; sourceTree = "<group>"; };
+		779F265110D2453F4BA9536A5B157965 /* LetterAvatarMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarMakerExtendable.swift; path = LetterAvatarKit/LetterAvatarMakerExtendable.swift; sourceTree = "<group>"; };
 		7A59E7C021AB8A1E75725C609C654583 /* Pods-LetterAvatarKitObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetterAvatarKitObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
-		8307B5D1B02867FB16F8E0FF4C929CDC /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
-		8320AC2954D41608D06513E5877DFBF6 /* LetterAvatarMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarMaker.swift; path = LetterAvatarKit/LetterAvatarMaker.swift; sourceTree = "<group>"; };
-		8325C5C35A9FB30F36600704070AABCD /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
+		7ACED043FF9E44B347F98FB468A2C946 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
+		7DECEB5DDF01C1A0EB8418234BA17452 /* Character+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Character+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		7FEC7E67B4ACCE8D3C71AF49056DA9A8 /* LetterAvatarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarBuilder.swift; path = LetterAvatarKit/LetterAvatarBuilder.swift; sourceTree = "<group>"; };
 		83D3FFFE41744BA1AB17EE94FB5D3222 /* Pods-LetterAvatarKitObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LetterAvatarKitObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		84891BB7EE84E87C39498943CC5DCD97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		85D288C2A8894EFA80619913FAE56490 /* LetterAvatarBuilderConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarBuilderConfiguration.swift; path = LetterAvatarKit/LetterAvatarBuilderConfiguration.swift; sourceTree = "<group>"; };
 		88633E760E91F5DB5655075DC75A60E1 /* Pods-LetterAvatarKitObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LetterAvatarKitObjcExample-umbrella.h"; sourceTree = "<group>"; };
-		8E5CE5A2BCC118459D150C7A447865F6 /* LetterAvatarBuilderConfiguration.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = LetterAvatarBuilderConfiguration.html; path = docs/Classes/LetterAvatarBuilderConfiguration.html; sourceTree = "<group>"; };
-		8F50CDF4DE88CDA6AD71461BA5F5D042 /* LetterAvatarBuilder.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = LetterAvatarBuilder.html; path = docs/Classes/LetterAvatarBuilder.html; sourceTree = "<group>"; };
-		932732F9AFCEA473ED78F93093E5FD2A /* LetterAvatarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetterAvatarKit.xcconfig; sourceTree = "<group>"; };
-		955A7C1D8BEEFEB46A2553C59BB7E169 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0024D10DB3E64CFA7C064766A5B6733 /* UIImage.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = UIImage.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Extensions/UIImage.html; sourceTree = "<group>"; };
-		A02E7590AEC392D630C1121387CA581B /* Pods_LetterAvatarKitObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetterAvatarKitObjcExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5BC50D6688CF055905D245F8DAC6B87 /* UIImage+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+LetterAvatarKit.swift"; sourceTree = "<group>"; };
-		AFA80D75287B549D7A6396D867FFB817 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Extensions.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
-		B350555474AA1C1547754147C58AFA9C /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
-		B6DF8D7FA00FB51A15E0279018A5D2D4 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
-		B7AEA1870E73FC120C1941F8A21C5A44 /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Classes.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Classes.html; sourceTree = "<group>"; };
-		C113579E252A83266C4D6F9AD15610A0 /* UIImage.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = UIImage.html; path = docs/Extensions/UIImage.html; sourceTree = "<group>"; };
-		C1FC820DBADBDCB802D97EEABB86C02D /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
-		C2DF75344145864544FBAD0071A5193A /* LetterAvatarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-umbrella.h"; sourceTree = "<group>"; };
-		CC8AA712BD8686BC4C578549C88ECBE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/LetterAvatarKit.docset/Contents/Info.plist; sourceTree = "<group>"; };
-		D53B0B5625685CDD5A9795AD6B455E3C /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jazzy.js; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
-		D7E6B979DAB09B37AF1CF9AD6589FD2B /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
-		E53F63FF5075E0EB64045CCA842896FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		E9780D36A1F0725F274FA4A5881A1915 /* LetterAvatarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LetterAvatarKit.h; path = LetterAvatarKit/LetterAvatarKit.h; sourceTree = "<group>"; };
-		EC9DD0B200226A8BE9F63DE2023A224A /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Classes.html; path = docs/Classes.html; sourceTree = "<group>"; };
-		EEEFD8B460AD1FF56FE48A7616DC4AE9 /* LetterAvatarBuilder.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = LetterAvatarBuilder.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Classes/LetterAvatarBuilder.html; sourceTree = "<group>"; };
-		FE442884C5DC6143CBD27E6FAC513852 /* LetterAvatarMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarMakerExtendable.swift; path = LetterAvatarKit/LetterAvatarMakerExtendable.swift; sourceTree = "<group>"; };
-		FF4013405D2A274D7872C334EDFA3198 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
+		88E58D99E913338C79A02C7EEFEC6F0B /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
+		8FA63BF2A3314F5F516B4D46047D6DD7 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
+		98A4D5BCB4F5BCC6B1D8662F6C7ED132 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E9BF32A454FA11EA9B0A51D7585499E /* UIColor+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		A02E7590AEC392D630C1121387CA581B /* Pods_LetterAvatarKitObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LetterAvatarKitObjcExample.framework; path = "Pods-LetterAvatarKitObjcExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F0599DC45DB976968BCD680742B6F0 /* UIImage.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIImage.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Extensions/UIImage.html; sourceTree = "<group>"; };
+		A55A78B3D60068A27731774A8E00DBCA /* UIImage.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIImage.html; path = docs/Extensions/UIImage.html; sourceTree = "<group>"; };
+		B1586633F6BB7D67A9B4DFF8D83E4A75 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
+		B7CCCAA4FF8B6649CE22562854BFC69F /* LetterAvatarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LetterAvatarKit.h; path = LetterAvatarKit/LetterAvatarKit.h; sourceTree = "<group>"; };
+		BBB3F5AF86BA1E3E5DA1FA47537F95D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BD613EA6BF47D4DBEEE0CE141DCC268D /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Classes.html; sourceTree = "<group>"; };
+		C09FA921BD1D80123A682C03631B9910 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
+		C17F7FC550C22834483730A6DA76F140 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
+		C65EC991BF71A053B053F22C36DE3421 /* LetterAvatarKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LetterAvatarKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C6F719F05868B0CE9C301D85F81B90A5 /* String+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		CA2BC862CCCB66160C18BE5E1BB883AC /* LetterAvatarBuilder.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarBuilder.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Classes/LetterAvatarBuilder.html; sourceTree = "<group>"; };
+		D6ABFDA1B08E8BFB2133E48A35EE9100 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
+		DAA6CE5048DB0366CCD87B88201B7F34 /* LetterAvatarBuilder.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarBuilder.html; path = docs/Classes/LetterAvatarBuilder.html; sourceTree = "<group>"; };
+		DBB5BC7F6F7ED92F7914CDCBD2A06402 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
+		E40EC74139BDE7857EC02630448E67F1 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
+		E6B47B7C99CD790E9BA7136AB26DCD21 /* UIColor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIColor.html; path = docs/Extensions/UIColor.html; sourceTree = "<group>"; };
+		F1B750D78FAA754D7A313A2A17EDD04B /* LetterAvatarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LetterAvatarKit.modulemap; sourceTree = "<group>"; };
+		F650906B7E9588704C135318FB00404A /* LetterAvatarKit.tgz */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarKit.tgz; path = docs/docsets/LetterAvatarKit.tgz; sourceTree = "<group>"; };
+		FEA672F03D0F19A455BA7E4918DFEC57 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
+		FECD6C43767F5A8370001E10FBF0BFFB /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
 		FF7453E93E928A00990323F089EE81DD /* Pods-LetterAvatarKitObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LetterAvatarKitObjcExample.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B516C94F659A3326213FAEEB8B7602 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7DECEB5DDF01C1A0EB8418234BA17452 /* Character+LetterAvatarKit.swift */,
+				C6F719F05868B0CE9C301D85F81B90A5 /* String+LetterAvatarKit.swift */,
+				9E9BF32A454FA11EA9B0A51D7585499E /* UIColor+LetterAvatarKit.swift */,
+				6E3DF090B2D999F9611E4367EEC38BAA /* UIImage+LetterAvatarKit.swift */,
+			);
+			name = Extensions;
+			path = LetterAvatarKit/Extensions;
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,95 +146,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		24C097C22D986CC3CD4164634EBC87EA /* LetterAvatarKit */ = {
+		4976543EBAB61E883CED310A59E37171 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5513DFB623FEF9F5DC4C6E112F8BCB82 /* LetterAvatarBuilder.swift */,
-				1DD091DA3DF05EAEA62F720EA60DAB65 /* LetterAvatarBuilderConfiguration.swift */,
-				E9780D36A1F0725F274FA4A5881A1915 /* LetterAvatarKit.h */,
-				8320AC2954D41608D06513E5877DFBF6 /* LetterAvatarMaker.swift */,
-				FE442884C5DC6143CBD27E6FAC513852 /* LetterAvatarMakerExtendable.swift */,
-				348F5355D652ADB13BC9B5556A0B9267 /* Extensions */,
-				B6A1D1611973078B4600193A5156938C /* Pod */,
-				42DA5B1361068FCFC0790771E9FA3AF8 /* Support Files */,
-			);
-			name = LetterAvatarKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		348F5355D652ADB13BC9B5556A0B9267 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				091BB612808CA8A85704AEA7D3963340 /* Character+LetterAvatarKit.swift */,
-				0F3AD5131AF5BDC64B64BF4724C70254 /* String+LetterAvatarKit.swift */,
-				30DAD5F8C3D58BEA98CEA402AC718511 /* UIColor+LetterAvatarKit.swift */,
-				A5BC50D6688CF055905D245F8DAC6B87 /* UIImage+LetterAvatarKit.swift */,
-			);
-			name = Extensions;
-			path = LetterAvatarKit/Extensions;
-			sourceTree = "<group>";
-		};
-		42DA5B1361068FCFC0790771E9FA3AF8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5A870F85A7EB9C75F90179000AC784DB /* LetterAvatarKit.modulemap */,
-				932732F9AFCEA473ED78F93093E5FD2A /* LetterAvatarKit.xcconfig */,
-				2C6E097EB4811FA8FCCCA1F8AA51C2F3 /* LetterAvatarKit-dummy.m */,
-				1DEAFB481E68CAE4159E1B091BDEABE7 /* LetterAvatarKit-Info.plist */,
-				1FA1866AF7E1090D4ED3E98A2897C73F /* LetterAvatarKit-prefix.pch */,
-				C2DF75344145864544FBAD0071A5193A /* LetterAvatarKit-umbrella.h */,
+				F1B750D78FAA754D7A313A2A17EDD04B /* LetterAvatarKit.modulemap */,
+				353245E92E269EFC1F09D150390FC13E /* LetterAvatarKit.xcconfig */,
+				5ABBC4D9458F23B38DA6C5B5F0834B76 /* LetterAvatarKit-dummy.m */,
+				1686ED9EC1754982B62A4E2FCEEDA239 /* LetterAvatarKit-Info.plist */,
+				0BA107F8470A3DD3D9280D7A375347FD /* LetterAvatarKit-prefix.pch */,
+				07AB794DBA7D3FC57F1CE52437FF92E1 /* LetterAvatarKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "LetterAvatarKitObjcExample/Pods/Target Support Files/LetterAvatarKit";
 			sourceTree = "<group>";
 		};
-		B6A1D1611973078B4600193A5156938C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3FD3CB358DF937204C75835BBC1E1F84 /* badge.svg */,
-				440EF9603912CC15CDDB0E67B435B892 /* carat.png */,
-				128FCDA4A788FAE0F33FFE2CF31722FB /* carat.png */,
-				B7AEA1870E73FC120C1941F8A21C5A44 /* Classes.html */,
-				EC9DD0B200226A8BE9F63DE2023A224A /* Classes.html */,
-				D7E6B979DAB09B37AF1CF9AD6589FD2B /* dash.png */,
-				C1FC820DBADBDCB802D97EEABB86C02D /* dash.png */,
-				04C84C194331C42EA371262EFD843010 /* docSet.dsidx */,
-				AFA80D75287B549D7A6396D867FFB817 /* Extensions.html */,
-				32914F5E3E272C0E329A2319500ACCF8 /* Extensions.html */,
-				B6DF8D7FA00FB51A15E0279018A5D2D4 /* gh.png */,
-				8307B5D1B02867FB16F8E0FF4C929CDC /* gh.png */,
-				087A82C3D01620996D70D255A5DDCCE0 /* highlight.css */,
-				955A7C1D8BEEFEB46A2553C59BB7E169 /* highlight.css */,
-				499F988B65BBCA5FCEC8E5703B62EDCB /* index.html */,
-				76F432FC8CB5B42508EF47626C5B245A /* index.html */,
-				CC8AA712BD8686BC4C578549C88ECBE2 /* Info.plist */,
-				2F690EFD56143B5304BA65F621E2A9EB /* jazzy.css */,
-				2F36B3B130BD441758DE37B113F29E83 /* jazzy.css */,
-				8325C5C35A9FB30F36600704070AABCD /* jazzy.js */,
-				D53B0B5625685CDD5A9795AD6B455E3C /* jazzy.js */,
-				FF4013405D2A274D7872C334EDFA3198 /* jquery.min.js */,
-				2658F7A7631BF207DFC4C00BA3355C2C /* jquery.min.js */,
-				8F50CDF4DE88CDA6AD71461BA5F5D042 /* LetterAvatarBuilder.html */,
-				EEEFD8B460AD1FF56FE48A7616DC4AE9 /* LetterAvatarBuilder.html */,
-				8E5CE5A2BCC118459D150C7A447865F6 /* LetterAvatarBuilderConfiguration.html */,
-				288D92F759F015E16DCBC461EA234906 /* LetterAvatarBuilderConfiguration.html */,
-				24DB9D4D86EDE5616A7FF0936AE20D50 /* LetterAvatarKit.podspec */,
-				1608D59F01782D1356104EDFF6E4B3FE /* LetterAvatarKit.tgz */,
-				E53F63FF5075E0EB64045CCA842896FE /* LICENSE */,
-				21E380550FE288A5A213C9C7369DCFA0 /* README.md */,
-				47BF3370EE3758E4E5141F750130C9B0 /* search.json */,
-				79111A0BCB398516C39D33B55EED7CC2 /* search.json */,
-				A0024D10DB3E64CFA7C064766A5B6733 /* UIImage.html */,
-				C113579E252A83266C4D6F9AD15610A0 /* UIImage.html */,
-				B350555474AA1C1547754147C58AFA9C /* undocumented.json */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		B6B8708A128F98BB45BCA3A4939BB12B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				24C097C22D986CC3CD4164634EBC87EA /* LetterAvatarKit */,
+				DFA0F8F1462E622ECAF459CD99013F1D /* LetterAvatarKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -268,6 +211,67 @@
 				CBBA3580666EF57882AD99C9D40D1EDE /* Products */,
 				C57FF64956861DD3957C59EDAA1C4299 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D9E5DF36ABB0FF89DBC675978BEE6687 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DBB5BC7F6F7ED92F7914CDCBD2A06402 /* badge.svg */,
+				123252F631A8F393863B15A216C1513D /* carat.png */,
+				19F6558309DB4FD505632F2AF35C0AE7 /* carat.png */,
+				0D83C87F7D61A27F12A19E22B3173F2D /* Classes.html */,
+				BD613EA6BF47D4DBEEE0CE141DCC268D /* Classes.html */,
+				E40EC74139BDE7857EC02630448E67F1 /* dash.png */,
+				C17F7FC550C22834483730A6DA76F140 /* dash.png */,
+				75D5DE0AD7635D1C151A4D75910BCDF8 /* docSet.dsidx */,
+				FECD6C43767F5A8370001E10FBF0BFFB /* Extensions.html */,
+				FEA672F03D0F19A455BA7E4918DFEC57 /* Extensions.html */,
+				50DF8C1FB951CCD5512D371876B30218 /* gh.png */,
+				38205A8531F7E916E7E4642B60340D7B /* gh.png */,
+				7ACED043FF9E44B347F98FB468A2C946 /* highlight.css */,
+				435363007DD6E5E6CF321B4D3A9ABB77 /* highlight.css */,
+				5C5AF5110275E531D68AE386024C94D5 /* index.html */,
+				C09FA921BD1D80123A682C03631B9910 /* index.html */,
+				575456FB39CC6683D8FDA84DB3CBF9E7 /* Info.plist */,
+				88E58D99E913338C79A02C7EEFEC6F0B /* jazzy.css */,
+				98A4D5BCB4F5BCC6B1D8662F6C7ED132 /* jazzy.css */,
+				4C51C23361C1B7FD2BD39F56EA51E950 /* jazzy.js */,
+				745DD5D6AA31D8FAA73A64B779178412 /* jazzy.js */,
+				B1586633F6BB7D67A9B4DFF8D83E4A75 /* jquery.min.js */,
+				8FA63BF2A3314F5F516B4D46047D6DD7 /* jquery.min.js */,
+				CA2BC862CCCB66160C18BE5E1BB883AC /* LetterAvatarBuilder.html */,
+				DAA6CE5048DB0366CCD87B88201B7F34 /* LetterAvatarBuilder.html */,
+				45297D5EDDC0D4EE752B938CD25940FF /* LetterAvatarBuilderConfiguration.html */,
+				312CDE39B9D1BC49B92A78237DB39F98 /* LetterAvatarBuilderConfiguration.html */,
+				C65EC991BF71A053B053F22C36DE3421 /* LetterAvatarKit.podspec */,
+				F650906B7E9588704C135318FB00404A /* LetterAvatarKit.tgz */,
+				BBB3F5AF86BA1E3E5DA1FA47537F95D3 /* LICENSE */,
+				84891BB7EE84E87C39498943CC5DCD97 /* README.md */,
+				D6ABFDA1B08E8BFB2133E48A35EE9100 /* search.json */,
+				3225B610822FFF2265134C92F7E6ACC2 /* search.json */,
+				E6B47B7C99CD790E9BA7136AB26DCD21 /* UIColor.html */,
+				633B61E25A133A5A30D36523108A0FBB /* UIColor.html */,
+				A55A78B3D60068A27731774A8E00DBCA /* UIImage.html */,
+				A4F0599DC45DB976968BCD680742B6F0 /* UIImage.html */,
+				6EDAB50B5720BCC8EE0074B007E33C57 /* undocumented.json */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		DFA0F8F1462E622ECAF459CD99013F1D /* LetterAvatarKit */ = {
+			isa = PBXGroup;
+			children = (
+				7FEC7E67B4ACCE8D3C71AF49056DA9A8 /* LetterAvatarBuilder.swift */,
+				85D288C2A8894EFA80619913FAE56490 /* LetterAvatarBuilderConfiguration.swift */,
+				B7CCCAA4FF8B6649CE22562854BFC69F /* LetterAvatarKit.h */,
+				76265D46F45CA31F735AE944955F3090 /* LetterAvatarMaker.swift */,
+				779F265110D2453F4BA9536A5B157965 /* LetterAvatarMakerExtendable.swift */,
+				00B516C94F659A3326213FAEEB8B7602 /* Extensions */,
+				D9E5DF36ABB0FF89DBC675978BEE6687 /* Pod */,
+				4976543EBAB61E883CED310A59E37171 /* Support Files */,
+			);
+			name = LetterAvatarKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
@@ -346,7 +350,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -354,7 +358,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = CBBA3580666EF57882AD99C9D40D1EDE /* Products */;
@@ -425,7 +428,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A59E7C021AB8A1E75725C609C654583 /* Pods-LetterAvatarKitObjcExample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -456,7 +459,7 @@
 		};
 		3150EF79E3048F685C2A517E3ECEE3D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 932732F9AFCEA473ED78F93093E5FD2A /* LetterAvatarKit.xcconfig */;
+			baseConfigurationReference = 353245E92E269EFC1F09D150390FC13E /* LetterAvatarKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -538,7 +541,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -612,7 +616,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72BBB8D54CE353B808481EBAFCAD212B /* Pods-LetterAvatarKitObjcExample.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -644,7 +648,7 @@
 		};
 		F477C4E74012C11A2C07C3063D202FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 932732F9AFCEA473ED78F93093E5FD2A /* LetterAvatarKit.xcconfig */;
+			baseConfigurationReference = 353245E92E269EFC1F09D150390FC13E /* LetterAvatarKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

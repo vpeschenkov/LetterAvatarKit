@@ -71,11 +71,18 @@ open class LetterAvatarBuilder: NSObject {
         let rect = CGRect(x: 0.0, y: 0.0, width: configuration.size.width, height: configuration.size.height)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, UIScreen.main.scale)
         if let context = UIGraphicsGetCurrentContext() {
+            let borderWidth = configuration.borderWidth
+            let borderColor = configuration.borderColor.cgColor
+            let strokeRect = rect.insetBy(dx: borderWidth * 0.5, dy: borderWidth * 0.5)
             context.setFillColor(backgroundColor)
+            context.setStrokeColor(borderColor)
+            context.setLineWidth(borderWidth)
             if (configuration.isCircle) {
-                context.fillEllipse(in: rect);
+                context.fillEllipse(in: rect)
+                context.strokeEllipse(in: strokeRect)
             } else {
                 context.fill(rect)
+                context.stroke(strokeRect)
             }
             
             var attributes = configuration.lettersFontAttributes

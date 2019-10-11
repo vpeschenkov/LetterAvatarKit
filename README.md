@@ -17,7 +17,7 @@
 `LetterAvatarKit` is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 ```ruby
-pod "LetterAvatarKit", "1.2.0" # Swift 5.0
+pod "LetterAvatarKit", "1.2.1" # Swift 5.0
 pod "LetterAvatarKit", "1.1.7" # Swift 4.2
 pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 ```
@@ -27,7 +27,7 @@ pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 Add this to `Cartfile`
 
 ```ruby
-github "vpeschenkov/LetterAvatarKit" == 1.2.0 # Swift 5.0
+github "vpeschenkov/LetterAvatarKit" == 1.2.1 # Swift 5.0
 github "vpeschenkov/LetterAvatarKit" == 1.1.7 # Swift 4.2
 github "vpeschenkov/LetterAvatarKit" == 1.1.5 # Swift 4.0
 ```
@@ -41,16 +41,39 @@ $ carthage update
 ### Swift
 
 Using `LetterAvatarMaker`:
+
 ```swift
+// Square avatar image
 let avatarImage = LetterAvatarMaker()
     .setUsername("Letter Avatar")
     .build()
 avatarImageView.image = avatarImage
 
-// Using closures
+// Circle avatar image with white border
+let circleAvatarImage = LetterAvatarMaker()
+    .setCircle(true)
+    .setUsername("Letter Avatar")
+    .setBorderWidth(1.0)
+    .setBackgroundColors([ .red ])
+    .build()
+avatarImageView.image = circleAvatarImage
+```
+
+Using `LetterAvatarMaker` with closures:
+
+```swift
 let avatarImage = LetterAvatarMaker()
     .build { c in
         c.username = "Letter Avatar"
+    }
+avatarImageView.image = avatarImage
+
+let avatarImage = LetterAvatarMaker()
+    .build { c in
+        c.isCircle = true
+        c.username = "Letter Avatar"
+        c.borderWidth = 1.0
+        c.backgroundColors = [ .red ]
     }
 avatarImageView.image = avatarImage
 ```
@@ -85,13 +108,13 @@ self.avatarImageView.image = [UIImage lk_makeLetterAvatarWithUsername:@"Letter A
 You can configure the following properties of `LetterAvatarBuilderConfiguration`:
 
 ```swift
-/// The size of an avatar image.
-open var size: CGSize = CGSize(width: 80, height: 80)
+/// The username.
+open var username: String?
 ```
 
 ```swift
-/// The username.
-open var username: String?
+/// The size of an avatar image.
+open var size: CGSize = CGSize(width: 80, height: 80)
 ```
 
 ```swift
@@ -123,6 +146,16 @@ open var lettersFontAttributes: [NSAttributedString.Key: Any]?
 ```swift
 /// Indicates whether to generate circle or square image.
 open var isCircle: Bool = false
+```
+
+```swift
+/// The border width of the image.
+open var borderWidth: CGFloat = 0.0
+```
+
+```swift
+/// The border color of the image.
+open var borderColor: UIColor = UIColor.white
 ```
 
 ## Community

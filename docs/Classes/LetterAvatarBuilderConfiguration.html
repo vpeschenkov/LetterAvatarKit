@@ -14,7 +14,7 @@
     <a title="LetterAvatarBuilderConfiguration Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">LetterAvatarKit Docs</a> (78% documented)</p>
+        <p><a href="../index.html">LetterAvatarKit Docs</a> (81% documented)</p>
         <p class="header-right"><a href="https://github.com/vpeschenkov/LetterAvatarKit"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -131,9 +131,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)singleLetter"></a>
-                    <a name="//apple_ref/swift/Property/singleLetter" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)singleLetter">singleLetter</a>
+                    <a name="/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)isSingleLettered"></a>
+                    <a name="//apple_ref/swift/Property/isSingleLettered" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)isSingleLettered">isSingleLettered</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -141,15 +141,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The flag that indicates of using single letter instead of two lettters.</p>
+                        <p>The flag that indicates of using single only one letter, otherwise,
+as much as wil be possible to obtain. But no more than 3 letters.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc(singleLetter)</span>
-<span class="kd">open</span> <span class="k">var</span> <span class="nv">singleLetter</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc(isSingleLettered)</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">isSingleLettered</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -197,7 +198,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The letters colors.</p>
+                        <p>The colors are used to draw image.</p>
 
                       </div>
                       <div class="declaration">
@@ -225,7 +226,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The background colors of a letter-based avatar.</p>
+                        <p>The background colors of the image.</p>
 
                       </div>
                       <div class="declaration">
@@ -268,12 +269,96 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)isCircle"></a>
+                    <a name="//apple_ref/swift/Property/isCircle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)isCircle">isCircle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether to generate circle or square image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(isCircle)</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">isCircle</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)borderWidth"></a>
+                    <a name="//apple_ref/swift/Property/borderWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)borderWidth">borderWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The border width of the image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(borderWidth)</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">borderWidth</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)borderColor"></a>
+                    <a name="//apple_ref/swift/Property/borderColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@LetterAvatarKit@objc(cs)LKLetterAvatarBuilderConfiguration(py)borderColor">borderColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The border color of the image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(borderColor)</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">borderColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2019-09-26)</p>
+          <p>&copy; 2019 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2019-10-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

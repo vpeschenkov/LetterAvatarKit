@@ -26,16 +26,30 @@
 import Foundation
 
 public protocol LetterAvatarMakerExtendable: NSObjectProtocol {
+    /// Sets the image size which is used to draw the image.
     func setSize(_ size: CGSize) -> LetterAvatarMakerExtendable
+    /// Sets a username size which is used to draw the image.
     func setUsername(_ username: String) -> LetterAvatarMakerExtendable
+    /// Sets the letter font which is used to draw the letters.
     func setLettersFont(_ lettersFont: UIFont?) -> LetterAvatarMakerExtendable
+    /// Sets the letter color which is used to draw the letters.
     func setLettersColor(_ lettersColor: UIColor) -> LetterAvatarMakerExtendable
+    /// Sets whether to generate single-lettered image or not.
     func setSingleLettered(_ isSingleLettered: Bool) -> LetterAvatarMakerExtendable
+    /// Sets the letter background colors which are used to draw the letters.
     func setBackgroundColors(_ backgroundColors: [UIColor]) -> LetterAvatarMakerExtendable
+    /// Sets the letter font attributes which are used to draw the letters.
     func setLettersFontAttributes(
         _ lettersFontAttributes: [NSAttributedString.Key: Any]?
     ) -> LetterAvatarMakerExtendable
+    // Sets whether to generate circle or square image.
     func setCircle(_ isCircle: Bool) -> LetterAvatarMakerExtendable
+    /// Sets the image border width which is used to draw the image.
+    func setBorderWidth(_ borderWidth: CGFloat) -> LetterAvatarMakerExtendable
+    /// Sets the image border color which is used to draw the image.
+    func setBorderColor(_ borderColor: UIColor) -> LetterAvatarMakerExtendable
+    /// Builds the image using the `maker` values
     func build(maker: (LetterAvatarBuilderConfiguration) -> Void) -> UIImage?
+    /// Builds the image using self parameters
     func build() -> UIImage?
 }

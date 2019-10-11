@@ -75,6 +75,18 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
     }
     
     @discardableResult
+    public func setBorderWidth(_ borderWidth: CGFloat) -> LetterAvatarMakerExtendable {
+        configuration.borderWidth = borderWidth
+        return self
+    }
+    
+    @discardableResult
+    public func setBorderColor(_ borderColor: UIColor) -> LetterAvatarMakerExtendable {
+        configuration.borderColor = borderColor
+        return self
+    }
+    
+    @discardableResult
     public func setCircle(_ isCircle: Bool) -> LetterAvatarMakerExtendable {
         configuration.isCircle = isCircle
         return self
