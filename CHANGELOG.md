@@ -8,6 +8,12 @@
 #### Fixed for any bug fixes.
 ```
 
+### 1.2.1
+
+#### Added
+- An ability to add borders
+- An ability to make the generated image circle
+
 ### 1.2.0
 
 - Implemented builder pattern
