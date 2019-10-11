@@ -17,7 +17,7 @@
 `LetterAvatarKit` is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 ```ruby
-pod "LetterAvatarKit", "1.2.1" # Swift 5.0
+pod "LetterAvatarKit", "1.2.0" # Swift 5.0
 pod "LetterAvatarKit", "1.1.7" # Swift 4.2
 pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 ```
@@ -27,7 +27,7 @@ pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 Add this to `Cartfile`
 
 ```ruby
-github "vpeschenkov/LetterAvatarKit" == 1.2.1 # Swift 5.0
+github "vpeschenkov/LetterAvatarKit" == 1.2.0 # Swift 5.0
 github "vpeschenkov/LetterAvatarKit" == 1.1.7 # Swift 4.2
 github "vpeschenkov/LetterAvatarKit" == 1.1.5 # Swift 4.0
 ```
