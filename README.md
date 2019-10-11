@@ -41,16 +41,36 @@ $ carthage update
 ### Swift
 
 Using `LetterAvatarMaker`:
+
 ```swift
+// Square avatar image
 let avatarImage = LetterAvatarMaker()
     .setUsername("Letter Avatar")
     .build()
 avatarImageView.image = avatarImage
 
+// Circle avatar image with white border
+let circleAvatarImage = LetterAvatarMaker()
+    .setCircle(true)
+    .setUsername("Letter Avatar")
+    .setBorderWidth(1.0)
+    .setBackgroundColors([ .red ])
+    .build()
+avatarImageView.image = circleAvatarImage
+
 // Using closures
 let avatarImage = LetterAvatarMaker()
     .build { c in
         c.username = "Letter Avatar"
+    }
+avatarImageView.image = avatarImage
+
+let avatarImage = LetterAvatarMaker()
+    .build { c in
+        c.isCircle = true
+        c.username = "Letter Avatar"
+        c.borderWidth = 1.0
+        c.backgroundColors = [ .red ]
     }
 avatarImageView.image = avatarImage
 ```
@@ -123,6 +143,16 @@ open var lettersFontAttributes: [NSAttributedString.Key: Any]?
 ```swift
 /// Indicates whether to generate circle or square image.
 open var isCircle: Bool = false
+```
+
+```swift
+/// The border width of the image.
+open var borderWidth: CGFloat = 0.0
+```
+
+```swift
+/// The border color of the image.
+open var borderColor: UIColor = UIColor.white
 ```
 
 ## Community

@@ -41,10 +41,10 @@ open class LetterAvatarBuilderConfiguration: NSObject {
     /// The letters font.
     @objc(lettersFont)
     open var lettersFont: UIFont?
-    /// The letters colors.
+    /// The colors are used to draw image.
     @objc(lettersColor)
     open var lettersColor: UIColor = LKUIColorByRGB(red: 236, green: 240, blue: 241)
-    /// The background colors of a letter-based avatar.
+    /// The background colors of the image.
     @objc(backgroundColors)
     open var backgroundColors: [UIColor] = UIColor.colors
     /// The letters font attributes.
@@ -53,4 +53,10 @@ open class LetterAvatarBuilderConfiguration: NSObject {
     /// Indicates whether to generate circle or square image.
     @objc(isCircle)
     open var isCircle: Bool = false
+    /// The border width of the image.
+    @objc(borderWidth)
+    open var borderWidth: CGFloat = 0.0
+    /// The border color of the image.
+    @objc(borderColor)
+    open var borderColor: UIColor = UIColor.white
 }
