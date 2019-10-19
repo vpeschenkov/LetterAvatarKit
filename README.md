@@ -11,6 +11,13 @@
 - iOS 8 and later
 - Swift 4.0 and later
 
+## Features
+- Ease of use
+- Flexible API
+- Builder pattern
+- Circle/Square image
+- Flat UI colors
+
 ## Installation
 
 ### [CocoaPods](https://cocoapods.org)
