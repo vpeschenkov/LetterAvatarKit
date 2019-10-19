@@ -15,7 +15,7 @@
 - Ease of use
 - Flexible API
 - Builder pattern
-- Circle/Square image
+- Circle/Square/Bordered image
 - Flat UI colors
 
 ## Installation
