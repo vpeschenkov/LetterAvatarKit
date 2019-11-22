@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		35DF42E2233D1B8700BFCE8F /* LetterAvatarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DF42E1233D1B8700BFCE8F /* LetterAvatarController.swift */; };
-		53EC603A9A5C9D5425EA0719 /* Pods_LetterAvatarKitExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60F9A63D0FF5102AEB4115D /* Pods_LetterAvatarKitExample.framework */; };
+		35ED48E723888E2D004B4643 /* LetterAvatarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 35ED48E623888E2D004B4643 /* LetterAvatarKit */; };
 		EBEC63BE1F8CF49B00CE334B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC63BD1F8CF49B00CE334B /* AppDelegate.swift */; };
 		EBEC63C31F8CF49B00CE334B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEC63C11F8CF49B00CE334B /* Main.storyboard */; };
 		EBEC63C51F8CF49B00CE334B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBEC63C41F8CF49B00CE334B /* Assets.xcassets */; };
@@ -17,9 +17,6 @@
 
 /* Begin PBXFileReference section */
 		35DF42E1233D1B8700BFCE8F /* LetterAvatarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterAvatarController.swift; sourceTree = "<group>"; };
-		471BABD137CB14DB31046E88 /* Pods-LetterAvatarKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterAvatarKitExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetterAvatarKitExample/Pods-LetterAvatarKitExample.release.xcconfig"; sourceTree = "<group>"; };
-		9716DC5024FBA0C45BC52A33 /* Pods-LetterAvatarKitExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterAvatarKitExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterAvatarKitExample/Pods-LetterAvatarKitExample.debug.xcconfig"; sourceTree = "<group>"; };
-		C60F9A63D0FF5102AEB4115D /* Pods_LetterAvatarKitExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetterAvatarKitExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC63BA1F8CF49B00CE334B /* LetterAvatarKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetterAvatarKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC63BD1F8CF49B00CE334B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBEC63C21F8CF49B00CE334B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,30 +30,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53EC603A9A5C9D5425EA0719 /* Pods_LetterAvatarKitExample.framework in Frameworks */,
+				35ED48E723888E2D004B4643 /* LetterAvatarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13139CE88BA2501FED43ACF5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C60F9A63D0FF5102AEB4115D /* Pods_LetterAvatarKitExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1E572CE5BE67F2106EE3B977 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9716DC5024FBA0C45BC52A33 /* Pods-LetterAvatarKitExample.debug.xcconfig */,
-				471BABD137CB14DB31046E88 /* Pods-LetterAvatarKitExample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		35DF42DE233D1B3C00BFCE8F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +53,6 @@
 			children = (
 				EBEC63BC1F8CF49B00CE334B /* LetterAvatarKitExample */,
 				EBEC63BB1F8CF49B00CE334B /* Products */,
-				1E572CE5BE67F2106EE3B977 /* Pods */,
-				13139CE88BA2501FED43ACF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,17 +81,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBEC63CC1F8CF49B00CE334B /* Build configuration list for PBXNativeTarget "LetterAvatarKitExample" */;
 			buildPhases = (
-				8C50C7792618142F9787557B /* [CP] Check Pods Manifest.lock */,
 				EBEC63B61F8CF49B00CE334B /* Sources */,
 				EBEC63B71F8CF49B00CE334B /* Frameworks */,
 				EBEC63B81F8CF49B00CE334B /* Resources */,
-				F6F80C452BEEEBCDC029AF2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LetterAvatarKitExample;
+			packageProductDependencies = (
+				35ED48E623888E2D004B4643 /* LetterAvatarKit */,
+			);
 			productName = LetterAvatarKitExample;
 			productReference = EBEC63BA1F8CF49B00CE334B /* LetterAvatarKitExample.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +123,9 @@
 				Base,
 			);
 			mainGroup = EBEC63B11F8CF49B00CE334B;
+			packageReferences = (
+				35ED48E523888E2D004B4643 /* XCRemoteSwiftPackageReference "LetterAvatarKit" */,
+			);
 			productRefGroup = EBEC63BB1F8CF49B00CE334B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -165,45 +147,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8C50C7792618142F9787557B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LetterAvatarKitExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6F80C452BEEEBCDC029AF2F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LetterAvatarKitExample/Pods-LetterAvatarKitExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LetterAvatarKit/LetterAvatarKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LetterAvatarKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LetterAvatarKitExample/Pods-LetterAvatarKitExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBEC63B61F8CF49B00CE334B /* Sources */ = {
@@ -343,20 +286,23 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		EBEC63CD1F8CF49B00CE334B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9716DC5024FBA0C45BC52A33 /* Pods-LetterAvatarKitExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LetterAvatarKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.peschenkov.LetterAvatarKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -366,13 +312,15 @@
 		};
 		EBEC63CE1F8CF49B00CE334B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 471BABD137CB14DB31046E88 /* Pods-LetterAvatarKitExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LetterAvatarKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.peschenkov.LetterAvatarKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -402,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35ED48E523888E2D004B4643 /* XCRemoteSwiftPackageReference "LetterAvatarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vpeschenkov/LetterAvatarKit";
+			requirement = {
+				branch = feature/spm;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35ED48E623888E2D004B4643 /* LetterAvatarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35ED48E523888E2D004B4643 /* XCRemoteSwiftPackageReference "LetterAvatarKit" */;
+			productName = LetterAvatarKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EBEC63B21F8CF49B00CE334B /* Project object */;
 }
