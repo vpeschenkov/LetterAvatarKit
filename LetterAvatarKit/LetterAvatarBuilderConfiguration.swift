@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+import UIKit
 import Foundation
 
 /// Uses for configurating a LetterAvatarBuilder instance.

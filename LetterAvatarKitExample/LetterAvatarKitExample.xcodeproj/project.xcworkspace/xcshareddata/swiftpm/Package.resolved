@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LetterAvatarKit",
+        "repositoryURL": "https://github.com/vpeschenkov/LetterAvatarKit",
+        "state": {
+          "branch": "feature/spm",
+          "revision": "fa2f918f3865bbea74f68241f7f01a5d23cab8a6",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
