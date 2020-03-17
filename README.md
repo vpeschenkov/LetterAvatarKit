@@ -78,7 +78,7 @@ avatarImageView.image = avatarImage
 
 let avatarImage = LetterAvatarMaker()
     .build { c in
-        c.isCircle = true
+        c.circle = true
         c.username = "Letter Avatar"
         c.borderWidth = 1.0
         c.backgroundColors = [ .red ]
@@ -153,7 +153,7 @@ open var lettersFontAttributes: [NSAttributedString.Key: Any]?
 
 ```swift
 /// Indicates whether to generate circle or square image.
-open var isCircle: Bool = false
+open var circle: Bool = false
 ```
 
 ```swift
