@@ -25,7 +25,7 @@
 `LetterAvatarKit` is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 ```ruby
-pod "LetterAvatarKit", "1.2.1" # Swift 5.0
+pod "LetterAvatarKit", "1.2.2" # Swift 5.0+
 pod "LetterAvatarKit", "1.1.7" # Swift 4.2
 pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 ```
@@ -35,7 +35,7 @@ pod "LetterAvatarKit", "1.1.5" # Swift 4.0
 Add this to `Cartfile`
 
 ```ruby
-github "vpeschenkov/LetterAvatarKit" == 1.2.1 # Swift 5.0
+github "vpeschenkov/LetterAvatarKit" == 1.2.2 # Swift 5.0+
 github "vpeschenkov/LetterAvatarKit" == 1.1.7 # Swift 4.2
 github "vpeschenkov/LetterAvatarKit" == 1.1.5 # Swift 4.0
 ```
@@ -164,6 +164,11 @@ open var borderWidth: CGFloat = 0.0
 ```swift
 /// The border color of the image.
 open var borderColor: UIColor = UIColor.white
+```
+
+```swift
+/// A Boolean flag indicating whether the avatar is opaque.
+open var opaque: Bool = false
 ```
 
 ## Community

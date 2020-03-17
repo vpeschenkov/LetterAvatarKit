@@ -51,8 +51,9 @@ func LKUIColorByRGB(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
 }
 
 extension UIColor {
+    
     private struct ColorKey {
-        static var value = "org.peschenkov.LetterAvatarKit.UIColor.colors"
+        static var propertyReference = "org.peschenkov.LetterAvatarKit.UIColor.colors"
     }
     /// Colors from http://flatuicolors.com/
     public enum HEXColor {
@@ -95,8 +96,8 @@ extension UIColor {
         /// ASBESTOS
         static let asbestosColor = 0x7F8C8D
     }
-    static public var colors: [ UIColor ] {
-        var colors = objc_getAssociatedObject(self, &ColorKey.value)
+    static public var colors: [UIColor] {
+        var colors = objc_getAssociatedObject(self, &ColorKey.propertyReference)
         if colors == nil {
             colors = [
                 LKUIColorByHEX(HEXColor.turquoiseColor),
@@ -119,9 +120,14 @@ extension UIColor {
                 LKUIColorByHEX(HEXColor.silverColor),
                 LKUIColorByHEX(HEXColor.asbestosColor)
             ]
-            objc_setAssociatedObject(self, &ColorKey.value, colors, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return colors as? [ UIColor ] ?? []
+            objc_setAssociatedObject(
+                self,
+                &ColorKey.propertyReference,
+                colors,
+                .OBJC_ASSOCIATION_RETAIN_NONATOMIC
+            )
+            return colors as? [UIColor] ?? []
         }
-        return colors as? [ UIColor ] ?? []
+        return colors as? [UIColor] ?? []
     }
 }

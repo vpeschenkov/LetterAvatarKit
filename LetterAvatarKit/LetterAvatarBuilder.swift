@@ -31,7 +31,7 @@ open class LetterAvatarBuilder: NSObject {
     /// Makes a letter-based avatar image by using a given configuration.
     ///
     /// - Parameters:
-    ///     - configuration: The configuration that is used to draw a
+    ///     - configuration: A configuration that is used to draw a
     /// letter-based avatar image.
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
@@ -47,7 +47,7 @@ open class LetterAvatarBuilder: NSObject {
         }
         let usernameInfo = UsernameInfo(
             username: username,
-            singleLetter: configuration.isSingleLettered
+            singleLetter: configuration.useSingleLetter
         )
         var colorIndex = 0
         if colors.count > 1 {
@@ -69,7 +69,7 @@ open class LetterAvatarBuilder: NSObject {
         backgroundColor: CGColor
         ) -> UIImage? {
         let rect = CGRect(x: 0.0, y: 0.0, width: configuration.size.width, height: configuration.size.height)
-        UIGraphicsBeginImageContextWithOptions(rect.size, false, UIScreen.main.scale)
+        UIGraphicsBeginImageContextWithOptions(rect.size, configuration.isOpaque, UIScreen.main.scale)
         if let context = UIGraphicsGetCurrentContext() {
             let borderWidth = configuration.borderWidth
             let borderColor = configuration.borderColor.cgColor
@@ -77,7 +77,7 @@ open class LetterAvatarBuilder: NSObject {
             context.setFillColor(backgroundColor)
             context.setStrokeColor(borderColor)
             context.setLineWidth(borderWidth)
-            if (configuration.isCircle) {
+            if configuration.circle {
                 context.fillEllipse(in: rect)
                 context.strokeEllipse(in: strokeRect)
             } else {
@@ -111,7 +111,7 @@ open class LetterAvatarBuilder: NSObject {
     
     private func makeFitFont(withFont font: UIFont?, forSize size: CGSize) -> UIFont {
         guard let font = font else {
-            return UIFont.systemFont(ofSize:min(size.height, size.width) / 2.0)
+            return UIFont.systemFont(ofSize: min(size.height, size.width) / 2.0)
         }
         let fitFont = font.withSize(min(size.height, size.width) / 2.0)
         return fitFont.pointSize < font.pointSize ? fitFont : font
@@ -129,7 +129,7 @@ private class UsernameInfo {
     }
     
     private let username: String
-    private let isSingleLettered: Bool
+    private let useSingleLetter: Bool
     
     private typealias InfoContainer = (letters: String, value: Int)
     private lazy var userInfo: InfoContainer = {
@@ -139,7 +139,7 @@ private class UsernameInfo {
         let components = username.components(separatedBy: " ")
         // If there are whether two words or more
         if components.count > 1 {
-            if !isSingleLettered {
+            if !useSingleLetter {
                 for component in components.prefix(3) {
                     if let letter = component.first {
                         letters.append(letter)
@@ -165,7 +165,7 @@ private class UsernameInfo {
                     // If single Letter is passed as false but the string is a single char,
                     // this line fails due to out of bounds exception.
                     // https://github.com/vpeschenkov/LetterAvatarKit/issues/11
-                    if !isSingleLettered && component.count >= 2 {
+                    if !useSingleLetter && component.count >= 2 {
                         // Process the second name letter
                         let startIndex = component.index(after: component.startIndex)
                         let endIndex = component.index(component.startIndex, offsetBy: 2)
@@ -183,6 +183,6 @@ private class UsernameInfo {
     
     init(username: String, singleLetter: Bool) {
         self.username = username
-        self.isSingleLettered = singleLetter
+        self.useSingleLetter = singleLetter
     }
 }

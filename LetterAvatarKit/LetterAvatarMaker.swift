@@ -56,8 +56,8 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
     }
     
     @discardableResult
-    public func setSingleLettered(_ isSingleLettered: Bool) -> LetterAvatarMakerExtendable {
-        configuration.isSingleLettered = isSingleLettered
+    public func useSingleLetter(_ useSingleLetter: Bool) -> LetterAvatarMakerExtendable {
+        configuration.useSingleLetter = useSingleLetter
         return self
     }
     
@@ -88,8 +88,14 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
     }
     
     @discardableResult
-    public func setCircle(_ isCircle: Bool) -> LetterAvatarMakerExtendable {
-        configuration.isCircle = isCircle
+    public func setCircle(_ circle: Bool) -> LetterAvatarMakerExtendable {
+        configuration.circle = circle
+        return self
+    }
+    
+    @discardableResult
+    public func drawOpaqueBackground(_ isOpaque: Bool) -> LetterAvatarMakerExtendable {
+        configuration.isOpaque = isOpaque
         return self
     }
     
