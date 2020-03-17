@@ -13,7 +13,7 @@
     <a title="LetterAvatarKit  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">LetterAvatarKit Docs</a> (81% documented)</p>
+        <p><a href="index.html">LetterAvatarKit Docs</a> (82% documented)</p>
         <p class="header-right"><a href="https://github.com/vpeschenkov/LetterAvatarKit"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -60,7 +60,8 @@
             
             <h1 id='letteravatarkit' class='heading'>LetterAvatarKit</h1>
 
-<p><img src="https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png" alt=""> <img src="https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master" alt=""> <img src="https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png" alt=""> <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat(https://github.com/Carthage/Carthage)" alt=""> <img src="https://img.shields.io/badge/swift-5.0-orange.svg?style=flat" alt=""> <img src="https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7" alt=""></p>
+<p><img src="https://img.shields.io/badge/swift-5.0-orange.svg?style=flat" alt=""> <img src="https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png" alt=""> <img src="https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png" alt=""> <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat(https://github.com/Carthage/Carthage)" alt=""> <img src="https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7" alt="">
+<img src="https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master" alt=""></p>
 
 <p><code>LetterAvatarKit</code> provides an <code>UIImage</code> extension for generating letter-based avatars/placeholders. There are a few images showing what you can achive by using this framework:</p>
 
@@ -71,19 +72,28 @@
 <li>iOS 8 and later</li>
 <li>Swift 4.0 and later</li>
 </ul>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>Ease of use</li>
+<li>Flexible API</li>
+<li>Builder pattern</li>
+<li>Circle/Square/Bordered image</li>
+<li>Flat UI colors</li>
+</ul>
 <h2 id='installation' class='heading'>Installation</h2>
 <h3 id='a-href-https-cocoapods-org-cocoapods-a' class='heading'><a href="https://cocoapods.org">CocoaPods</a></h3>
 
 <p><code>LetterAvatarKit</code> is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
 it, simply add the following line to your Podfile:</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.2.1"</span> <span class="c1"># Swift 5.0</span>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.2.2"</span> <span class="c1"># Swift 5.0+</span>
 <span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.1.7"</span> <span class="c1"># Swift 4.2</span>
 <span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.1.5"</span> <span class="c1"># Swift 4.0</span>
 </code></pre>
 <h3 id='a-href-https-github-com-carthage-carthage-carthage-a' class='heading'><a href="https://github.com/Carthage/Carthage">Carthage</a></h3>
 
 <p>Add this to <code>Cartfile</code></p>
-<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.2</span><span class="o">.</span><span class="mi">1</span> <span class="c1"># Swift 5.0</span>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.2</span><span class="o">.</span><span class="mi">2</span> <span class="c1"># Swift 5.0+</span>
 <span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">7</span> <span class="c1"># Swift 4.2</span>
 <span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">5</span> <span class="c1"># Swift 4.0</span>
 </code></pre>
@@ -149,11 +159,11 @@ it, simply add the following line to your Podfile:</p>
 <h2 id='customization' class='heading'>Customization</h2>
 
 <p>You can configure the following properties of <code><a href="Classes/LetterAvatarBuilderConfiguration.html">LetterAvatarBuilderConfiguration</a></code>:</p>
-<pre class="highlight swift"><code><span class="c1">/// The size of an avatar image.</span>
-<span class="kd">open</span> <span class="k">var</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="o">=</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">80</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">80</span><span class="p">)</span>
-</code></pre>
 <pre class="highlight swift"><code><span class="c1">/// The username.</span>
 <span class="kd">open</span> <span class="k">var</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="c1">/// The size of an avatar image.</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="o">=</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">80</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">80</span><span class="p">)</span>
 </code></pre>
 <pre class="highlight swift"><code><span class="c1">/// The flag that indicates of using single only one letter, otherwise,</span>
 <span class="c1">/// as much as wil be possible to obtain. But no more than 3 letters.</span>
@@ -180,6 +190,9 @@ it, simply add the following line to your Podfile:</p>
 <pre class="highlight swift"><code><span class="c1">/// The border color of the image.</span>
 <span class="kd">open</span> <span class="k">var</span> <span class="nv">borderColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span>
 </code></pre>
+<pre class="highlight swift"><code><span class="c1">/// A Boolean flag indicating whether the avatar is opaque.</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">opaque</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span>
+</code></pre>
 <h2 id='community' class='heading'>Community</h2>
 
 <p>Questions, comments, issues, and pull requests are welcome!</p>
@@ -196,7 +209,7 @@ it, simply add the following line to your Podfile:</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2019-10-11)</p>
+          <p>&copy; 2020 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2020-03-17)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

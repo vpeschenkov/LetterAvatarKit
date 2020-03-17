@@ -2,7 +2,7 @@
   "warnings": [
     {
       "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/Extensions/UIColor+LetterAvatarKit.swift",
-      "line": 98,
+      "line": 99,
       "symbol": "UIColor.colors",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
@@ -16,14 +16,14 @@
     },
     {
       "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/LetterAvatarMaker.swift",
-      "line": 28,
+      "line": 29,
       "symbol": "LetterAvatarMaker",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/LetterAvatarMakerExtendable.swift",
-      "line": 28,
+      "line": 29,
       "symbol": "LetterAvatarMakerExtendable",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"

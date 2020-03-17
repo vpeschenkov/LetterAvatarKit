@@ -26,6 +26,7 @@
 import Foundation
 
 internal extension Character {
+    
     var ASCIIValue: Int {
         let unicode = String(self).unicodeScalars
         return Int(unicode[unicode.startIndex].value)
