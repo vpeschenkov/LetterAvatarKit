@@ -5,9 +5,9 @@
         "package": "LetterAvatarKit",
         "repositoryURL": "https://github.com/vpeschenkov/LetterAvatarKit",
         "state": {
-          "branch": "feature/spm",
-          "revision": "fa2f918f3865bbea74f68241f7f01a5d23cab8a6",
-          "version": null
+          "branch": null,
+          "revision": "218b48b379ec40166b89a048faa62eaa8d206b70",
+          "version": "1.2.2"
         }
       }
     ]

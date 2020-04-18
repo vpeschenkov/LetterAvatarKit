@@ -7,11 +7,13 @@ let package = Package(
     name: "LetterAvatarKit",
     platforms: [
         .iOS(.v9),
+        .tvOS(.v9)
     ],
     products: [
         .library(
             name: "LetterAvatarKit",
-            targets: ["LetterAvatarKit"]),
+            targets: ["LetterAvatarKit"]
+        ),
     ],
     dependencies: [
     ],
@@ -19,6 +21,7 @@ let package = Package(
         .target(
             name: "LetterAvatarKit",
             dependencies: [],
-            path: "LetterAvatarKit")
+            path: "LetterAvatarKit"
+        )
     ]
 )

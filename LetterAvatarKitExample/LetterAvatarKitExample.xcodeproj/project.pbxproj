@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35DF42E2233D1B8700BFCE8F /* LetterAvatarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DF42E1233D1B8700BFCE8F /* LetterAvatarController.swift */; };
-		35ED48E723888E2D004B4643 /* LetterAvatarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 35ED48E623888E2D004B4643 /* LetterAvatarKit */; };
+		98CF310F244B159000A218C2 /* LetterAvatarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98CF310E244B159000A218C2 /* LetterAvatarKit */; };
 		EBEC63BE1F8CF49B00CE334B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC63BD1F8CF49B00CE334B /* AppDelegate.swift */; };
 		EBEC63C31F8CF49B00CE334B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEC63C11F8CF49B00CE334B /* Main.storyboard */; };
 		EBEC63C51F8CF49B00CE334B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBEC63C41F8CF49B00CE334B /* Assets.xcassets */; };
@@ -30,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35ED48E723888E2D004B4643 /* LetterAvatarKit in Frameworks */,
+				98CF310F244B159000A218C2 /* LetterAvatarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 			);
 			name = LetterAvatarKitExample;
 			packageProductDependencies = (
-				35ED48E623888E2D004B4643 /* LetterAvatarKit */,
+				98CF310E244B159000A218C2 /* LetterAvatarKit */,
 			);
 			productName = LetterAvatarKitExample;
 			productReference = EBEC63BA1F8CF49B00CE334B /* LetterAvatarKitExample.app */;
@@ -124,7 +124,7 @@
 			);
 			mainGroup = EBEC63B11F8CF49B00CE334B;
 			packageReferences = (
-				35ED48E523888E2D004B4643 /* XCRemoteSwiftPackageReference "LetterAvatarKit" */,
+				98CF310D244B159000A218C2 /* XCRemoteSwiftPackageReference "LetterAvatarKit" */,
 			);
 			productRefGroup = EBEC63BB1F8CF49B00CE334B /* Products */;
 			projectDirPath = "";
@@ -352,20 +352,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		35ED48E523888E2D004B4643 /* XCRemoteSwiftPackageReference "LetterAvatarKit" */ = {
+		98CF310D244B159000A218C2 /* XCRemoteSwiftPackageReference "LetterAvatarKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/vpeschenkov/LetterAvatarKit";
 			requirement = {
-				branch = feature/spm;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		35ED48E623888E2D004B4643 /* LetterAvatarKit */ = {
+		98CF310E244B159000A218C2 /* LetterAvatarKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 35ED48E523888E2D004B4643 /* XCRemoteSwiftPackageReference "LetterAvatarKit" */;
+			package = 98CF310D244B159000A218C2 /* XCRemoteSwiftPackageReference "LetterAvatarKit" */;
 			productName = LetterAvatarKit;
 		};
 /* End XCSwiftPackageProductDependency section */
