@@ -1,6 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'LetterAvatarKit'
-  spec.platform         = :ios, '8.0'
+  spec.ios.deployment_target = '8.0'
+  spec.tvos.deployment_target = '9.0'
   spec.version          = '1.2.2'
   spec.license          = { :type => 'MIT' }
   spec.homepage         = 'https://github.com/vpeschenkov/LetterAvatarKit'
