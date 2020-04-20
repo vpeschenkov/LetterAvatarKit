@@ -97,10 +97,10 @@ extension UIImage {
             for i in stride(from: 0, to: numberOfPixels, by: 1) {
                 if lhsPixelsPointer[i] != rhsPixelsPointer[i] {
                     diff += 1
-                }
-                let error = CGFloat(CGFloat(diff) / CGFloat(numberOfPixels))
-                if error > tolerance {
-                    return false
+                    let error = CGFloat(CGFloat(diff) / CGFloat(numberOfPixels))
+                    if error > tolerance {
+                        return false
+                    }
                 }
             }
             return true
