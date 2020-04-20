@@ -59,7 +59,7 @@ extension UIImage {
         
         var lhsImage: UIImage?
         UIGraphicsBeginImageContext(size)
-        if let _ = UIGraphicsGetCurrentContext() {
+        if UIGraphicsGetCurrentContext() != nil {
             self.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
             lhsImage = UIGraphicsGetImageFromCurrentImageContext()
         }
@@ -67,7 +67,7 @@ extension UIImage {
         
         var rhsImage: UIImage?
         UIGraphicsBeginImageContext(size)
-        if let _ = UIGraphicsGetCurrentContext() {
+        if UIGraphicsGetCurrentContext() != nil {
             image.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
             rhsImage = UIGraphicsGetImageFromCurrentImageContext()
         }
@@ -83,7 +83,7 @@ extension UIImage {
         
         if lhsData == rhsData {
             return true
-        } else  {
+        } else {
             guard let lhsPixelsPointer: UnsafePointer<UInt8> = CFDataGetBytePtr(lhsData) else {
                 return false
             }
