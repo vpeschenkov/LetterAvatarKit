@@ -22,6 +22,11 @@ let package = Package(
             name: "LetterAvatarKit",
             dependencies: [],
             path: "LetterAvatarKit"
+        ),
+        .testTarget(
+            name: "LetterAvatarKitTests",
+            dependencies: [],
+            path: "LetterAvatarKitTests"
         )
     ]
 )
