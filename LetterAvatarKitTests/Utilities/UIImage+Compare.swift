@@ -45,9 +45,11 @@ extension UIImage {
         guard let image = object as? UIImage else {
             return false
         }
-        return compareImages(with: image, tolerance: 0.01)
+        return compareImages(with: image, tolerance: 0.1)
     }
     
+    // swiftlint:disable function_body_length
+    // swiftlint:disable cyclomatic_complexity
     open func compareImages(with image: UIImage?, tolerance: CGFloat) -> Bool {
         guard let image = image else {
             return false
@@ -92,7 +94,7 @@ extension UIImage {
         
         guard let lhsData = lhs.dataProvider?.data,
               let rhsData = rhs.dataProvider?.data else {
-                return false
+            return false
         }
         
         if lhsData == rhsData {
@@ -100,20 +102,22 @@ extension UIImage {
         } else {
             guard let lhsPixelsPointer: UnsafePointer<UInt8> = CFDataGetBytePtr(lhsData),
                   let rhsPixelsPointer: UnsafePointer<UInt8> = CFDataGetBytePtr(rhsData) else {
-                    return false
+                return false
             }
             var errorCount = 0
             let numberOfPixels = Int(self.size.width * self.size.height * 4)
-            for i in stride(from: 0, to: numberOfPixels, by: 1) {
-                if lhsPixelsPointer[i] != rhsPixelsPointer[i] {
-                    errorCount += 1
-                    let error = CGFloat(CGFloat(errorCount) / CGFloat(numberOfPixels))
-                    if error > tolerance {
-                        return false
-                    }
+            // swiftlint:disable line_length
+            for i in stride(from: 0, to: numberOfPixels, by: 1) where lhsPixelsPointer[i] != rhsPixelsPointer[i] {
+                errorCount += 1
+                let error = CGFloat(CGFloat(errorCount) / CGFloat(numberOfPixels))
+                if error > tolerance {
+                    return false
                 }
             }
+            // swiftlint:enable line_length
             return true
         }
     }
+    // swiftlint:enable cyclomatic_complexity
+    // swiftlint:enable function_body_length
 }

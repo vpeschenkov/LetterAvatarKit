@@ -8,19 +8,22 @@
 #### Fixed for any bug fixes.
 ```
 
-### 1.2.1
+### 1.2.4
+#### Added
+- Xcode 11 support
 
+### 1.2.1
 #### Added
 - An ability to add borders
 - An ability to make the generated image circle
 
 ### 1.2.0
-
-- Implemented builder pattern
+#### Added
+- Builder pattern
 
 #### Changed
 - `LAK` prefix renamed to `LK`
 
 ### 1.1.9
-
-- Added Xcode 11 support
+#### Added
+- Xcode 11 support
