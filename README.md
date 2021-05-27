@@ -94,12 +94,12 @@ Using `LetterAvatarBuilderConfiguration`:
 ```swift
 let configuration = LetterAvatarBuilderConfiguration()
 configuration.username = "Letter Avatar"
-avatarImageView.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
+avatarImageView.image = UIImage.makeLetterAvatar(configuration: configuration)
 ```
 
 Using UIImage extension:
 ```swift
-avatarImageView.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
+avatarImageView.image = UIImage.makeLetterAvatar(username: "Letter Avatar")
 ```
 
 ### Objective-C

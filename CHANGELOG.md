@@ -8,6 +8,15 @@
 #### Fixed for any bug fixes.
 ```
 
+### 1.2.5
+#### Renamed
+- `LetterAvatarBuilder`
+  - `makeAvatar(with:)` to `makeAvatar(:)`
+- `UIImage extension`
+  - `makeLetterAvatar(withConfiguration:)` to `makeLetterAvatar(configuration:)`
+  - `makeLetterAvatar(withUsername:)` to `makeLetterAvatar(username:)`
+  - `makeLetterAvatar(withUsername:size)` to `makeLetterAvatar(username:size)`
+
 ### 1.2.4
 #### Added
 - Xcode 12 support

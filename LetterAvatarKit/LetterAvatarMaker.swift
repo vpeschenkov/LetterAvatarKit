@@ -101,10 +101,10 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
     
     public func build(maker: (LetterAvatarBuilderConfiguration) -> Void) -> UIImage? {
         maker(configuration)
-        return UIImage.makeLetterAvatar(withConfiguration: configuration)
+        return UIImage.makeLetterAvatar(configuration: configuration)
     }
     
     public func build() -> UIImage? {
-        return UIImage.makeLetterAvatar(withConfiguration: configuration)
+        return UIImage.makeLetterAvatar(configuration: configuration)
     }
 }

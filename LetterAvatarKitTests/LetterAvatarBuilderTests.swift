@@ -30,7 +30,7 @@ class LetterAvatarBuilderTests: XCTestCase {
     func testAvatarBuild() {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = "Letter Avatar"
-        let avatarImage = LetterAvatarBuilder().makeAvatar(with: configuration)
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
         XCTAssertEqual(avatarImage, UIImage(named: "LetterAvatarTestImage"))
     }
     
@@ -39,7 +39,7 @@ class LetterAvatarBuilderTests: XCTestCase {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = "Letter Avatar"
         configuration.size = size
-        let avatarImage = LetterAvatarBuilder().makeAvatar(with: configuration)
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
         XCTAssertTrue(avatarImage?.size.width == size.width)
         XCTAssertTrue(avatarImage?.size.height == size.height)
     }
@@ -50,7 +50,7 @@ class LetterAvatarBuilderTests: XCTestCase {
         configuration.username = "Avatar Test"
         configuration.useSingleLetter = true
         // Make images
-        let avatarImage = LetterAvatarBuilder().makeAvatar(with: configuration)
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
         let testImage = UIImage(named: "LetterAvatarSingleLetterTestImage")
         // Test them
         XCTAssertTrue(avatarImage?.size.width == configuration.size.width)
@@ -60,7 +60,7 @@ class LetterAvatarBuilderTests: XCTestCase {
     
     func testAvatarBuildWithEmptyUsername() {
         let configuration = LetterAvatarBuilderConfiguration()
-        let avatarImage = LetterAvatarBuilder().makeAvatar(with: configuration)
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
         let testImage = UIImage(named: "LetterAvatarEmptyTestImage")
         XCTAssertEqual(avatarImage, testImage)
     }
@@ -68,7 +68,7 @@ class LetterAvatarBuilderTests: XCTestCase {
     func testAvatarBuildWithOneWordUsername() {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = "Avatar"
-        let avatarImage = LetterAvatarBuilder().makeAvatar(with: configuration)
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
         let testImage = UIImage(named: "LetterAvatarOneWordTestImage")
         XCTAssertEqual(avatarImage, testImage)
     }
@@ -76,7 +76,7 @@ class LetterAvatarBuilderTests: XCTestCase {
     func testAvatarBuildWithMoreThanTwoWordsUsername() {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = "Letter Test Avatar"
-        let avatarImage = LetterAvatarBuilder().makeAvatar(with: configuration)
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
         let testImage = UIImage(named: "LetterAvatarTestImage")
         XCTAssertNotEqual(avatarImage, testImage)
     }
@@ -85,7 +85,7 @@ class LetterAvatarBuilderTests: XCTestCase {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = "Avatar"
         configuration.useSingleLetter = true
-        let avatarImage = LetterAvatarBuilder().makeAvatar(with: configuration)
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
         let testImage = UIImage(named: "LetterAvatarSingleLetterTestImage")
         XCTAssertEqual(avatarImage, testImage)
     }
@@ -95,7 +95,7 @@ class LetterAvatarBuilderTests: XCTestCase {
         configuration.username = "Avatar"
         configuration.useSingleLetter = true
         configuration.backgroundColors = [ .red ]
-        let avatarImage = LetterAvatarBuilder().makeAvatar(with: configuration)
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
         XCTAssertNotNil(avatarImage)
     }
     
@@ -107,7 +107,7 @@ class LetterAvatarBuilderTests: XCTestCase {
         configuration.username = "N"
         configuration.useSingleLetter = true
         configuration.backgroundColors = [ .red ]
-        let avatarImage = LetterAvatarBuilder().makeAvatar(with: configuration)
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
         XCTAssertNotNil(avatarImage)
     }
 }
