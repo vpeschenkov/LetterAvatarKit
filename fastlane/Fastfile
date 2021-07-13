@@ -8,7 +8,7 @@
 
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
-setup_travis
+
 default_platform(:ios)
 
 platform :ios do
