@@ -8,6 +8,10 @@
 #### Fixed for any bug fixes.
 ```
 
+### 1.2.5
+#### Removed
+- Removed `SwiftUI` dependency (#31)
+
 ### 1.2.4
 #### Added
 - Xcode 12 support
