@@ -13,12 +13,12 @@
 - Swift 4.0+
 
 ## Features
-- Ease of use
-- Flexible API
-- Builder pattern
-- Circle/Square/Bordered image
-- Flat UI colors
-- tvOS support
+- Easy to use and intuitive interface
+- Highly flexible API allows for customization and integration into various projects
+- Use of the builder pattern for constructing avatar configurations
+- Support for creating circular, square, or bordered images
+- Wide range of flat UI colors available
+- Compatible with tvOS platform
 
 ## Installation
 
