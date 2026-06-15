@@ -1,0 +1,39 @@
+name: Documentation
+
+on:
+  push:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  jazzy:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: macos-latest
+    env:
+      BUNDLE_WITHOUT: fastlane
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Generate documentation
+        run: scripts/generate_docs.sh
+
+      - name: Commit documentation
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update Jazzy documentation
+          file_pattern: docs

@@ -8,20 +8,26 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="LetterAvatarKit  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">LetterAvatarKit Docs</a> (82% documented)</p>
-        <p class="header-right"><a href="https://github.com/vpeschenkov/LetterAvatarKit"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p><a href="index.html">LetterAvatarKit 2.0.0 Docs</a> (75% documented)</p>
+        <p class="header-right"><a href="https://github.com/vpeschenkov/LetterAvatarKit"><img src="img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="index.html">LetterAvatarKit Reference</a>
-        <img id="carat" src="img/carat.png" />
-        LetterAvatarKit  Reference
+        <a href="index.html">LetterAvatarKit</a>
       </p>
     </div>
     <div class="content-wrapper">
@@ -60,8 +66,7 @@
             
             <h1 id='letteravatarkit' class='heading'>LetterAvatarKit</h1>
 
-<p><img src="https://img.shields.io/badge/swift-5.0-orange.svg?style=flat" alt=""> <img src="https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png" alt=""> <img src="https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png" alt=""> <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat(https://github.com/Carthage/Carthage)" alt=""> <img src="https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7" alt="">
-<img src="https://travis-ci.org/vpeschenkov/LetterAvatarKit.svg?branch=master" alt=""></p>
+<p><img src="https://img.shields.io/badge/swift-5.9-orange.svg?style=flat" alt=""> <img src="https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png" alt=""> <img src="https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png" alt=""> <img src="https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7" alt=""></p>
 
 <p><code>LetterAvatarKit</code> provides an <code>UIImage</code> extension for generating letter-based avatars/placeholders. There are a few images showing what you can achive by using this framework:</p>
 
@@ -69,36 +74,30 @@
 <h2 id='requirements' class='heading'>Requirements</h2>
 
 <ul>
-<li>iOS 8 and later</li>
-<li>Swift 4.0 and later</li>
+<li>iOS 12+</li>
+<li>tvOS 12+</li>
+<li>Swift 5.9+</li>
 </ul>
 <h2 id='features' class='heading'>Features</h2>
 
 <ul>
-<li>Ease of use</li>
-<li>Flexible API</li>
-<li>Builder pattern</li>
-<li>Circle/Square/Bordered image</li>
-<li>Flat UI colors</li>
+<li>Easy to use and intuitive interface</li>
+<li>Highly flexible API allows for customization and integration into various projects</li>
+<li>Use of the builder pattern for constructing avatar configurations</li>
+<li>Support for creating circular, square, or bordered images</li>
+<li>Wide range of flat UI colors available</li>
+<li>Compatible with tvOS platform</li>
 </ul>
 <h2 id='installation' class='heading'>Installation</h2>
 <h3 id='a-href-https-cocoapods-org-cocoapods-a' class='heading'><a href="https://cocoapods.org">CocoaPods</a></h3>
 
 <p><code>LetterAvatarKit</code> is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
 it, simply add the following line to your Podfile:</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.2.2"</span> <span class="c1"># Swift 5.0+</span>
-<span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.1.7"</span> <span class="c1"># Swift 4.2</span>
-<span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span><span class="p">,</span> <span class="s2">"1.1.5"</span> <span class="c1"># Swift 4.0</span>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"LetterAvatarKit"</span>
 </code></pre>
-<h3 id='a-href-https-github-com-carthage-carthage-carthage-a' class='heading'><a href="https://github.com/Carthage/Carthage">Carthage</a></h3>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
 
-<p>Add this to <code>Cartfile</code></p>
-<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.2</span><span class="o">.</span><span class="mi">2</span> <span class="c1"># Swift 5.0+</span>
-<span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">7</span> <span class="c1"># Swift 4.2</span>
-<span class="n">github</span> <span class="s2">"vpeschenkov/LetterAvatarKit"</span> <span class="o">==</span> <span class="mf">1.1</span><span class="o">.</span><span class="mi">5</span> <span class="c1"># Swift 4.0</span>
-</code></pre>
-<pre class="highlight shell"><code><span class="nv">$ </span>carthage update
-</code></pre>
+<p>Add <code>https://github.com/vpeschenkov/LetterAvatarKit</code> as a package dependency in Xcode.</p>
 <h2 id='usage' class='heading'>Usage</h2>
 <h3 id='swift' class='heading'>Swift</h3>
 
@@ -128,7 +127,7 @@ it, simply add the following line to your Podfile:</p>
 
 <span class="k">let</span> <span class="nv">avatarImage</span> <span class="o">=</span> <span class="kt">LetterAvatarMaker</span><span class="p">()</span>
     <span class="o">.</span><span class="n">build</span> <span class="p">{</span> <span class="n">c</span> <span class="k">in</span>
-        <span class="n">c</span><span class="o">.</span><span class="n">isCircle</span> <span class="o">=</span> <span class="kc">true</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">circle</span> <span class="o">=</span> <span class="kc">true</span>
         <span class="n">c</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">"Letter Avatar"</span>
         <span class="n">c</span><span class="o">.</span><span class="n">borderWidth</span> <span class="o">=</span> <span class="mf">1.0</span>
         <span class="n">c</span><span class="o">.</span><span class="n">backgroundColors</span> <span class="o">=</span> <span class="p">[</span> <span class="o">.</span><span class="n">red</span> <span class="p">]</span>
@@ -144,17 +143,6 @@ it, simply add the following line to your Podfile:</p>
 
 <p>Using UIImage extension:</p>
 <pre class="highlight swift"><code><span class="n">avatarImageView</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="o">.</span><span class="nf">makeLetterAvatar</span><span class="p">(</span><span class="nv">withUsername</span><span class="p">:</span> <span class="s">"Letter Avatar"</span><span class="p">)</span>
-</code></pre>
-<h3 id='objective-c' class='heading'>Objective-C</h3>
-
-<p>Using <code>LKLetterAvatarBuilderCongiguration</code>:</p>
-<pre class="highlight objective_c"><code><span class="n">LKLetterAvatarBuilderCongiguration</span> <span class="o">*</span><span class="n">configuration</span> <span class="o">=</span> <span class="p">[[</span><span class="n">LKLetterAvatarBuilderCongiguration</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
-<span class="n">configuration</span><span class="p">.</span><span class="n">username</span> <span class="o">=</span> <span class="s">@"Letter Avatar"</span><span class="p">;</span>
-<span class="n">self</span><span class="p">.</span><span class="n">avatarImageView</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImage</span> <span class="nf">lk_makeLetterAvatarWithConfiguration</span><span class="p">:</span><span class="n">configuration</span><span class="p">];</span>
-</code></pre>
-
-<p>Using UIImage extension:</p>
-<pre class="highlight objective_c"><code><span class="n">self</span><span class="p">.</span><span class="n">avatarImageView</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImage</span> <span class="nf">lk_makeLetterAvatarWithUsername</span><span class="p">:</span><span class="s">@"Letter Avatar"</span><span class="p">];</span>
 </code></pre>
 <h2 id='customization' class='heading'>Customization</h2>
 
@@ -182,7 +170,7 @@ it, simply add the following line to your Podfile:</p>
 <span class="kd">open</span> <span class="k">var</span> <span class="nv">lettersFontAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSAttributedString</span><span class="o">.</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span>
 </code></pre>
 <pre class="highlight swift"><code><span class="c1">/// Indicates whether to generate circle or square image.</span>
-<span class="kd">open</span> <span class="k">var</span> <span class="nv">isCircle</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="kd">open</span> <span class="k">var</span> <span class="nv">circle</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span>
 </code></pre>
 <pre class="highlight swift"><code><span class="c1">/// The border width of the image.</span>
 <span class="kd">open</span> <span class="k">var</span> <span class="nv">borderWidth</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">0.0</span>
@@ -209,11 +197,10 @@ it, simply add the following line to your Podfile:</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="hhttps://github.com/vpeschenkov" target="_blank" rel="external">Victor</a>. All rights reserved. (Last updated: 2020-03-17)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2026 <a class="link" href="https://github.com/vpeschenkov" target="_blank" rel="external noopener">Victor Peschenkov</a>. All rights reserved. (Last updated: 2026-06-15)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

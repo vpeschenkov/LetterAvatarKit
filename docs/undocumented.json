@@ -1,33 +1,47 @@
 {
   "warnings": [
     {
-      "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/Extensions/UIColor+LetterAvatarKit.swift",
-      "line": 99,
+      "file": "/Users/runner/work/LetterAvatarKit/LetterAvatarKit/LetterAvatarKit/Extensions/UIColor+LetterAvatarKit.swift",
+      "line": 96,
       "symbol": "UIColor.colors",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/LetterAvatarMaker.swift",
-      "line": null,
-      "symbol": "LetterAvatarMaker",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/runner/work/LetterAvatarKit/LetterAvatarKit/LetterAvatarKit/LetterAvatarBuilder.swift",
+      "line": 30,
+      "symbol": "LetterAvatarBuilder.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/LetterAvatarMaker.swift",
+      "file": "/Users/runner/work/LetterAvatarKit/LetterAvatarKit/LetterAvatarKit/LetterAvatarBuilderConfiguration.swift",
+      "line": 31,
+      "symbol": "LetterAvatarBuilderConfiguration.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/LetterAvatarKit/LetterAvatarKit/LetterAvatarKit/LetterAvatarMaker.swift",
       "line": 29,
       "symbol": "LetterAvatarMaker",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/vpeschenkov/Documents/git/LetterAvatarKit/LetterAvatarKit/LetterAvatarMakerExtendable.swift",
+      "file": "/Users/runner/work/LetterAvatarKit/LetterAvatarKit/LetterAvatarKit/LetterAvatarMaker.swift",
+      "line": 35,
+      "symbol": "LetterAvatarMaker",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/LetterAvatarKit/LetterAvatarKit/LetterAvatarKit/LetterAvatarMakerExtendable.swift",
       "line": 29,
       "symbol": "LetterAvatarMakerExtendable",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/vpeschenkov/Documents/git/LetterAvatarKit"
+  "source_directory": "/Users/runner/work/LetterAvatarKit/LetterAvatarKit"
 }
