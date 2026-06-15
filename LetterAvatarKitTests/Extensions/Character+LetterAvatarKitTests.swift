@@ -28,12 +28,12 @@ import Foundation
 @testable import LetterAvatarKit
 
 class CharacterLetterAvatarKitTests: XCTestCase {
-    func testASCIIVAlue() {
+    func testUnicodeScalarValue() {
         let first = Character("A")
         let second = Character("B")
-        // 65 is ASCII code of "A"
-        XCTAssertEqual(first.ASCIIValue, 65)
-        XCTAssertNotEqual(first.ASCIIValue, second.ASCIIValue)
+        // 65 is the Unicode scalar value of "A".
+        XCTAssertEqual(first.unicodeScalarValue, 65)
+        XCTAssertNotEqual(first.unicodeScalarValue, second.unicodeScalarValue)
     }
     
 }

@@ -49,8 +49,7 @@ extension UIImage {
     }
     
     // swiftlint:disable function_body_length
-    // swiftlint:disable cyclomatic_complexity
-    open func compareImages(with image: UIImage?, tolerance: CGFloat) -> Bool {
+    public func compareImages(with image: UIImage?, tolerance: CGFloat) -> Bool {
         guard let image = image else {
             return false
         }
@@ -62,20 +61,15 @@ extension UIImage {
         var lhsImage: CGImage? = self.cgImage
         var rhsImage: CGImage? = image.cgImage
         let convertToSuitableByteOrder = { (image: UIImage, size: CGSize) -> CGImage? in
-            defer {
-                UIGraphicsEndImageContext()
-            }
-            UIGraphicsBeginImageContext(size)
-            if UIGraphicsGetCurrentContext() != nil {
+            let renderer = UIGraphicsImageRenderer(size: size)
+            return renderer.image { _ in
                 image.draw(in: CGRect(
                     x: 0,
                     y: 0,
                     width: size.width,
                     height: size.height
                 ))
-                return UIGraphicsGetImageFromCurrentImageContext()?.cgImage
-            }
-            return nil
+            }.cgImage
         }
         
         if #available(iOS 12.0, *) {
@@ -118,6 +112,5 @@ extension UIImage {
             return true
         }
     }
-    // swiftlint:enable cyclomatic_complexity
     // swiftlint:enable function_body_length
 }
