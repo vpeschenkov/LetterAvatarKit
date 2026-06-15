@@ -26,7 +26,7 @@
 import UIKit
 import Foundation
 
-public protocol LetterAvatarMakerExtendable {
+public protocol LetterAvatarMakerExtendable: NSObjectProtocol {
     func setSize(_ size: CGSize) -> LetterAvatarMakerExtendable
     func setUsername(_ username: String) -> LetterAvatarMakerExtendable
     func setLettersFont(_ lettersFont: UIFont?) -> LetterAvatarMakerExtendable

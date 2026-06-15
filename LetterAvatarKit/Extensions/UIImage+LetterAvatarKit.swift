@@ -34,6 +34,7 @@ extension UIImage {
     /// letter-based avatar image.
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
+    @objc(lk_makeLetterAvatarWithConfiguration:)
     static public func makeLetterAvatar(
         withConfiguration configuration: LetterAvatarBuilderConfiguration
         ) -> UIImage? {
@@ -47,6 +48,7 @@ extension UIImage {
     /// letter-based avatar image.
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
+    @objc(lk_makeLetterAvatarWithUsername:)
     static public func makeLetterAvatar(withUsername username: String?) -> UIImage? {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = username
@@ -61,6 +63,7 @@ extension UIImage {
     ///     - size: The avatar size.
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
+    @objc(lk_makeLetterAvatarWithUsername:size:)
     static public func makeLetterAvatar(withUsername username: String?, size: CGSize) -> UIImage? {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = username

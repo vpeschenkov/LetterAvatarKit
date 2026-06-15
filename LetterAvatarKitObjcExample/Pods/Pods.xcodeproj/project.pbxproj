@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0584C435C846DDCAA24CC80C113E2CCA /* UIImage+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DC0A4A696BD80DF7788873B5CDF16A /* UIImage+LetterAvatarKit.swift */; };
+		2F8CF71CFE1A49E6AC0F9249D245676D /* LetterAvatarMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184ACE6A80A91FF774360F6F72A47656 /* LetterAvatarMaker.swift */; };
+		3A98437C7929C2C4F473324B9B80475B /* LetterAvatarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC304188D745159BA2CC691CD12ECC9 /* LetterAvatarKit-dummy.m */; };
+		3D2855ABCF69550604576029CB9B50D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		4056B423638CAF41F304806AEAF639BF /* Pods-LetterAvatarKitObjcExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C50D087AE41542C5113C0257B89E33B /* Pods-LetterAvatarKitObjcExample-dummy.m */; };
+		4FE3BDAB1FAA0D13490B09ECBA293969 /* LetterAvatarMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2190660FEC1C8EC63E9DC5FA39903D2 /* LetterAvatarMakerExtendable.swift */; };
+		5C3F9C4D98ECC9A61FD37DD8E0BA2129 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
+		6755634E163D0939D2DAD6B0C14C1690 /* LetterAvatarKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FDB39565BB50E5FDA0B95E5F19429EC /* LetterAvatarKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C69A0BEBE8ED1E6C9AD3F035B976BB6 /* UIColor+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD29A8654444A0AA0EB1768EA70B8309 /* UIColor+LetterAvatarKit.swift */; };
+		92B62928529EC1024EC72FE8CB26BFBE /* Pods-LetterAvatarKitObjcExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88633E760E91F5DB5655075DC75A60E1 /* Pods-LetterAvatarKitObjcExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6B05BCF581181943533540F84D474CB /* LetterAvatarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE5CA44BC06BBA4B0203A184FFB9D9A /* LetterAvatarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E561D28F14CFF06A48AFEC405346EC45 /* LetterAvatarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70DB39D10D60B7640993C170832933 /* LetterAvatarBuilder.swift */; };
+		F01C3F97F76FAEDB24DE5812601139E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		F82925B3C6ABE0F62055438047EFA7C6 /* Character+LetterAvatarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358EAC33149A244181A7A4FE13B4C5C /* Character+LetterAvatarKit.swift */; };
+		F8FE1786CEDC81A25F23F521C6F00ED8 /* LetterAvatarBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B89DFF2AF7522C5E3A021A9541C205 /* LetterAvatarBuilderConfiguration.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB56B702E7BF15F1B7EB0B8B90C88A21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F7736046D8F388E749400613707326;
+			remoteInfo = LetterAvatarKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01377300CA24347E9F0BC146A5C11BA4 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
+		0A40C8521CD2EA6FC4577E5B5F5FB619 /* LetterAvatarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-prefix.pch"; sourceTree = "<group>"; };
+		0CE5CA44BC06BBA4B0203A184FFB9D9A /* LetterAvatarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LetterAvatarKit.h; path = LetterAvatarKit/LetterAvatarKit.h; sourceTree = "<group>"; };
+		0D0FCB96D781BA8AF910D121165E47F3 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
+		1566DC82A5DC612B796D0CA351EC78EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/LetterAvatarKit.docset/Contents/Info.plist; sourceTree = "<group>"; };
+		15F9CCA5786FEF74B11D867FB973DEE0 /* Pods-LetterAvatarKitObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetterAvatarKitObjcExample-frameworks.sh"; sourceTree = "<group>"; };
+		184ACE6A80A91FF774360F6F72A47656 /* LetterAvatarMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarMaker.swift; path = LetterAvatarKit/LetterAvatarMaker.swift; sourceTree = "<group>"; };
+		282C7967098A8C9B01BF0562E7EE015C /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
+		29EC2865FD64E1B12A11F04F7C3156C2 /* UIColor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIColor.html; path = docs/Extensions/UIColor.html; sourceTree = "<group>"; };
+		2D3D7A99FA3B11311C7CA5B63533652C /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
+		2F1593CF41762BD646A705D8A36195A3 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
+		382E379DC100FEE6E35D9FB44D7FBA86 /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; name = docSet.dsidx; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
+		390DC9B3AC679956BC4A5412994D3B20 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
+		3F5F5D8AC86DF262067E99B33F1DE117 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
+		3F75AFED5837C88AEF197D47BAA22140 /* Pods-LetterAvatarKitObjcExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetterAvatarKitObjcExample-Info.plist"; sourceTree = "<group>"; };
+		3FB44DFFA431F0C30B439CCC263E54EF /* UIImage.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIImage.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Extensions/UIImage.html; sourceTree = "<group>"; };
+		4894B8EB2679B877245243D648476EC4 /* LetterAvatarBuilderConfiguration.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarBuilderConfiguration.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Classes/LetterAvatarBuilderConfiguration.html; sourceTree = "<group>"; };
+		4C19914A0FCBB621E17CE626910F51FC /* LetterAvatarBuilder.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarBuilder.html; path = docs/Classes/LetterAvatarBuilder.html; sourceTree = "<group>"; };
+		4C50D087AE41542C5113C0257B89E33B /* Pods-LetterAvatarKitObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LetterAvatarKitObjcExample-dummy.m"; sourceTree = "<group>"; };
+		563250A697FB009E508EB46B20DE1ADA /* LetterAvatarKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LetterAvatarKit; path = LetterAvatarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ADB68C25D193013EB3240813040419 /* UIColor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIColor.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Extensions/UIColor.html; sourceTree = "<group>"; };
+		57DA105AAD84B0803F512F9AEAC73BE0 /* Pods-LetterAvatarKitObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetterAvatarKitObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		58040124C93E9E5C987CB7E3BE090469 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
+		5AC76E7610B69CF8DC2B4FC3F6A6564C /* LetterAvatarKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LetterAvatarKit.modulemap; sourceTree = "<group>"; };
+		65E1FDD74DDE6973CBA2ABEC281CF5DD /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Classes.html; sourceTree = "<group>"; };
+		6694DFFCF0E557B3EBC56083F3EB3366 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
+		69DC0A4A696BD80DF7788873B5CDF16A /* UIImage+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		6B4D293A9C4D9564FF6004B4BD0881DC /* LetterAvatarKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetterAvatarKit.release.xcconfig; sourceTree = "<group>"; };
+		6B8CB336BB5804D9BB5123552A9B0013 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
+		6F0128C14B099F8241AC427F6FDDAFF2 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
+		72BBB8D54CE353B808481EBAFCAD212B /* Pods-LetterAvatarKitObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetterAvatarKitObjcExample.release.xcconfig"; sourceTree = "<group>"; };
+		7A59E7C021AB8A1E75725C609C654583 /* Pods-LetterAvatarKitObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetterAvatarKitObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		83D3FFFE41744BA1AB17EE94FB5D3222 /* Pods-LetterAvatarKitObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LetterAvatarKitObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86EBE33EED07C564471D8442B93ED2E4 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
+		88633E760E91F5DB5655075DC75A60E1 /* Pods-LetterAvatarKitObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LetterAvatarKitObjcExample-umbrella.h"; sourceTree = "<group>"; };
+		94DE162BBD5904BB9F7B5E93C27AC717 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		95B89DFF2AF7522C5E3A021A9541C205 /* LetterAvatarBuilderConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarBuilderConfiguration.swift; path = LetterAvatarKit/LetterAvatarBuilderConfiguration.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FDB39565BB50E5FDA0B95E5F19429EC /* LetterAvatarKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetterAvatarKit-umbrella.h"; sourceTree = "<group>"; };
+		A02E7590AEC392D630C1121387CA581B /* Pods-LetterAvatarKitObjcExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LetterAvatarKitObjcExample"; path = Pods_LetterAvatarKitObjcExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CDBE2BBED3B0C21ACBA323CEDC26FB /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
+		A3AA30DCC90C9BC8AC005B9531C88996 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		AD29A8654444A0AA0EB1768EA70B8309 /* UIColor+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		B1F63471CEA53A1C79BEF5E650ADFD25 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
+		B9134A272F6A2817FC04E9B1192880F4 /* UIImage.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIImage.html; path = docs/Extensions/UIImage.html; sourceTree = "<group>"; };
+		BBC0F7F084C424C9B8FD91D37A9BC6A0 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
+		BD70DB39D10D60B7640993C170832933 /* LetterAvatarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarBuilder.swift; path = LetterAvatarKit/LetterAvatarBuilder.swift; sourceTree = "<group>"; };
+		BE4E2012993C7EB23F82111A5D2C156F /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
+		BE578E310237BB5E12FA4CECF50A9615 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
+		BEDCC6034EA8E4FE7A405AC19D952B7B /* LetterAvatarBuilderConfiguration.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarBuilderConfiguration.html; path = docs/Classes/LetterAvatarBuilderConfiguration.html; sourceTree = "<group>"; };
+		C0B71ABA88F3B9E9680D6256DF8101D1 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
+		C2190660FEC1C8EC63E9DC5FA39903D2 /* LetterAvatarMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LetterAvatarMakerExtendable.swift; path = LetterAvatarKit/LetterAvatarMakerExtendable.swift; sourceTree = "<group>"; };
+		CCC304188D745159BA2CC691CD12ECC9 /* LetterAvatarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetterAvatarKit-dummy.m"; sourceTree = "<group>"; };
+		CEE387ABBD223A80B24AFC542C9EC65A /* LetterAvatarKit.tgz */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarKit.tgz; path = docs/docsets/LetterAvatarKit.tgz; sourceTree = "<group>"; };
+		CFF6E71E04FEB263DE498D9BD0CA3DF5 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
+		D1CF7A6259592E3D5D8282D54A8CC951 /* LetterAvatarBuilder.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LetterAvatarBuilder.html; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/Classes/LetterAvatarBuilder.html; sourceTree = "<group>"; };
+		D72F2E3861704C1EEF30A77A48573F74 /* LetterAvatarKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LetterAvatarKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E358EAC33149A244181A7A4FE13B4C5C /* Character+LetterAvatarKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Character+LetterAvatarKit.swift"; sourceTree = "<group>"; };
+		E381E175BE86EA0AF7C6622F50F4E5EE /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
+		ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EE87630193F71BA52C97714ED3E5F220 /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/Classes.html; sourceTree = "<group>"; };
+		F27645BE60793483E5372F96998C9E08 /* LetterAvatarKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetterAvatarKit.debug.xcconfig; sourceTree = "<group>"; };
+		F4ADD11341893E87C65686F7A6F6D2B3 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/LetterAvatarKit.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
+		F992B55E45A3E87B127E6C562ADAEEA3 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
+		FADFAD902F347FA9D47B9DD614644AE0 /* LetterAvatarKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LetterAvatarKit-Info.plist"; sourceTree = "<group>"; };
+		FF7453E93E928A00990323F089EE81DD /* Pods-LetterAvatarKitObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LetterAvatarKitObjcExample.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		710868F7BB06FA42E007E2162D19EFD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01C3F97F76FAEDB24DE5812601139E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A513B4207A33F9C0D7E49A43291E53EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2855ABCF69550604576029CB9B50D7 /* Foundation.framework in Frameworks */,
+				5C3F9C4D98ECC9A61FD37DD8E0BA2129 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DE6440B6853131A80C53DDA34375AAB /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DE6440B6853131A80C53DDA34375AAB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */,
+				ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		67A6A278667D7DE317903832D9FEEBA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AC76E7610B69CF8DC2B4FC3F6A6564C /* LetterAvatarKit.modulemap */,
+				CCC304188D745159BA2CC691CD12ECC9 /* LetterAvatarKit-dummy.m */,
+				FADFAD902F347FA9D47B9DD614644AE0 /* LetterAvatarKit-Info.plist */,
+				0A40C8521CD2EA6FC4577E5B5F5FB619 /* LetterAvatarKit-prefix.pch */,
+				9FDB39565BB50E5FDA0B95E5F19429EC /* LetterAvatarKit-umbrella.h */,
+				F27645BE60793483E5372F96998C9E08 /* LetterAvatarKit.debug.xcconfig */,
+				6B4D293A9C4D9564FF6004B4BD0881DC /* LetterAvatarKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "LetterAvatarKitObjcExample/Pods/Target Support Files/LetterAvatarKit";
+			sourceTree = "<group>";
+		};
+		70057179CF049A049489A6C823CBE0CF /* LetterAvatarKit */ = {
+			isa = PBXGroup;
+			children = (
+				BD70DB39D10D60B7640993C170832933 /* LetterAvatarBuilder.swift */,
+				95B89DFF2AF7522C5E3A021A9541C205 /* LetterAvatarBuilderConfiguration.swift */,
+				0CE5CA44BC06BBA4B0203A184FFB9D9A /* LetterAvatarKit.h */,
+				184ACE6A80A91FF774360F6F72A47656 /* LetterAvatarMaker.swift */,
+				C2190660FEC1C8EC63E9DC5FA39903D2 /* LetterAvatarMakerExtendable.swift */,
+				86523A578C4BB7682FD5DF96F66E2E53 /* Extensions */,
+				B5CD7A5C4D931A885D2B4B23ECB80E1E /* Pod */,
+				67A6A278667D7DE317903832D9FEEBA6 /* Support Files */,
+			);
+			name = LetterAvatarKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		86523A578C4BB7682FD5DF96F66E2E53 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E358EAC33149A244181A7A4FE13B4C5C /* Character+LetterAvatarKit.swift */,
+				AD29A8654444A0AA0EB1768EA70B8309 /* UIColor+LetterAvatarKit.swift */,
+				69DC0A4A696BD80DF7788873B5CDF16A /* UIImage+LetterAvatarKit.swift */,
+			);
+			name = Extensions;
+			path = LetterAvatarKit/Extensions;
+			sourceTree = "<group>";
+		};
+		B5CD7A5C4D931A885D2B4B23ECB80E1E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				390DC9B3AC679956BC4A5412994D3B20 /* badge.svg */,
+				BBC0F7F084C424C9B8FD91D37A9BC6A0 /* carat.png */,
+				BE578E310237BB5E12FA4CECF50A9615 /* carat.png */,
+				EE87630193F71BA52C97714ED3E5F220 /* Classes.html */,
+				65E1FDD74DDE6973CBA2ABEC281CF5DD /* Classes.html */,
+				282C7967098A8C9B01BF0562E7EE015C /* dash.png */,
+				6F0128C14B099F8241AC427F6FDDAFF2 /* dash.png */,
+				382E379DC100FEE6E35D9FB44D7FBA86 /* docSet.dsidx */,
+				2D3D7A99FA3B11311C7CA5B63533652C /* Extensions.html */,
+				A1CDBE2BBED3B0C21ACBA323CEDC26FB /* Extensions.html */,
+				F4ADD11341893E87C65686F7A6F6D2B3 /* gh.png */,
+				B1F63471CEA53A1C79BEF5E650ADFD25 /* gh.png */,
+				C0B71ABA88F3B9E9680D6256DF8101D1 /* highlight.css */,
+				3F5F5D8AC86DF262067E99B33F1DE117 /* highlight.css */,
+				58040124C93E9E5C987CB7E3BE090469 /* index.html */,
+				2F1593CF41762BD646A705D8A36195A3 /* index.html */,
+				1566DC82A5DC612B796D0CA351EC78EA /* Info.plist */,
+				6B8CB336BB5804D9BB5123552A9B0013 /* jazzy.css */,
+				86EBE33EED07C564471D8442B93ED2E4 /* jazzy.css */,
+				BE4E2012993C7EB23F82111A5D2C156F /* jazzy.js */,
+				CFF6E71E04FEB263DE498D9BD0CA3DF5 /* jazzy.js */,
+				01377300CA24347E9F0BC146A5C11BA4 /* jquery.min.js */,
+				E381E175BE86EA0AF7C6622F50F4E5EE /* jquery.min.js */,
+				4C19914A0FCBB621E17CE626910F51FC /* LetterAvatarBuilder.html */,
+				D1CF7A6259592E3D5D8282D54A8CC951 /* LetterAvatarBuilder.html */,
+				BEDCC6034EA8E4FE7A405AC19D952B7B /* LetterAvatarBuilderConfiguration.html */,
+				4894B8EB2679B877245243D648476EC4 /* LetterAvatarBuilderConfiguration.html */,
+				D72F2E3861704C1EEF30A77A48573F74 /* LetterAvatarKit.podspec */,
+				CEE387ABBD223A80B24AFC542C9EC65A /* LetterAvatarKit.tgz */,
+				A3AA30DCC90C9BC8AC005B9531C88996 /* LICENSE */,
+				94DE162BBD5904BB9F7B5E93C27AC717 /* README.md */,
+				0D0FCB96D781BA8AF910D121165E47F3 /* search.json */,
+				F992B55E45A3E87B127E6C562ADAEEA3 /* search.json */,
+				57ADB68C25D193013EB3240813040419 /* UIColor.html */,
+				29EC2865FD64E1B12A11F04F7C3156C2 /* UIColor.html */,
+				3FB44DFFA431F0C30B439CCC263E54EF /* UIImage.html */,
+				B9134A272F6A2817FC04E9B1192880F4 /* UIImage.html */,
+				6694DFFCF0E557B3EBC56083F3EB3366 /* undocumented.json */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B6B8708A128F98BB45BCA3A4939BB12B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70057179CF049A049489A6C823CBE0CF /* LetterAvatarKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C2000A16CE439504DB37FF631AE029F7 /* Pods-LetterAvatarKitObjcExample */ = {
+			isa = PBXGroup;
+			children = (
+				FF7453E93E928A00990323F089EE81DD /* Pods-LetterAvatarKitObjcExample.modulemap */,
+				83D3FFFE41744BA1AB17EE94FB5D3222 /* Pods-LetterAvatarKitObjcExample-acknowledgements.markdown */,
+				57DA105AAD84B0803F512F9AEAC73BE0 /* Pods-LetterAvatarKitObjcExample-acknowledgements.plist */,
+				4C50D087AE41542C5113C0257B89E33B /* Pods-LetterAvatarKitObjcExample-dummy.m */,
+				15F9CCA5786FEF74B11D867FB973DEE0 /* Pods-LetterAvatarKitObjcExample-frameworks.sh */,
+				3F75AFED5837C88AEF197D47BAA22140 /* Pods-LetterAvatarKitObjcExample-Info.plist */,
+				88633E760E91F5DB5655075DC75A60E1 /* Pods-LetterAvatarKitObjcExample-umbrella.h */,
+				7A59E7C021AB8A1E75725C609C654583 /* Pods-LetterAvatarKitObjcExample.debug.xcconfig */,
+				72BBB8D54CE353B808481EBAFCAD212B /* Pods-LetterAvatarKitObjcExample.release.xcconfig */,
+			);
+			name = "Pods-LetterAvatarKitObjcExample";
+			path = "Target Support Files/Pods-LetterAvatarKitObjcExample";
+			sourceTree = "<group>";
+		};
+		C57FF64956861DD3957C59EDAA1C4299 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2000A16CE439504DB37FF631AE029F7 /* Pods-LetterAvatarKitObjcExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B6B8708A128F98BB45BCA3A4939BB12B /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				D4B7AA071E91E136996B0303A8395417 /* Products */,
+				C57FF64956861DD3957C59EDAA1C4299 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D4B7AA071E91E136996B0303A8395417 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				563250A697FB009E508EB46B20DE1ADA /* LetterAvatarKit */,
+				A02E7590AEC392D630C1121387CA581B /* Pods-LetterAvatarKitObjcExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		670C6D973CEBE609B6F4883E83501826 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B62928529EC1024EC72FE8CB26BFBE /* Pods-LetterAvatarKitObjcExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD34C7A87DCD51B64373A2C2663BC87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B05BCF581181943533540F84D474CB /* LetterAvatarKit.h in Headers */,
+				6755634E163D0939D2DAD6B0C14C1690 /* LetterAvatarKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		961D4DE155D1D97BBB2F3D48799AEBA6 /* Pods-LetterAvatarKitObjcExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A9B2C077AB64A9F9C745F0194BAE1EA /* Build configuration list for PBXNativeTarget "Pods-LetterAvatarKitObjcExample" */;
+			buildPhases = (
+				670C6D973CEBE609B6F4883E83501826 /* Headers */,
+				11209DC767E6DAFEED48469A5943DE6A /* Sources */,
+				710868F7BB06FA42E007E2162D19EFD8 /* Frameworks */,
+				EFFCDD11E7CDBED5DCF0DD63520ACF42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69CD41DD18D09E0BCB2005010EE143F1 /* PBXTargetDependency */,
+			);
+			name = "Pods-LetterAvatarKitObjcExample";
+			productName = Pods_LetterAvatarKitObjcExample;
+			productReference = A02E7590AEC392D630C1121387CA581B /* Pods-LetterAvatarKitObjcExample */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9F7736046D8F388E749400613707326 /* LetterAvatarKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6764C1FCFC68E581449D7F6D420E8019 /* Build configuration list for PBXNativeTarget "LetterAvatarKit" */;
+			buildPhases = (
+				CCD34C7A87DCD51B64373A2C2663BC87 /* Headers */,
+				C881BAA9512E923E382A5BC8BA7BF31A /* Sources */,
+				A513B4207A33F9C0D7E49A43291E53EA /* Frameworks */,
+				3BE0987CB64DEC7FE9063BB45D41E078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetterAvatarKit;
+			productName = LetterAvatarKit;
+			productReference = 563250A697FB009E508EB46B20DE1ADA /* LetterAvatarKit */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D4B7AA071E91E136996B0303A8395417 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9F7736046D8F388E749400613707326 /* LetterAvatarKit */,
+				961D4DE155D1D97BBB2F3D48799AEBA6 /* Pods-LetterAvatarKitObjcExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BE0987CB64DEC7FE9063BB45D41E078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFCDD11E7CDBED5DCF0DD63520ACF42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11209DC767E6DAFEED48469A5943DE6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4056B423638CAF41F304806AEAF639BF /* Pods-LetterAvatarKitObjcExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C881BAA9512E923E382A5BC8BA7BF31A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82925B3C6ABE0F62055438047EFA7C6 /* Character+LetterAvatarKit.swift in Sources */,
+				E561D28F14CFF06A48AFEC405346EC45 /* LetterAvatarBuilder.swift in Sources */,
+				F8FE1786CEDC81A25F23F521C6F00ED8 /* LetterAvatarBuilderConfiguration.swift in Sources */,
+				3A98437C7929C2C4F473324B9B80475B /* LetterAvatarKit-dummy.m in Sources */,
+				2F8CF71CFE1A49E6AC0F9249D245676D /* LetterAvatarMaker.swift in Sources */,
+				4FE3BDAB1FAA0D13490B09ECBA293969 /* LetterAvatarMakerExtendable.swift in Sources */,
+				8C69A0BEBE8ED1E6C9AD3F035B976BB6 /* UIColor+LetterAvatarKit.swift in Sources */,
+				0584C435C846DDCAA24CC80C113E2CCA /* UIImage+LetterAvatarKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69CD41DD18D09E0BCB2005010EE143F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LetterAvatarKit;
+			target = D9F7736046D8F388E749400613707326 /* LetterAvatarKit */;
+			targetProxy = CB56B702E7BF15F1B7EB0B8B90C88A21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AC5F49B38F93C8DAC47F4E515D1D6AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27645BE60793483E5372F96998C9E08 /* LetterAvatarKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/LetterAvatarKit/LetterAvatarKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/LetterAvatarKit/LetterAvatarKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LetterAvatarKit/LetterAvatarKit.modulemap";
+				PRODUCT_MODULE_NAME = LetterAvatarKit;
+				PRODUCT_NAME = LetterAvatarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		264C6E4901BB821BF1570535A9586858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A59E7C021AB8A1E75725C609C654583 /* Pods-LetterAvatarKitObjcExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-LetterAvatarKitObjcExample/Pods-LetterAvatarKitObjcExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LetterAvatarKitObjcExample/Pods-LetterAvatarKitObjcExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CA5C8498614D19F065688075BC8D50E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4D293A9C4D9564FF6004B4BD0881DC /* LetterAvatarKit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/LetterAvatarKit/LetterAvatarKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/LetterAvatarKit/LetterAvatarKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LetterAvatarKit/LetterAvatarKit.modulemap";
+				PRODUCT_MODULE_NAME = LetterAvatarKit;
+				PRODUCT_NAME = LetterAvatarKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC336FD062F73510BEBF00D35B7AF0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BBB8D54CE353B808481EBAFCAD212B /* Pods-LetterAvatarKitObjcExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-LetterAvatarKitObjcExample/Pods-LetterAvatarKitObjcExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LetterAvatarKitObjcExample/Pods-LetterAvatarKitObjcExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6764C1FCFC68E581449D7F6D420E8019 /* Build configuration list for PBXNativeTarget "LetterAvatarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC5F49B38F93C8DAC47F4E515D1D6AF /* Debug */,
+				CA5C8498614D19F065688075BC8D50E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A9B2C077AB64A9F9C745F0194BAE1EA /* Build configuration list for PBXNativeTarget "Pods-LetterAvatarKitObjcExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264C6E4901BB821BF1570535A9586858 /* Debug */,
+				DC336FD062F73510BEBF00D35B7AF0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

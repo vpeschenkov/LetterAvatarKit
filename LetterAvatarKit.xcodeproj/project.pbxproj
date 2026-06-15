@@ -28,6 +28,7 @@
 		EB821DFC1F98C233009B3775 /* UIImage+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB821DFB1F98C233009B3775 /* UIImage+Compare.swift */; };
 		EB8EC4131F85929E000B7641 /* LetterAvatarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8EC4091F85929E000B7641 /* LetterAvatarKit.framework */; };
 		EB8EC4181F85929E000B7641 /* LetterAvatarBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EC4171F85929E000B7641 /* LetterAvatarBuilderTests.swift */; };
+		EB8EC41A1F85929E000B7641 /* LetterAvatarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8EC40C1F85929E000B7641 /* LetterAvatarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB8EC4241F859382000B7641 /* LetterAvatarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EC4231F859382000B7641 /* LetterAvatarBuilder.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		EB821DF51F98B906009B3775 /* LetterAvatarTestImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LetterAvatarTestImage@3x.png"; sourceTree = "<group>"; };
 		EB821DFB1F98C233009B3775 /* UIImage+Compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Compare.swift"; sourceTree = "<group>"; };
 		EB8EC4091F85929E000B7641 /* LetterAvatarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LetterAvatarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8EC40C1F85929E000B7641 /* LetterAvatarKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetterAvatarKit.h; sourceTree = "<group>"; };
 		EB8EC40D1F85929E000B7641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB8EC4121F85929E000B7641 /* LetterAvatarKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetterAvatarKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8EC4171F85929E000B7641 /* LetterAvatarBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterAvatarBuilderTests.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				EB516B611F8810D200BEA1F2 /* Extensions */,
+				EB8EC40C1F85929E000B7641 /* LetterAvatarKit.h */,
 				EB8EC4231F859382000B7641 /* LetterAvatarBuilder.swift */,
 				3591E078233C233F0041B834 /* LetterAvatarMakerExtendable.swift */,
 				35089432210272B20024E7CA /* LetterAvatarBuilderConfiguration.swift */,
@@ -182,6 +185,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8EC41A1F85929E000B7641 /* LetterAvatarKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

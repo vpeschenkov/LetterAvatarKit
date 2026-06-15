@@ -26,9 +26,7 @@
 import UIKit
 import Foundation
 
-open class LetterAvatarMaker {
-    public init() {}
-
+open class LetterAvatarMaker: NSObject {
     fileprivate var configuration = LetterAvatarBuilderConfiguration()
 }
 

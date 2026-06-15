@@ -1,0 +1,31 @@
+{
+  "name": "LetterAvatarKit",
+  "platforms": {
+    "ios": "12.0",
+    "tvos": "12.0"
+  },
+  "version": "2.0.0",
+  "license": {
+    "type": "MIT"
+  },
+  "homepage": "https://github.com/vpeschenkov/LetterAvatarKit",
+  "authors": {
+    "Viktor Peschenkov": "v.peschenkov@gmail.com"
+  },
+  "summary": "An extension that generates letter-based avatars/placeholders written in Swift",
+  "source": {
+    "git": "https://github.com/vpeschenkov/LetterAvatarKit.git",
+    "tag": "2.0.0"
+  },
+  "source_files": [
+    "LetterAvatarKit/*.{h,swift}",
+    "LetterAvatarKit/Extensions/*.{swift}"
+  ],
+  "requires_arc": true,
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "swift_versions": "5.9",
+  "swift_version": "5.9"
+}

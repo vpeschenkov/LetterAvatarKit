@@ -1,0 +1,6 @@
+framework module Pods_LetterAvatarKitObjcExample {
+  umbrella header "Pods-LetterAvatarKitObjcExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

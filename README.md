@@ -1,137 +1,180 @@
 # LetterAvatarKit
 
-[![Swift 5.9](https://img.shields.io/badge/Swift-5.9-orange.svg)](https://swift.org)
-[![Platforms](https://img.shields.io/badge/platform-iOS%2012%2B%20%7C%20tvOS%2012%2B-lightgrey.svg)](https://developer.apple.com)
-[![SPM](https://img.shields.io/badge/Swift_Package_Manager-compatible-brightgreen.svg)](https://swift.org/package-manager)
-[![CocoaPods](https://img.shields.io/cocoapods/v/LetterAvatarKit.svg)](https://cocoapods.org/pods/LetterAvatarKit)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![][Swift Version] ![][Pods] ![][Platform] ![][Codacy Badge]
 
-Generate beautiful, deterministic letter avatars for iOS and tvOS with a tiny UIKit-first Swift library.
+`LetterAvatarKit` provides an ```UIImage``` extension for generating letter-based avatars/placeholders. There are a few images showing what you can achive by using this framework:
 
-`LetterAvatarKit` turns names, usernames, initials, emails, and placeholders into polished `UIImage` avatars. It is ideal for chat apps, contact lists, teams, CRM products, profile fallbacks, onboarding flows, and any UI that needs fast identity visuals without downloading remote images.
+![][screenshots]
 
-![LetterAvatarKit examples][Screenshots]
+## Requirements
+- iOS 12+
+- tvOS 12+
+- Swift 5.9+
 
-## Why LetterAvatarKit
-
-- Zero network dependency: create avatars locally from a string.
-- Deterministic colors: the same name can produce a consistent visual identity.
-- UIKit native: returns `UIImage` and works with `UIImageView` immediately.
-- Flexible styling: size, initials, font, text color, background palette, borders, circle or square shape.
-- Swift-first API: builder API, configuration object, and `UIImage` extension.
-- Lightweight install: Swift Package Manager or CocoaPods.
-- Production-ready targets: iOS 12+, tvOS 12+, Swift 5.9+.
+## Features
+- Easy to use and intuitive interface
+- Highly flexible API allows for customization and integration into various projects
+- Use of the builder pattern for constructing avatar configurations
+- Support for creating circular, square, or bordered images
+- Wide range of flat UI colors available
+- Compatible with tvOS platform
 
 ## Installation
 
-### Swift Package Manager
+### [CocoaPods](https://cocoapods.org)
 
-In Xcode, add this repository as a package dependency:
-
-```text
-https://github.com/vpeschenkov/LetterAvatarKit
-```
-
-### CocoaPods
-
-Add `LetterAvatarKit` to your `Podfile`:
-
+`LetterAvatarKit` is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 ```ruby
 pod "LetterAvatarKit"
 ```
 
-## Quick Start
+### Swift Package Manager
+
+Add `https://github.com/vpeschenkov/LetterAvatarKit` as a package dependency in Xcode.
+
+## Usage
 
 ### Swift
 
-```swift
-import LetterAvatarKit
-
-avatarImageView.image = UIImage.makeLetterAvatar(withUsername: "Taylor Swift")
-```
-
-For a customized avatar:
+Using `LetterAvatarMaker`:
 
 ```swift
-let avatar = LetterAvatarMaker()
-    .setUsername("Taylor Swift")
-    .setSize(CGSize(width: 96, height: 96))
-    .setCircle(true)
-    .setBorderWidth(2)
-    .setBorderColor(.white)
-    .setBackgroundColors([.systemPurple, .systemIndigo, .systemPink])
+// Square avatar image
+let avatarImage = LetterAvatarMaker()
+    .setUsername("Letter Avatar")
     .build()
+avatarImageView.image = avatarImage
 
-avatarImageView.image = avatar
+// Circle avatar image with white border
+let circleAvatarImage = LetterAvatarMaker()
+    .setCircle(true)
+    .setUsername("Letter Avatar")
+    .setBorderWidth(1.0)
+    .setBackgroundColors([ .red ])
+    .build()
+avatarImageView.image = circleAvatarImage
 ```
 
-Using the closure-based builder:
+Using `LetterAvatarMaker` with closures:
 
 ```swift
-let avatar = LetterAvatarMaker().build { configuration in
-    configuration.username = "Design Team"
-    configuration.size = CGSize(width: 80, height: 80)
-    configuration.circle = true
-    configuration.useSingleLetter = false
-    configuration.lettersFont = .boldSystemFont(ofSize: 28)
-    configuration.backgroundColors = [.systemBlue]
-}
+let avatarImage = LetterAvatarMaker()
+    .build { c in
+        c.username = "Letter Avatar"
+    }
+avatarImageView.image = avatarImage
+
+let avatarImage = LetterAvatarMaker()
+    .build { c in
+        c.circle = true
+        c.username = "Letter Avatar"
+        c.borderWidth = 1.0
+        c.backgroundColors = [ .red ]
+    }
+avatarImageView.image = avatarImage
 ```
 
-Using a configuration object directly:
-
+Using `LetterAvatarBuilderConfiguration`:
 ```swift
 let configuration = LetterAvatarBuilderConfiguration()
 configuration.username = "Letter Avatar"
-configuration.circle = true
-configuration.borderWidth = 1
-
 avatarImageView.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
 ```
 
-## Configuration
+Using UIImage extension:
+```swift
+avatarImageView.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
+```
 
-`LetterAvatarBuilderConfiguration` supports the common controls needed for modern avatar UI:
+### Objective-C
 
-| Property | Description |
-| --- | --- |
-| `username` | Source string used to extract initials and pick the background color. |
-| `size` | Output image size. Defaults to `80x80`. |
-| `useSingleLetter` | Uses one initial instead of up to three letters. |
-| `lettersFont` | Custom font for the initials. |
-| `lettersColor` | Text color for the initials. |
-| `backgroundColors` | Palette used for avatar backgrounds. |
-| `lettersFontAttributes` | Advanced text attributes for custom rendering. |
-| `circle` | Generates a circular avatar when `true`; square when `false`. |
-| `borderWidth` | Border width around the avatar. |
-| `borderColor` | Border color around the avatar. |
-| `isOpaque` | Draws an opaque background when enabled. |
+Using `LKLetterAvatarBuilderCongiguration`:
+```objc
+LKLetterAvatarBuilderCongiguration *configuration = [[LKLetterAvatarBuilderCongiguration alloc] init];
+configuration.username = @"Letter Avatar";
+self.avatarImageView.image = [UIImage lk_makeLetterAvatarWithConfiguration:configuration];
+```
+Using UIImage extension:
+```objc
+self.avatarImageView.image = [UIImage lk_makeLetterAvatarWithUsername:@"Letter Avatar"];
+```
 
-## Use Cases
+## Customization
 
-- Profile placeholders before a user uploads a photo.
-- Chat and messaging participant avatars.
-- Contact, customer, and team member lists.
-- Offline-first apps that need instant avatar rendering.
-- Design systems that need consistent identity fallback images.
+You can configure the following properties of `LetterAvatarBuilderConfiguration`:
 
-## Requirements
+```swift
+/// The username.
+open var username: String?
+```
 
-- iOS 12+
-- tvOS 12+
-- Swift 5.9+
-- Xcode 15+
+```swift
+/// The size of an avatar image.
+open var size: CGSize = CGSize(width: 80, height: 80)
+```
 
-## Keywords
+```swift
+/// The flag that indicates of using single only one letter, otherwise,
+/// as much as wil be possible to obtain. But no more than 3 letters.
+open var isSingleLettered: Bool = false
+```
 
-`swift`, `ios`, `tvos`, `uikit`, `avatar`, `initials`, `profile-image`, `placeholder`, `contacts`, `chat-ui`, `swift-package-manager`, `cocoapods`
+```swift
+/// The letters font.
+open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
+```
 
-## Contributing
+```swift
+/// The letters colors
+open var lettersColor: UIColor = LKUIColorByRGB(red: 236, green: 240, blue: 241)
+```
 
-Issues, ideas, and pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+```swift
+/// The background colors of an image.
+open var backgroundColors: [UIColor] = UIColor.colors
+```
+
+```swift
+/// The letters font attributes.
+open var lettersFontAttributes: [NSAttributedString.Key: Any]?
+```
+
+```swift
+/// Indicates whether to generate circle or square image.
+open var circle: Bool = false
+```
+
+```swift
+/// The border width of the image.
+open var borderWidth: CGFloat = 0.0
+```
+
+```swift
+/// The border color of the image.
+open var borderColor: UIColor = UIColor.white
+```
+
+```swift
+/// A Boolean flag indicating whether the avatar is opaque.
+open var opaque: Bool = false
+```
+
+## Community
+
+Questions, comments, issues, and pull requests are welcome!
+
+## Contacts
+
+- [GitHub](https://github.com/vpeschenkov)
+- [Twitter](https://twitter.com/vpeschenkov)
 
 ## License
 
-LetterAvatarKit is released under the MIT license. See [LICENSE](LICENSE) for details.
+Distributed under the MIT license. See [LICENSE](https://github.com/vpeschenkov/LetterAvatarKit/blob/master/LICENSE) for more information.
 
 [Screenshots]: https://i.imgur.com/n3SjH6q.jpg
+[Platform]: https://cocoapod-badges.herokuapp.com/p/LetterAvatarKit/badge.png
+[Pods]: https://cocoapod-badges.herokuapp.com/v/LetterAvatarKit/badge.png
+[Swift Version]: https://img.shields.io/badge/swift-5.9-orange.svg?style=flat
+[Codacy Badge]: https://api.codacy.com/project/badge/Grade/d0f9b1a4ccb64d4aacd18a971e4cf8b7

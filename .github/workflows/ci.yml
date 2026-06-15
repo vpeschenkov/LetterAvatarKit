@@ -34,3 +34,18 @@ jobs:
             -project LetterAvatarKitExample/LetterAvatarKitExample.xcodeproj \
             -scheme LetterAvatarKitExample \
             -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'
+
+      - name: Install CocoaPods
+        run: gem install cocoapods
+
+      - name: Install Objective-C example pods
+        working-directory: LetterAvatarKitObjcExample
+        run: pod install
+
+      - name: Build Objective-C example
+        working-directory: LetterAvatarKitObjcExample
+        run: |
+          xcodebuild build \
+            -workspace LetterAvatarKitObjcExample.xcworkspace \
+            -scheme LetterAvatarKitObjcExample \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'
