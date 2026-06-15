@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  test:
+    name: Test
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Validate package manifest
+        run: swift package dump-package
+
+      - name: Test framework
+        run: |
+          xcodebuild test \
+            -project LetterAvatarKit.xcodeproj \
+            -scheme LetterAvatarKit \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'
+
+      - name: Build Swift example
+        run: |
+          xcodebuild build \
+            -project LetterAvatarKitExample/LetterAvatarKitExample.xcodeproj \
+            -scheme LetterAvatarKitExample \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'
+
+      - name: Install CocoaPods
+        run: gem install cocoapods
+
+      - name: Install Objective-C example pods
+        working-directory: LetterAvatarKitObjcExample
+        run: pod install
+
+      - name: Build Objective-C example
+        working-directory: LetterAvatarKitObjcExample
+        run: |
+          xcodebuild build \
+            -workspace LetterAvatarKitObjcExample.xcworkspace \
+            -scheme LetterAvatarKitObjcExample \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'

@@ -8,6 +8,18 @@
 #### Fixed for any bug fixes.
 ```
 
+### 2.0.0
+#### Changed
+- Raised minimum deployment targets to iOS 12.0 and tvOS 12.0.
+- Updated the package, podspec, and project settings for Swift 5.9.
+- Modernized image rendering to use `UIGraphicsImageRenderer`.
+- Updated the Swift example to depend on the local package checkout.
+- Replaced Travis CI with GitHub Actions.
+
+#### Removed
+- Removed obsolete compatibility helpers and tests for standard library APIs.
+- Removed Carthage documentation.
+
 ### 1.2.5
 #### Removed
 - Removed `SwiftUI` dependency (#31)
