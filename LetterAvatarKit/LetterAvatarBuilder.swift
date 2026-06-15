@@ -26,8 +26,9 @@
 import UIKit
 
 /// Uses for making letter-based avatar images.
-@objc(LKLetterAvatarBuilder)
-open class LetterAvatarBuilder: NSObject {
+open class LetterAvatarBuilder {
+    public init() {}
+
     /// Makes a letter-based avatar image by using a given configuration.
     ///
     /// - Parameters:
@@ -35,7 +36,6 @@ open class LetterAvatarBuilder: NSObject {
     /// letter-based avatar image.
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
-    @objc(makeAvatarWithConfiguration:)
     open func makeAvatar(with configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
         let colors = configuration.backgroundColors.isEmpty ? UIColor.colors : configuration.backgroundColors
         guard let username = configuration.username else {

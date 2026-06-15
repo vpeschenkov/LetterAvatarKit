@@ -87,19 +87,6 @@ Using UIImage extension:
 avatarImageView.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
 ```
 
-### Objective-C
-
-Using `LKLetterAvatarBuilderCongiguration`:
-```objc
-LKLetterAvatarBuilderCongiguration *configuration = [[LKLetterAvatarBuilderCongiguration alloc] init];
-configuration.username = @"Letter Avatar";
-self.avatarImageView.image = [UIImage lk_makeLetterAvatarWithConfiguration:configuration];
-```
-Using UIImage extension:
-```objc
-self.avatarImageView.image = [UIImage lk_makeLetterAvatarWithUsername:@"Letter Avatar"];
-```
-
 ## Customization
 
 You can configure the following properties of `LetterAvatarBuilderConfiguration`:
