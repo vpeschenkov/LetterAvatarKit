@@ -37,7 +37,7 @@ open class LetterAvatarBuilder: NSObject {
     /// - Returns: Returns whether an instance of UIImage or nil.
     @objc(makeAvatarWithConfiguration:)
     open func makeAvatar(with configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
-        let colors = configuration.backgroundColors
+        let colors = configuration.backgroundColors.isEmpty ? UIColor.colors : configuration.backgroundColors
         guard let username = configuration.username else {
             return drawAvatar(
                 with: configuration,
@@ -51,7 +51,7 @@ open class LetterAvatarBuilder: NSObject {
         )
         var colorIndex = 0
         if colors.count > 1 {
-            colorIndex = usernameInfo.ASCIIValue
+            colorIndex = usernameInfo.unicodeScalarValue
             colorIndex *= 3557 // Prime number
             colorIndex %= colors.count - 1
         }
@@ -67,10 +67,15 @@ open class LetterAvatarBuilder: NSObject {
         with configuration: LetterAvatarBuilderConfiguration,
         letters: String,
         backgroundColor: CGColor
-        ) -> UIImage? {
+    ) -> UIImage? {
         let rect = CGRect(x: 0.0, y: 0.0, width: configuration.size.width, height: configuration.size.height)
-        UIGraphicsBeginImageContextWithOptions(rect.size, configuration.isOpaque, UIScreen.main.scale)
-        if let context = UIGraphicsGetCurrentContext() {
+        let format = UIGraphicsImageRendererFormat.default()
+        format.opaque = configuration.isOpaque
+        format.scale = UIScreen.main.scale
+        let renderer = UIGraphicsImageRenderer(size: rect.size, format: format)
+
+        return renderer.image { rendererContext in
+            let context = rendererContext.cgContext
             let borderWidth = configuration.borderWidth
             let borderColor = configuration.borderColor.cgColor
             let strokeRect = rect.insetBy(dx: borderWidth * 0.5, dy: borderWidth * 0.5)
@@ -102,11 +107,7 @@ open class LetterAvatarBuilder: NSObject {
                 height: lettersSize.height
             )
             letters.draw(in: lettersRect, withAttributes: attributes)
-            let avatarImage = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
-            return avatarImage
         }
-        return nil
     }
     
     private func makeFitFont(withFont font: UIFont?, forSize size: CGSize) -> UIFont {
@@ -124,7 +125,7 @@ private class UsernameInfo {
         return userInfo.letters
     }
     
-    public var ASCIIValue: Int {
+    public var unicodeScalarValue: Int {
         return userInfo.value
     }
     
@@ -134,7 +135,7 @@ private class UsernameInfo {
     private typealias InfoContainer = (letters: String, value: Int)
     private lazy var userInfo: InfoContainer = {
         var letters = String()
-        var lettersASCIIValue = 0
+        var lettersUnicodeScalarValue = 0
         // Obtains an array of words by using a given username
         let components = username.components(separatedBy: " ")
         // If there are whether two words or more
@@ -143,7 +144,7 @@ private class UsernameInfo {
                 for component in components.prefix(3) {
                     if let letter = component.first {
                         letters.append(letter)
-                        lettersASCIIValue += letter.ASCIIValue
+                        lettersUnicodeScalarValue += letter.unicodeScalarValue
                     }
                 }
             } else {
@@ -151,7 +152,7 @@ private class UsernameInfo {
                     // Process the firs name letter
                     if let letter = firstComponent.first {
                         letters.append(letter)
-                        lettersASCIIValue += letter.ASCIIValue
+                        lettersUnicodeScalarValue += letter.unicodeScalarValue
                     }
                 }
             }
@@ -161,7 +162,7 @@ private class UsernameInfo {
                 // Process the firs name letter
                 if let letter = component.first {
                     letters.append(letter)
-                    lettersASCIIValue += letter.ASCIIValue
+                    lettersUnicodeScalarValue += letter.unicodeScalarValue
                     // If single Letter is passed as false but the string is a single char,
                     // this line fails due to out of bounds exception.
                     // https://github.com/vpeschenkov/LetterAvatarKit/issues/11
@@ -172,13 +173,13 @@ private class UsernameInfo {
                         let substring = component[startIndex..<endIndex].capitalized
                         if let letter = substring.first {
                             letters.append(letter)
-                            lettersASCIIValue += letter.ASCIIValue
+                            lettersUnicodeScalarValue += letter.unicodeScalarValue
                         }
                     }
                 }
             }
         }
-        return (letters: letters, value: lettersASCIIValue)
+        return (letters: letters, value: lettersUnicodeScalarValue)
     }()
     
     init(username: String, singleLetter: Bool) {

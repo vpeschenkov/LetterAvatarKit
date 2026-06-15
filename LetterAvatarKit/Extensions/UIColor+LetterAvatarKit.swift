@@ -51,10 +51,7 @@ func LKUIColorByRGB(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
 }
 
 extension UIColor {
-    
-    private struct ColorKey {
-        static var propertyReference = "org.peschenkov.LetterAvatarKit.UIColor.colors"
-    }
+
     /// Colors from http://flatuicolors.com/
     public enum HEXColor {
         /// TURQUOISE
@@ -96,38 +93,25 @@ extension UIColor {
         /// ASBESTOS
         static let asbestosColor = 0x7F8C8D
     }
-    static public var colors: [UIColor] {
-        var colors = objc_getAssociatedObject(self, &ColorKey.propertyReference)
-        if colors == nil {
-            colors = [
-                LKUIColorByHEX(HEXColor.turquoiseColor),
-                LKUIColorByHEX(HEXColor.emeraldColor),
-                LKUIColorByHEX(HEXColor.piterRiverColor),
-                LKUIColorByHEX(HEXColor.amethystColor),
-                LKUIColorByHEX(HEXColor.wetAsphaltColor),
-                LKUIColorByHEX(HEXColor.greenSeaColor),
-                LKUIColorByHEX(HEXColor.nephritisColor),
-                LKUIColorByHEX(HEXColor.belizeHoldeColor),
-                LKUIColorByHEX(HEXColor.wisteriaColor),
-                LKUIColorByHEX(HEXColor.midnightBlueColor),
-                LKUIColorByHEX(HEXColor.sunflowerColor),
-                LKUIColorByHEX(HEXColor.carrotColor),
-                LKUIColorByHEX(HEXColor.alizarinColor),
-                LKUIColorByHEX(HEXColor.concreteColor),
-                LKUIColorByHEX(HEXColor.orangeColor),
-                LKUIColorByHEX(HEXColor.pumpkinColor),
-                LKUIColorByHEX(HEXColor.pomegranateColor),
-                LKUIColorByHEX(HEXColor.silverColor),
-                LKUIColorByHEX(HEXColor.asbestosColor)
-            ]
-            objc_setAssociatedObject(
-                self,
-                &ColorKey.propertyReference,
-                colors,
-                .OBJC_ASSOCIATION_RETAIN_NONATOMIC
-            )
-            return colors as? [UIColor] ?? []
-        }
-        return colors as? [UIColor] ?? []
-    }
+    static public let colors: [UIColor] = [
+        LKUIColorByHEX(HEXColor.turquoiseColor),
+        LKUIColorByHEX(HEXColor.emeraldColor),
+        LKUIColorByHEX(HEXColor.piterRiverColor),
+        LKUIColorByHEX(HEXColor.amethystColor),
+        LKUIColorByHEX(HEXColor.wetAsphaltColor),
+        LKUIColorByHEX(HEXColor.greenSeaColor),
+        LKUIColorByHEX(HEXColor.nephritisColor),
+        LKUIColorByHEX(HEXColor.belizeHoldeColor),
+        LKUIColorByHEX(HEXColor.wisteriaColor),
+        LKUIColorByHEX(HEXColor.midnightBlueColor),
+        LKUIColorByHEX(HEXColor.sunflowerColor),
+        LKUIColorByHEX(HEXColor.carrotColor),
+        LKUIColorByHEX(HEXColor.alizarinColor),
+        LKUIColorByHEX(HEXColor.concreteColor),
+        LKUIColorByHEX(HEXColor.orangeColor),
+        LKUIColorByHEX(HEXColor.pumpkinColor),
+        LKUIColorByHEX(HEXColor.pomegranateColor),
+        LKUIColorByHEX(HEXColor.silverColor),
+        LKUIColorByHEX(HEXColor.asbestosColor)
+    ]
 }
