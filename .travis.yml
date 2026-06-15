@@ -1,7 +1,0 @@
-language: objective-c
-osx_image: xcode12
-
-install:
-  - bundle install
-script:
-  - fastlane test
