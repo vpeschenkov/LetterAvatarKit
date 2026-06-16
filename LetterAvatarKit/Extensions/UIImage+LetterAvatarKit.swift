@@ -34,12 +34,36 @@ extension UIImage {
     /// letter-based avatar image.
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
+    static public func makeLetterAvatar(configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
+        return LetterAvatarBuilder().makeAvatar(configuration)
+    }
+
+    /// Makes an letter-based avatar image using given configuration.
+    ///
+    /// - Parameters:
+    ///     - configuration: The configuration that uses to draw a
+    /// letter-based avatar image.
+    ///
+    /// - Returns: Returns whether an instance of UIImage or nil.
     static public func makeLetterAvatar(
         withConfiguration configuration: LetterAvatarBuilderConfiguration
-        ) -> UIImage? {
-        return LetterAvatarBuilder().makeAvatar(with: configuration)
+    ) -> UIImage? {
+        return makeLetterAvatar(configuration: configuration)
     }
-    
+
+    /// Makes an letter-based avatar image using given username.
+    ///
+    /// - Parameters:
+    ///     - username: The username that uses to draw a
+    /// letter-based avatar image.
+    ///
+    /// - Returns: Returns whether an instance of UIImage or nil.
+    static public func makeLetterAvatar(username: String?) -> UIImage? {
+        let configuration = LetterAvatarBuilderConfiguration()
+        configuration.username = username
+        return makeLetterAvatar(configuration: configuration)
+    }
+
     /// Makes an letter-based avatar image using given username.
     ///
     /// - Parameters:
@@ -48,11 +72,24 @@ extension UIImage {
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
     static public func makeLetterAvatar(withUsername username: String?) -> UIImage? {
+        return makeLetterAvatar(username: username)
+    }
+
+    /// Makes an letter-based avatar image using given username and size.
+    ///
+    /// - Parameters:
+    ///     - username: The username that uses to draw a
+    /// letter-based avatar image.
+    ///     - size: The avatar size.
+    ///
+    /// - Returns: Returns whether an instance of UIImage or nil.
+    static public func makeLetterAvatar(username: String?, size: CGSize) -> UIImage? {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = username
-        return LetterAvatarBuilder().makeAvatar(with: configuration)
+        configuration.size = size
+        return makeLetterAvatar(configuration: configuration)
     }
-    
+
     /// Makes an letter-based avatar image using given username and size.
     ///
     /// - Parameters:
@@ -62,10 +99,7 @@ extension UIImage {
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
     static public func makeLetterAvatar(withUsername username: String?, size: CGSize) -> UIImage? {
-        let configuration = LetterAvatarBuilderConfiguration()
-        configuration.username = username
-        configuration.size = size
-        return LetterAvatarBuilder().makeAvatar(with: configuration)
+        return makeLetterAvatar(username: username, size: size)
     }
     
 }

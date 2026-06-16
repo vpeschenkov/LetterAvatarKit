@@ -37,7 +37,28 @@ open class LetterAvatarBuilder {
     ///
     /// - Returns: Returns whether an instance of UIImage or nil.
     open func makeAvatar(with configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
+        return makeAvatar(configuration)
+    }
+
+    /// Makes a letter-based avatar image by using a given configuration.
+    ///
+    /// - Parameters:
+    ///     - configuration: A configuration that is used to draw a
+    /// letter-based avatar image.
+    ///
+    /// - Returns: Returns whether an instance of UIImage or nil.
+    open func makeAvatar(_ configuration: LetterAvatarBuilderConfiguration) -> UIImage? {
         let colors = configuration.backgroundColors.isEmpty ? UIColor.colors : configuration.backgroundColors
+        if let letters = configuration.letters {
+            let unicodeScalarValue = configuration.username.map {
+                UsernameInfo(username: $0, singleLetter: configuration.useSingleLetter).unicodeScalarValue
+            } ?? unicodeScalarValue(for: letters)
+            return drawAvatar(
+                with: configuration,
+                letters: letters,
+                backgroundColor: backgroundColor(for: unicodeScalarValue, colors: colors)
+            )
+        }
         guard let username = configuration.username else {
             return drawAvatar(
                 with: configuration,
@@ -49,20 +70,29 @@ open class LetterAvatarBuilder {
             username: username,
             singleLetter: configuration.useSingleLetter
         )
-        var colorIndex = 0
-        if colors.count > 1 {
-            colorIndex = usernameInfo.unicodeScalarValue
-            colorIndex *= 3557 // Prime number
-            colorIndex %= colors.count - 1
-        }
-        let backgroundColor = colors[colorIndex].cgColor
         return drawAvatar(
             with: configuration,
             letters: usernameInfo.letters,
-            backgroundColor: backgroundColor
+            backgroundColor: backgroundColor(for: usernameInfo.unicodeScalarValue, colors: colors)
         )
     }
-    
+
+    private func backgroundColor(for unicodeScalarValue: Int, colors: [UIColor]) -> CGColor {
+        var colorIndex = 0
+        if colors.count > 1 {
+            colorIndex = unicodeScalarValue
+            colorIndex *= 3557 // Prime number
+            colorIndex %= colors.count - 1
+        }
+        return colors[colorIndex].cgColor
+    }
+
+    private func unicodeScalarValue(for letters: String) -> Int {
+        return letters.reduce(0) { result, letter in
+            result + letter.unicodeScalarValue
+        }
+    }
+
     private func drawAvatar(
         with configuration: LetterAvatarBuilderConfiguration,
         letters: String,

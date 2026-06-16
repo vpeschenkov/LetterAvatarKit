@@ -61,6 +61,19 @@ class LetterAvatarMakerTests: XCTestCase {
         XCTAssertEqual(avatarImage, testImage)
     }
     
+    func testAvatarBuildWithCustomLetters() {
+        let generatedAvatar = LetterAvatarMaker()
+            .setUsername("+19")
+            .setBackgroundColors([ .red ])
+            .build()
+        let customAvatar = LetterAvatarMaker()
+            .setUsername("+19")
+            .setLetters("VIP")
+            .setBackgroundColors([ .red ])
+            .build()
+        XCTAssertNotEqual(generatedAvatar?.pngData(), customAvatar?.pngData())
+    }
+
     func testAvatarBuildWithOneWordUsername() {
         let avatarImage = LetterAvatarMaker()
             .setUsername("Avatar")

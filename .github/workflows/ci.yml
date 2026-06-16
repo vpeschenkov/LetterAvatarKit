@@ -21,16 +21,24 @@ jobs:
       - name: Validate package manifest
         run: swift package dump-package
 
+      - name: Create iOS simulator
+        run: |
+          RUNTIME_ID=$(xcrun simctl list runtimes --json | jq -r '[.runtimes[] | select(.platform == "iOS" and .isAvailable == true)] | last.identifier')
+          SIMULATOR_UDID=$(xcrun simctl create "CI iPhone" "com.apple.CoreSimulator.SimDeviceType.iPhone-16" "$RUNTIME_ID")
+          xcrun simctl boot "$SIMULATOR_UDID"
+          xcrun simctl bootstatus "$SIMULATOR_UDID" -b
+          echo "SIMULATOR_UDID=$SIMULATOR_UDID" >> "$GITHUB_ENV"
+
       - name: Test framework
         run: |
           xcodebuild test \
             -project LetterAvatarKit.xcodeproj \
             -scheme LetterAvatarKit \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'
+            -destination "id=$SIMULATOR_UDID"
 
       - name: Build Swift example
         run: |
           xcodebuild build \
             -project LetterAvatarKitExample/LetterAvatarKitExample.xcodeproj \
             -scheme LetterAvatarKitExample \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'
+            -destination 'generic/platform=iOS Simulator'

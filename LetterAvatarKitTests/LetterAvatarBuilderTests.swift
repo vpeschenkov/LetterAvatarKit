@@ -34,6 +34,13 @@ class LetterAvatarBuilderTests: XCTestCase {
         XCTAssertEqual(avatarImage, UIImage(named: "LetterAvatarTestImage"))
     }
     
+    func testAvatarBuildWithUnlabeledConfiguration() {
+        let configuration = LetterAvatarBuilderConfiguration()
+        configuration.username = "Letter Avatar"
+        let avatarImage = LetterAvatarBuilder().makeAvatar(configuration)
+        XCTAssertEqual(avatarImage, UIImage(named: "LetterAvatarTestImage"))
+    }
+
     func testAvatarBuildWithCustomSize() {
         let size = CGSize(width: 100, height: 100)
         let configuration = LetterAvatarBuilderConfiguration()
@@ -65,6 +72,21 @@ class LetterAvatarBuilderTests: XCTestCase {
         XCTAssertEqual(avatarImage, testImage)
     }
     
+    func testAvatarBuildWithCustomLetters() {
+        let generatedConfiguration = LetterAvatarBuilderConfiguration()
+        generatedConfiguration.username = "+19"
+        generatedConfiguration.backgroundColors = [ .red ]
+        let generatedAvatar = LetterAvatarBuilder().makeAvatar(with: generatedConfiguration)
+
+        let customConfiguration = LetterAvatarBuilderConfiguration()
+        customConfiguration.username = "+19"
+        customConfiguration.letters = "VIP"
+        customConfiguration.backgroundColors = [ .red ]
+        let customAvatar = LetterAvatarBuilder().makeAvatar(with: customConfiguration)
+
+        XCTAssertNotEqual(generatedAvatar?.pngData(), customAvatar?.pngData())
+    }
+
     func testAvatarBuildWithOneWordUsername() {
         let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = "Avatar"

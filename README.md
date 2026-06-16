@@ -54,6 +54,13 @@ let circleAvatarImage = LetterAvatarMaker()
     .setBackgroundColors([ .red ])
     .build()
 avatarImageView.image = circleAvatarImage
+
+// Avatar image with explicit text instead of derived initials
+let customTextAvatarImage = LetterAvatarMaker()
+    .setUsername("+19")
+    .setLetters("+19")
+    .build()
+avatarImageView.image = customTextAvatarImage
 ```
 
 Using `LetterAvatarMaker` with closures:
@@ -79,12 +86,12 @@ Using `LetterAvatarBuilderConfiguration`:
 ```swift
 let configuration = LetterAvatarBuilderConfiguration()
 configuration.username = "Letter Avatar"
-avatarImageView.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
+avatarImageView.image = UIImage.makeLetterAvatar(configuration: configuration)
 ```
 
 Using UIImage extension:
 ```swift
-avatarImageView.image = UIImage.makeLetterAvatar(withUsername: "Letter Avatar")
+avatarImageView.image = UIImage.makeLetterAvatar(username: "Letter Avatar")
 ```
 
 ## Customization
@@ -97,6 +104,11 @@ open var username: String?
 ```
 
 ```swift
+/// Letters that should be drawn instead of deriving them from the username.
+open var letters: String?
+```
+
+```swift
 /// The size of an avatar image.
 open var size: CGSize = CGSize(width: 80, height: 80)
 ```
@@ -104,12 +116,12 @@ open var size: CGSize = CGSize(width: 80, height: 80)
 ```swift
 /// The flag that indicates of using single only one letter, otherwise,
 /// as much as wil be possible to obtain. But no more than 3 letters.
-open var isSingleLettered: Bool = false
+open var useSingleLetter: Bool = false
 ```
 
 ```swift
 /// The letters font.
-open var lettersFont: UIFont = UIFont.systemFont(ofSize: 16.0)
+open var lettersFont: UIFont?
 ```
 
 ```swift
@@ -144,7 +156,7 @@ open var borderColor: UIColor = UIColor.white
 
 ```swift
 /// A Boolean flag indicating whether the avatar is opaque.
-open var opaque: Bool = false
+open var isOpaque: Bool = false
 ```
 
 ## Community
