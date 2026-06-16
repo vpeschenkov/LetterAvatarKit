@@ -44,7 +44,13 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
         configuration.username = username
         return self
     }
-    
+
+    @discardableResult
+    public func setLetters(_ letters: String?) -> LetterAvatarMakerExtendable {
+        configuration.letters = letters
+        return self
+    }
+
     @discardableResult
     public func setLettersFont(_ lettersFont: UIFont?) -> LetterAvatarMakerExtendable {
         configuration.lettersFont = lettersFont
@@ -103,10 +109,10 @@ extension LetterAvatarMaker: LetterAvatarMakerExtendable {
     
     public func build(maker: (LetterAvatarBuilderConfiguration) -> Void) -> UIImage? {
         maker(configuration)
-        return UIImage.makeLetterAvatar(withConfiguration: configuration)
+        return UIImage.makeLetterAvatar(configuration: configuration)
     }
     
     public func build() -> UIImage? {
-        return UIImage.makeLetterAvatar(withConfiguration: configuration)
+        return UIImage.makeLetterAvatar(configuration: configuration)
     }
 }

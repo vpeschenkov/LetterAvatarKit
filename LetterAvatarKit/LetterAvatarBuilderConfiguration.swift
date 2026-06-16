@@ -34,6 +34,8 @@ open class LetterAvatarBuilderConfiguration {
     open var size: CGSize = CGSize(width: 80, height: 80)
     /// An username.
     open var username: String?
+    /// Letters that should be drawn instead of deriving them from the username.
+    open var letters: String?
     /// A flag that indicates of using single only one letter, otherwise,
     /// as much as wil be possible to obtain. But no more than 3 letters.
     open var useSingleLetter: Bool = false

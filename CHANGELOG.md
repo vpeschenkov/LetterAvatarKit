@@ -8,6 +8,14 @@
 #### Fixed for any bug fixes.
 ```
 
+### Unreleased
+#### Added
+- Added optional explicit avatar text via `LetterAvatarBuilderConfiguration.letters` and `LetterAvatarMaker.setLetters(_:)`.
+- Added Swiftier `makeAvatar(_:)` and `UIImage.makeLetterAvatar(...)` overloads while keeping existing APIs.
+
+#### Fixed
+- Updated the podspec to declare multiple frameworks with `frameworks`.
+
 ### 2.0.0
 #### Changed
 - Raised minimum deployment targets to iOS 12.0 and tvOS 12.0.

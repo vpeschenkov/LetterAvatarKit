@@ -29,6 +29,7 @@ import Foundation
 public protocol LetterAvatarMakerExtendable {
     func setSize(_ size: CGSize) -> LetterAvatarMakerExtendable
     func setUsername(_ username: String) -> LetterAvatarMakerExtendable
+    func setLetters(_ letters: String?) -> LetterAvatarMakerExtendable
     func setLettersFont(_ lettersFont: UIFont?) -> LetterAvatarMakerExtendable
     func setLettersColor(_ lettersColor: UIColor) -> LetterAvatarMakerExtendable
     func useSingleLetter(_ useSingleLetter: Bool) -> LetterAvatarMakerExtendable
