@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
   spec.name             = 'LetterAvatarKit'
   spec.ios.deployment_target = '12.0'
   spec.tvos.deployment_target = '12.0'
-  spec.version          = '2.0.0'
+  spec.version          = '2.1.0'
   spec.license          = { :type => 'MIT' }
   spec.homepage         = 'https://github.com/vpeschenkov/LetterAvatarKit'
   spec.authors          = { 'Viktor Peschenkov' => 'v.peschenkov@gmail.com' }

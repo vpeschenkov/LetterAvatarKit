@@ -8,7 +8,7 @@
 #### Fixed for any bug fixes.
 ```
 
-### Unreleased
+### 2.1.0
 #### Added
 - Added optional explicit avatar text via `LetterAvatarBuilderConfiguration.letters` and `LetterAvatarMaker.setLetters(_:)`.
 - Added Swiftier `makeAvatar(_:)` and `UIImage.makeLetterAvatar(...)` overloads while keeping existing APIs.
